@@ -2,6 +2,6 @@
   "id": "ninjin",
   "name": "人参",
   "name_kana": "にんじん",
-  "dyeing_material_type_id": "plant-dyes",
-  "description": "人参の葉の部分を煮出すと、黄緑色に染めることができます。煮出すあいだ、人参の匂いがかなり漂います。"
+  "dyeing_material_type_id": "plant-dye",
+  "description": "人参の葉の部分を煮出すと、あざやかな黄緑色に染めることができます。煮出すあいだ、人参の匂いがかなり漂います。"
 }

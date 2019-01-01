@@ -2,6 +2,6 @@
   "id": "shiso",
   "name": "紫蘇",
   "name_kana": "しそ",
-  "dyeing_material_type_id": "plant-dyes",
-  "description": "梅干しに使われる紫蘇です。赤紫蘇で緑色に染まります。酸性で抽出することで赤にも染まりますが、堅牢度が低く、すぐに色があせてしまいます。"
+  "dyeing_material_type_id": "plant-dye",
+  "description": "梅干しに使われる紫蘇です。赤紫蘇で緑色に染まります。酸性で抽出することで赤にも染まりますが、堅牢度が低く、素材によってはすぐに色があせてしまいます。"
 }

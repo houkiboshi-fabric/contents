@@ -2,6 +2,6 @@
   "id": "biwa",
   "name": "枇杷の葉",
   "name_kana": "びわのは",
-  "dyeing_material_type_id": "plant-dyes",
-  "description": "黄色を出すのにメジャーな染料です"
+  "dyeing_material_type_id": "plant-dye",
+  "description": "普通に煮出すと黄色系、アルカリ性で煮出すと赤系の茶色に染まります。乾燥葉の方が濃い色が出るので、染料店で購入するか、枇杷茶を使うのが手っ取り早いです。"
 }
