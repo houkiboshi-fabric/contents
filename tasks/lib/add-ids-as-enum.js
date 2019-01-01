@@ -2,9 +2,6 @@
 
 const cloneDeep = require('lodash.clonedeep');
 
-const isObject = v =>
-  v !== null && typeof v !== 'undefined' && typeof v === 'object';
-
 const addIdsAsEnum = (schema, propValuesList) => {
   const clonedSchema = cloneDeep(schema);
   const props = clonedSchema.properties;

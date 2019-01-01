@@ -77,8 +77,12 @@ describe('addIdsAsEnum', () => {
     ];
 
     const result = addIdsAsEnum(schema, propValuesList);
-    expect(result.properties.foo_items.items.properties.foo_ids.items.enum).toEqual(ids);
-    expect(result.properties.bar_items.items.properties.bar_ids.enum).toEqual(ids);
+    expect(
+      result.properties.foo_items.items.properties.foo_ids.items.enum
+    ).toEqual(ids);
+    expect(result.properties.bar_items.items.properties.bar_ids.enum).toEqual(
+      ids
+    );
     expect(result.properties.buz_id.enum).toEqual(ids);
     expect(result.properties.qux_ids.items.enum).toEqual(ids);
   });

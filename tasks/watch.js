@@ -14,14 +14,12 @@ const paths = [
 ].map(p => resolve(dirs.docs, p, '**', '*.json'));
 
 const watcher = chokidar.watch(paths, {
-  ignored: /(^|[\/\\])\../,
+  ignored: /(^|[/\\])\../,
   persistent: true,
   ignoreInitial: true
 });
 
-const log = console.log.bind(console);
-
 watcher
-  .on('add', path => build())
-  .on('change', path => build())
-  .on('unlink', path => build());
+  .on('add', () => build())
+  .on('change', () => build())
+  .on('unlink', () => build());

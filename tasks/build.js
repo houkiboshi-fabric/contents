@@ -27,7 +27,7 @@ const fetchSchemas = async () => {
 };
 
 const idToPropName = id => {
-  return id.replace(/\..+$/, '').replace(/-/g, '_') + '_id';
+  return `${id.replace(/\..+$/, '').replace(/-/g, '_')}_id`;
 };
 
 const pullDocIds = schemaData => {
@@ -37,9 +37,6 @@ const pullDocIds = schemaData => {
     return doc.id;
   });
 };
-
-const isObject = v =>
-  v !== null && typeof v !== 'undefined' && typeof v === 'object';
 
 const generateSchema = schemaDict => {
   return schemaDict
