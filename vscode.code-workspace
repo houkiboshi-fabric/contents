@@ -8,27 +8,27 @@
 		"json.schemas": [
 			{
 				"fileMatch": [
-					"/dyeing-material-types/*.json"
+					"/docs/dyeing-material-types/*.json"
 				],
 				"url": "https://houkiboshi-fabric.github.io/schema/ref-parsed/dyeing-material-type.json"
 			},
 			{
 				"fileMatch": [
-					"/dyeing-materials/*.json"
+					"/docs/dyeing-materials/*.json"
 				],
-				"url": "https://houkiboshi-fabric.github.io/schema/ref-parsed/dyeing-material.json"
+				"url": "./schemas/dyeing-material.json"
 			},
 			{
 				"fileMatch": [
-					"/products/*.json"
+					"/docs/products/*.json"
 				],
-				"url": "https://houkiboshi-fabric.github.io/schema/ref-parsed/product.json"
+				"url": "./schemas/product.json"
 			},
 			{
 				"fileMatch": [
-					"/raw-materials/*.json"
+					"/docs/raw-materials/*.json"
 				],
-				"url": "https://houkiboshi-fabric.github.io/schema/ref-parsed/raw-material.json"
+				"url": "./schemas/raw-material.json"
 			}
 		]
 	}

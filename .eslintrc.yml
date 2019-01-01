@@ -1,0 +1,32 @@
+env:
+  node: true
+  jest/globals: true
+plugins:
+  - prettier
+  - jest
+extends:
+  - eslint:recommended
+  - standard
+  - plugin:jest/recommended
+  - prettier
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+rules:
+  prettier/prettier: error
+  no-unused-vars:
+    - error
+    - argsIgnorePattern: ^_
+      varsIgnorePattern: ^_
+  no-console:
+    - off
+  no-var:
+    - error
+  prefer-const:
+    - error
+  prefer-rest-params:
+    - warn
+  prefer-spread:
+    - warn
+  prefer-template:
+    - warn
