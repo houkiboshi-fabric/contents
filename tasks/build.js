@@ -1,7 +1,7 @@
 'use strict';
 
 const { readFileSync, writeFileSync } = require('fs');
-const { resolve } = require('path');
+const { resolve, relative } = require('path');
 
 const fetch = require('node-fetch');
 const glob = require('glob');
@@ -68,7 +68,7 @@ const writeSchemas = dict => {
   dict.forEach(item => {
     const path = resolve(dirs.schemas, item.schema.$id);
     const data = JSON.stringify(item.newSchema, null, 2);
-    console.log(`Generated: ${path}`);
+    console.log(`Generated: ${relative(dirs.root, path)}`);
     writeFileSync(path, data);
   });
 };
