@@ -10,7 +10,10 @@ houkiboshi-fabric dataset
 
 ## Install
 
-```console
+``` console
+$ git clone git@github.com:houkiboshi-fabric/contents.git
+$ cd contents/
+$ nodenv install # <-- optional
 $ yarn install
 ```
 
