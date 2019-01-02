@@ -9,6 +9,7 @@ const mkdirp = require('mkdirp');
 
 const { dirSchemaMap, dirs } = require('./config.js');
 const { addIdsAsEnum } = require('./lib/add-ids-as-enum.js');
+const { addDefaultSnippets } = require('./lib/add-default-snippets.js');
 
 const fetchSchema = uri => fetch(uri).then(response => response.json());
 
@@ -55,7 +56,8 @@ const generateSchema = schemaDict => {
           values: item.ids
         };
       });
-      const newSchema = addIdsAsEnum(item.schema, propValuesList);
+      const idAdded = addIdsAsEnum(item.schema, propValuesList);
+      const newSchema = addDefaultSnippets(idAdded);
       return {
         ...item,
         newSchema
