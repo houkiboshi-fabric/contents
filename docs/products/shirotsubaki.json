@@ -1,0 +1,58 @@
+{
+  "id": "shirotsubaki",
+  "name": "白つばき",
+  "name_kana": "しろつばき",
+  "name_alt": "ポーチ",
+  "name_alt_kana": "ぽーち",
+  "links_to_shop": [
+    "https://minne.com/items/9363615",
+    "https://www.creema.jp/item/4626723/detail"
+  ],
+  "image": "https://houkiboshi.co/products/shirotsubaki/images/main.jpg",
+  "price": 3900,
+  "size": {
+    "width_mm": 250,
+    "depth_mm": 150,
+    "notes": [
+      "開口部 約 23 cm"
+    ]
+  },
+  "weight_g": 41,
+  "raw_materials": [
+    {
+      "raw_material_ids": [
+        "cotton"
+      ],
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      },
+      "used_at": "表生地"
+    },
+    {
+      "raw_material_ids": [
+        "cotton"
+      ],
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      },
+      "used_at": "裏生地"
+    },
+    {
+      "raw_material_ids": [
+        "plastic-fastener"
+      ],
+      "used_at": "部品"
+    }
+  ],
+  "dyeing_materials": [
+    {
+      "dyeing_material_ids": [
+        "kuzu",
+        "resin-pigment"
+      ]
+    }
+  ],
+  "description": "冬に道ばたで見た白い椿がきれいだったので、形にしたいと思って布を染めました。\n内側の布は葛で染めたので、冬の終わりと春の終わりが合体したポーチになりました。\nA4の紙を三つ折りして入れられるくらいの大きさで、ノートならB6、A6が入ります（写真はA6ノート)。\n母子手帳と予防接種などのお知らせの紙をいっしょに入れたり、メモ帳とペン、文庫本、いろいろ入ります。"
+}

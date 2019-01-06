@@ -1,0 +1,49 @@
+{
+  "id": "shinkai",
+  "name": "深海",
+  "name_kana": "しんかい",
+  "name_alt": "織りフェルトのキーホルダー",
+  "name_alt_kana": "おりふぇるとのきーほるだー",
+  "links_to_shop": [
+    "https://minne.com/items/1449933"
+  ],
+  "price": 1200,
+  "image": "https://houkiboshi.co/products/shinkai/images/main.jpg",
+  "size": {
+    "width_mm": 60,
+    "depth_mm": 90,
+    "height_mm": 20,
+    "notes": [
+      "ひもの長さ:約10 cm"
+    ]
+  },
+  "weight_g": 11,
+  "raw_materials": [
+    {
+      "raw_material_ids": [
+        "wool"
+      ],
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      },
+      "used_at": "本体"
+    },
+    {
+      "raw_material_ids": [
+        "leather",
+        "ring",
+        "wood-beads"
+      ],
+      "used_at": "部品"
+    }
+  ],
+  "dyeing_materials": [
+    {
+      "dyeing_material_ids": [
+        "ready-made"
+      ]
+    }
+  ],
+  "description": "織った羊毛を少し縮絨させてつくったフェルトのキーホルダーです。\n青緑系のミックス色と灰色の組み合わせでつくりました。\nかばんなどにひっかけておくとかわいいし便利です。\n個体差ありますが、おおよそ6.5 cm以内の長さの鍵であれば収まると思います。サイズを必ずご確認ください。 "
+}

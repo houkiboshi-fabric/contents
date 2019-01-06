@@ -1,0 +1,39 @@
+{
+  "id": "harunoike",
+  "name": "春の池",
+  "name_kana": "はるのいけ",
+  "name_alt": "草木染め糸のハンカチ",
+  "name_alt_kana": "くさきぞめいとのはんかち",
+  "links_to_shop": [
+    "https://minne.com/items/4402158",
+    "https://www.creema.jp/item/4635013/detail/"
+  ],
+  "price": 3250,
+  "image": "https://houkiboshi.co/products/harunoike/images/main.jpg",
+  "size": {
+    "width_mm": 220,
+    "depth_mm": 235
+  },
+  "weight_g": 7,
+  "raw_materials": [
+    {
+      "raw_material_ids": [
+        "cotton",
+        "hakushu-cotton"
+      ],
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      }
+    }
+  ],
+  "dyeing_materials": [
+    {
+      "dyeing_material_ids": [
+        "sakura",
+        "akane",
+        "ready-made"
+      ]
+    }
+  ]
+}

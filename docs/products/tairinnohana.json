@@ -1,0 +1,37 @@
+{
+  "id": "tairinnohana",
+  "name": "大輪の花",
+  "name_kana": "たいりんのはな",
+  "name_alt": "型染めと草木染めのハンカチ",
+  "name_alt_kana": "かたぞめとくさきぞめのはんかち",
+  "price": 2300,
+  "links_to_shop": [
+    "https://minne.com/items/6598420"
+  ],
+  "image": "https://houkiboshi.co/products/tairinnohana/images/main.jpg",
+  "size": {
+    "width_mm": 450,
+    "depth_mm": 450
+  },
+  "weight_g": 7,
+  "raw_materials": [
+    {
+      "raw_material_ids": [
+        "cotton"
+      ],
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      }
+    }
+  ],
+  "dyeing_materials": [
+    {
+      "dyeing_material_ids": [
+        "resin-pigment",
+        "tamanegi"
+      ]
+    }
+  ],
+  "description": "綿ローンのハンカチに型染めで柄を重ね、草木染めで同系色の地の色を入れました。\n型染めからイメージされる力強くパキッとした柄ではなくて、水彩で描いたような透明感があって地色となじむ柄が出したいなと考えて作りました。かっこいい感じになりました。"
+}

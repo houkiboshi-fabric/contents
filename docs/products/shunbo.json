@@ -1,0 +1,39 @@
+{
+  "id": "shunbo",
+  "name": "春暮",
+  "name_kana": "しゅんぼ",
+  "name_alt": "草木染め糸のハンカチ",
+  "name_alt_kana": "くさきぞめいとのはんかち",
+  "price": 3250,
+  "links_to_shop": [
+    "https://minne.com/items/6595046",
+    "https://www.creema.jp/item/4634952/detail"
+  ],
+  "image": "https://houkiboshi.co/products/shunbo/images/main.jpg",
+  "size": {
+    "width_mm": 220,
+    "depth_mm": 235
+  },
+  "weight_g": 7,
+  "raw_materials": [
+    {
+      "raw_material_ids": [
+        "cotton",
+        "hakushu-cotton"
+      ],
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      }
+    }
+  ],
+  "dyeing_materials": [
+    {
+      "dyeing_material_ids": [
+        "sakura",
+        "akane"
+      ]
+    }
+  ],
+  "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。\n市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。\n軽くてやわらかく、しなやかです。\n緯糸にはところどころに手紡ぎした伯州綿のスラブ糸を使っています。"
+}

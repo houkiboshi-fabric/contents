@@ -1,0 +1,38 @@
+{
+  "id": "tenchi",
+  "name": "天地",
+  "name_kana": "てんち",
+  "name_alt": "壁飾り",
+  "name_alt_kana": "かべかざり",
+  "links_to_shop": [
+    "https://minne.com/items/15007450",
+    "https://www.creema.jp/item/5916193/detail"
+  ],
+  "price": 5700,
+  "image": "https://houkiboshi.co/products/tenchi/images/main.jpg",
+  "size": {
+    "width_mm": 250,
+    "depth_mm": 30,
+    "height_mm": 250
+  },
+  "weight_g": 140,
+  "raw_materials": [
+    {
+      "raw_material_ids": [
+        "wool"
+      ],
+      "mixing_ratio": {
+        "percentage": 100,
+        "decorator": "="
+      }
+    }
+  ],
+  "dyeing_materials": [
+    {
+      "dyeing_material_ids": [
+        "akane","benikanamemochi","hiyokogusa","logwood"
+      ]
+    }
+  ],
+  "description": "壁に飾る織物です。織物は四角になりがちですが、丸くて立体感あるものが飾りたいなあと考えてつくりました。同じものをつくることが難しいので、一点物です。"
+}

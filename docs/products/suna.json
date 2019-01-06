@@ -1,0 +1,60 @@
+{
+  "id": "suna",
+  "name": "砂",
+  "name_kana": "すな",
+  "name_alt": "ポーチ",
+  "name_alt_kana": "ぽーち",
+  "links_to_shop": [
+    "https://minne.com/items/12906285",
+    "https://www.creema.jp/item/5349802/detail"
+  ],
+  "price": 4800,
+  "image": "https://houkiboshi.co/products/suna/images/main.jpg",
+  "size": {
+    "width_mm": 250,
+    "depth_mm": 150,
+    "notes": [
+      "開口部 約 23 cm"
+    ]
+  },
+  "weight_g": 43,
+  "raw_materials": [
+    {
+      "raw_material_ids": [
+        "wool"
+      ],
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      },
+      "used_at": "表生地"
+    },
+    {
+      "raw_material_ids": [
+        "cotton"
+      ],
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      },
+      "used_at": "裏生地"
+    },
+    {
+      "raw_material_ids": [
+        "plastic-fastener"
+      ],
+      "used_at": "部品"
+    }
+  ],
+  "dyeing_materials": [
+    {
+      "dyeing_material_ids": [
+        "sakura",
+        "hiyokogusa",
+        "kuzu",
+        "ready-made"
+      ]
+    }
+  ],
+  "description": "羊毛を草木染めした糸と、茶色・灰色・生成りの羊そのままの色の糸とで、冬の砂丘みたいな布を作りました。手紡ぎした糸をたくさん使っているので、表情ある表面になっています。\nA4の紙を三つ折りして入れられるくらいの大きさで、ノートならB6、A6が入ります。\n母子手帳と予防接種などのお知らせの紙をいっしょに入れたり、メモ帳とペン、文庫本、いろいろ入ります。"
+}
