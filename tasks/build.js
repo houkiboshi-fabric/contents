@@ -32,7 +32,7 @@ const idToPropName = id => {
 };
 
 const pullDocIds = schemaData => {
-  const pattern = resolve(dirs.docs, schemaData.dir, '**', '*.json');
+  const pattern = resolve(dirs.docs, schemaData.dir, '**', '!(index).json');
   return glob.sync(pattern).map(filePath => {
     const doc = JSON.parse(readFileSync(filePath, 'utf8'));
     return doc.id;
@@ -75,6 +75,20 @@ const writeSchemas = dict => {
   });
 };
 
+const writeIndexFiles = () => {
+  const dirsToGenerateIndex = [...dirSchemaMap.keys()];
+  dirsToGenerateIndex.forEach(dir => {
+    const pattern = resolve(dirs.docs, dir, '**', '!(index).json');
+    const contents = glob.sync(pattern).reduce((acm, path) => {
+      const content = readFileSync(path, 'utf-8');
+      return [...acm, JSON.parse(content)];
+    }, []);
+    const indexPath = resolve(dirs.docs, dir, 'index.json');
+    console.log(`Generated index: ${relative(dirs.root, indexPath)}`);
+    writeFileSync(indexPath, JSON.stringify(contents, null, 2));
+  });
+};
+
 let schemaDict = null;
 
 const build = async () => {
@@ -83,6 +97,7 @@ const build = async () => {
   }
   const dict = generateSchema(schemaDict);
   writeSchemas(dict);
+  writeIndexFiles();
 };
 
 build();

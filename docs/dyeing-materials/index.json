@@ -1,0 +1,149 @@
+[
+  {
+    "id": "ai",
+    "name": "藍",
+    "name_kana": "あい",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "藍といえば発酵させて濃い青色に染める染液ですが、明るい水色に染まる生葉染めや、乾燥させた葉を煮出す染液の作り方もあります。うちでは生葉染めと煮出し染めをしています。藍は他の草木染めと違って金属による媒染が必要なく、それは色素のインジゴとインジカンの関係によるものです。インジゴが酸素と結合することで色が定着するため、染液に浸したあとに空気に触れさせる作業をします。また、摘み取られたあとに高速・高温で乾燥させた藍の葉を粉状にしてエタノールを混ぜることで紫色に染めることもできるのですが、条件を満たす処理がされた葉を手に入れるのが困難です。"
+  },
+  {
+    "id": "akane",
+    "name": "茜",
+    "name_kana": "あかね",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "赤い色を染めるときに使います。堅牢度が高く、洗濯の必要があるアイテムにも使いやすい染料です。染液を煮出すときにあまり高温にしないこと、また、酸性で煮出すことで、きれいな赤を抽出できます。染料店で購入します。"
+  },
+  {
+    "id": "benikanamemochi",
+    "name": "ベニカナメモチ",
+    "name_kana": "べにかなめもち",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "新葉が赤くなるのが特徴の木です。赤い新葉で染めると、緑がかった黄色に染まります。"
+  },
+  {
+    "id": "biwa",
+    "name": "枇杷の葉",
+    "name_kana": "びわのは",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "普通に煮出すと黄色系、アルカリ性で煮出すと赤系の茶色に染まります。乾燥葉の方が濃い色が出るので、染料店で購入するか、枇杷茶を使うのが手っ取り早いです。"
+  },
+  {
+    "id": "hiyokogusa",
+    "name": "ひよこ草",
+    "name_kana": "ひよこぐさ",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "いわゆるハコベで、淡い黄色に染まる雑草です。人参のまわりにたくさん生えていてうっとおしかったので染めてみたらいい感じの色でした。"
+  },
+  {
+    "id": "kinkan",
+    "name": "金柑",
+    "name_kana": "きんかん",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "金柑の葉と枝を煮出して染液にします。明るい黄色に染まります。"
+  },
+  {
+    "id": "koucha",
+    "name": "紅茶",
+    "name_kana": "こうちゃ",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "紅茶です。一煎目は飲む用にして、そのあとは染液抽出用に乾かしておくと二度美味しいです。紅茶のような色に染まります。"
+  },
+  {
+    "id": "kuzu",
+    "name": "葛",
+    "name_kana": "くず",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "5月ごろから道端でもさもさ生える植物です。葛まんじゅうの葛であり、繊維を取り出して糸として使うこともあるという、食べられるし染められるし布を作れる植物です。緑色を染め、日光堅牢度を上げるために銅媒染をします。ミョウバン媒染では堅牢度が低く、色あせの進みが早いです。きれいな緑色にするために、「重曹を入れてアルカリ性にした上で煮出し、煮出した液を捨てる」という作業を3回以上行ったうえで、やっと緑色に染められる染液を確保できます。3回以内の煮出した液や、ミョウバン媒染では黄色が強い色になります。"
+  },
+  {
+    "id": "logwood",
+    "name": "ログウッド",
+    "name_kana": "ろぐうっど",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "紫色に染まります。pHによっては赤くなる説もあります（したことない）。植物名はアカミノキで、ログウッドは別名。染料店で購入します。他の染料との掛け合わせや媒染を工夫することで、黒に近い色を作り出す染料です。"
+  },
+  {
+    "id": "mint",
+    "name": "ミント",
+    "name_kana": "みんと",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "繁殖力の高いミントは、煮出して染料にすると茶系の色に染められます。煮ているときの匂いが良いので好きです。"
+  },
+  {
+    "id": "nazuna",
+    "name": "なずな",
+    "name_kana": "なずな",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "春の七草のひとつ、なずなは、別名ぺんぺん草です。淡い黄色に染まります。日光堅牢度も良いらしいです。"
+  },
+  {
+    "id": "ninjin",
+    "name": "人参",
+    "name_kana": "にんじん",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "人参の葉の部分を煮出すと、あざやかな黄緑色に染めることができます。煮出すあいだ、人参の匂いがかなり漂います。"
+  },
+  {
+    "id": "resin-pigment",
+    "name": "樹脂顔料",
+    "name_kana": "じゅしがんりょう",
+    "dyeing_material_type_id": "resin-pigment",
+    "description": "型染めのときに使う顔料です。バインダーという定着剤を入れることで布に色を定着させます。バインダーが多ければ仕上がりが固く、少なければ布の風合いを損ないません。水の量や布の特徴、バインダーの割合によって色のにじみやすさが変わります。"
+  },
+  {
+    "id": "rosemary",
+    "name": "ローズマリー",
+    "name_kana": "ろーずまりー",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "肉料理などに使うローズマリーは、染料にするとレモンイエローのような色に染められます。"
+  },
+  {
+    "id": "sakura",
+    "name": "桜",
+    "name_kana": "さくら",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "桜はアルカリ性で抽出することでピンク色に染まります。使うのは花びらではなく、枝や樹皮です。中性の水で煮出すと、黃〜茶系の色に染まります。桜にはいろんな抽出方法を研究している人がいて、発酵させたり抽出後に寝かせたりなど様々な方法があるようです。"
+  },
+  {
+    "id": "sangoju",
+    "name": "サンゴジュ",
+    "name_kana": "さんごじゅ",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "葉で染めます。赤みがかったベージュのような色に染まります。"
+  },
+  {
+    "id": "shiso",
+    "name": "紫蘇",
+    "name_kana": "しそ",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "梅干しに使われる紫蘇です。赤紫蘇で緑色に染まります。酸性で抽出することで赤にも染まりますが、堅牢度が低く、素材によってはすぐに色があせてしまいます。"
+  },
+  {
+    "id": "tamanegi",
+    "name": "玉葱",
+    "name_kana": "たまねぎ",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "玉葱の皮はとても染まりやすく堅牢度も高い、手軽で優秀な染料です。濃い黄色に染まりますが、短時間で引き上げることで色の濃さのコントロールができます。"
+  },
+  {
+    "id": "ume",
+    "name": "梅",
+    "name_kana": "うめ",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "桜とおなじく、枝や葉をアルカリ性で抽出するとピンク色に染まります。中性で抽出すると黄色系です。"
+  },
+  {
+    "id": "yomogi",
+    "name": "ヨモギ",
+    "name_kana": "よもぎ",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "やや緑がかった黄色に染まります。緑を強くしたいときには、アルカリ性で抽出します。"
+  },
+  {
+    "id": "yuzu",
+    "name": "柚子",
+    "name_kana": "ゆず",
+    "dyeing_material_type_id": "plant-dye",
+    "description": "柚子は枝と葉を煮出して使います。レモンイエローのような淡い黄色に染まります。煮出す過程でいい匂いを楽しめます。"
+  }
+]

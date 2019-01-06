@@ -1,0 +1,17 @@
+[
+  {
+    "id": "plant-dye",
+    "name": "植物染料",
+    "name_kana": "しょくぶつせんりょう"
+  },
+  {
+    "id": "ready-made",
+    "name": "既製品",
+    "name_kana": "きせいひん"
+  },
+  {
+    "id": "resin-pigment",
+    "name": "樹脂顔料",
+    "name_kana": "じゅしがんりょう"
+  }
+]

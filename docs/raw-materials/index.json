@@ -1,0 +1,53 @@
+[
+  {
+    "id": "cotton",
+    "name": "綿",
+    "name_kana": "めん"
+  },
+  {
+    "id": "hakushu-cotton",
+    "name": "伯州綿",
+    "name_kana": "はくしゅうめん"
+  },
+  {
+    "id": "leather",
+    "name": "革",
+    "name_kana": "かわ",
+    "description": "革です"
+  },
+  {
+    "id": "metal-fastener",
+    "name": "金属ファスナー",
+    "name_kana": "きんぞくふぁすなー",
+    "description": "務歯や取っ手が金属のファスナーです。"
+  },
+  {
+    "id": "plastic-fastener",
+    "name": "プラスティックファスナー",
+    "name_kana": "ぷらすてぃっくふぁすなー",
+    "description": "務歯や持ち手がプラスティックのファスナーです。"
+  },
+  {
+    "id": "plastic-snap-fastner",
+    "name": "プラスティックスナップボタン",
+    "name_kana": "ぷらすてぃっくすなっぷぼたん",
+    "description": "プラスティック製のポチポチ留めるホックです。"
+  },
+  {
+    "id": "ring",
+    "name": "リング",
+    "name_kana": "りんぐ",
+    "description": "金属のリングです。"
+  },
+  {
+    "id": "wood-beads",
+    "name": "ウッドビーズ",
+    "name_kana": "うっどびーず",
+    "description": "木でできたビーズです。"
+  },
+  {
+    "id": "wool",
+    "name": "羊毛",
+    "name_kana": "ようもう"
+  }
+]
