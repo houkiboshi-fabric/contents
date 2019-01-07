@@ -3,5 +3,7 @@
   "name": "金柑",
   "name_kana": "きんかん",
   "dyeing_material_type_id": "plant-dye",
+  "image": null,
+  "images_alt": [],
   "description": "金柑の葉と枝を煮出して染液にします。明るい黄色に染まります。"
 }

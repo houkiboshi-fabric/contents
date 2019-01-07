@@ -6,6 +6,10 @@
   "name_alt_kana": "ぽーち",
   "price": 4800,
   "image": "https://houkiboshi.co/products/hakumei/images/main.jpg",
+  "images_alt": [
+    "https://houkiboshi.co/products/hakumei/images/01.jpg",
+    "https://houkiboshi.co/products/hakumei/images/02.jpg"
+  ],
   "size": {
     "width_mm": 250,
     "depth_mm": 150,

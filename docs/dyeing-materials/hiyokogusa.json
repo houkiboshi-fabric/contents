@@ -3,5 +3,7 @@
   "name": "ひよこ草",
   "name_kana": "ひよこぐさ",
   "dyeing_material_type_id": "plant-dye",
+  "image": null,
+  "images_alt": [],
   "description": "いわゆるハコベで、淡い黄色に染まる雑草です。人参のまわりにたくさん生えていてうっとおしかったので染めてみたらいい感じの色でした。"
 }

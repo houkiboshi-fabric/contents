@@ -10,6 +10,9 @@
   ],
   "price": 5500,
   "image": "https://houkiboshi.co/products/himekonohadori/images/main.jpg",
+  "images_alt": [
+    "https://houkiboshi.co/products/himekonohadori/images/main.jpg"
+  ],
   "size": {
     "width_mm": 200,
     "depth_mm":1500

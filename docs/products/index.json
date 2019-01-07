@@ -11,6 +11,11 @@
     ],
     "price": 3900,
     "image": "https://houkiboshi.co/products/akatsubaki/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/akatsubaki/images/01.jpg",
+      "https://houkiboshi.co/products/akatsubaki/images/02.jpg",
+      "https://houkiboshi.co/products/akatsubaki/images/03.jpg"
+    ],
     "size": {
       "width_mm": 250,
       "depth_mm": 150,
@@ -69,6 +74,10 @@
     ],
     "price": 18000,
     "image": "https://houkiboshi.co/products/ankan/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/ankan/images/01.jpg",
+      "https://houkiboshi.co/products/ankan/images/02.jpg"
+    ],
     "size": {
       "width_mm": 1680,
       "depth_mm": 230
@@ -110,6 +119,10 @@
     ],
     "price": 16000,
     "image": "https://houkiboshi.co/products/aogai/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/aogai/images/01.jpg",
+      "https://houkiboshi.co/products/aogai/images/02.jpg"
+    ],
     "size": {
       "width_mm": 1600,
       "depth_mm": 400
@@ -137,7 +150,16 @@
     "name_kana": "あおやぎ",
     "name_alt": "ポーチ",
     "name_alt_kana": "ぽーち",
+    "price": 4800,
+    "links_to_shop": [
+      "https://minne.com/items/14791895",
+      "https://www.creema.jp/item/5836792/detail"
+    ],
     "image": "https://houkiboshi.co/products/aoyagi/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/aoyagi/images/01.jpg",
+      "https://houkiboshi.co/products/aoyagi/images/02.jpg"
+    ],
     "size": {
       "width_mm": 250,
       "depth_mm": 150,
@@ -181,7 +203,8 @@
           "ready-made"
         ]
       }
-    ]
+    ],
+    "description": "A4の紙を三つ折りして入れられるくらいの大きさで、ノートならB6、A6が入ります。\n母子手帳と予防接種などのお知らせの紙をいっしょに入れたり、メモ帳とペン、文庫本、いろいろ入ります。"
   },
   {
     "id": "awayuki",
@@ -195,6 +218,10 @@
     ],
     "price": 16000,
     "image": "https://houkiboshi.co/products/awayuki/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/awayuki/images/01.jpg",
+      "https://houkiboshi.co/products/awayuki/images/02.jpg"
+    ],
     "size": {
       "width_mm": 1400,
       "depth_mm": 250
@@ -232,6 +259,11 @@
       "https://www.creema.jp/item/4617679/detail"
     ],
     "image": "https://houkiboshi.co/products/chojo/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/chojo/images/01.jpg",
+      "https://houkiboshi.co/products/chojo/images/02.jpg",
+      "https://houkiboshi.co/products/chojo/images/03.jpg"
+    ],
     "size": {
       "width_mm": 1440,
       "depth_mm": 280
@@ -270,6 +302,10 @@
     ],
     "price": 3250,
     "image": "https://houkiboshi.co/products/hakubutsukan/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/hakubutsukan/images/01.jpg",
+      "https://houkiboshi.co/products/hakubutsukan/images/02.jpg"
+    ],
     "size": {
       "width_mm": 220,
       "depth_mm": 235
@@ -306,6 +342,10 @@
     "name_alt_kana": "ぽーち",
     "price": 4800,
     "image": "https://houkiboshi.co/products/hakumei/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/hakumei/images/01.jpg",
+      "https://houkiboshi.co/products/hakumei/images/02.jpg"
+    ],
     "size": {
       "width_mm": 250,
       "depth_mm": 150,
@@ -368,6 +408,10 @@
     ],
     "price": 3250,
     "image": "https://houkiboshi.co/products/harunoike/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/harunoike/images/01.jpg",
+      "https://houkiboshi.co/products/harunoike/images/02.jpg"
+    ],
     "size": {
       "width_mm": 220,
       "depth_mm": 235
@@ -393,7 +437,8 @@
           "ready-made"
         ]
       }
-    ]
+    ],
+    "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。\n市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。\n軽くてやわらかく、しなやかです。\n緯糸にはところどころに手紡ぎした伯州綿のスラブ糸を使っています。"
   },
   {
     "id": "heian",
@@ -407,6 +452,9 @@
     ],
     "price": 28000,
     "image": "https://houkiboshi.co/products/heian/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/heian/images/01.jpg"
+    ],
     "size": {
       "width_mm": 950,
       "depth_mm": 230
@@ -445,6 +493,9 @@
     ],
     "price": 5500,
     "image": "https://houkiboshi.co/products/himekonohadori/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/himekonohadori/images/main.jpg"
+    ],
     "size": {
       "width_mm": 200,
       "depth_mm": 1500
@@ -486,6 +537,9 @@
     ],
     "price": 18000,
     "image": "https://houkiboshi.co/products/kafuku/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/kafuku/images/01.jpg"
+    ],
     "size": {
       "width_mm": 1500,
       "depth_mm": 510
@@ -526,6 +580,11 @@
     ],
     "price": 5300,
     "image": "https://houkiboshi.co/products/kanko/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/kanko/images/01.jpg",
+      "https://houkiboshi.co/products/kanko/images/02.jpg",
+      "https://houkiboshi.co/products/kanko/images/03.jpg"
+    ],
     "size": {
       "width_mm": 5000,
       "depth_mm": 350
@@ -563,6 +622,11 @@
     ],
     "price": 15000,
     "image": "https://houkiboshi.co/products/kuchibue/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/kuchibue/images/01.jpg",
+      "https://houkiboshi.co/products/kuchibue/images/02.jpg",
+      "https://houkiboshi.co/products/kuchibue/images/03.jpg"
+    ],
     "size": {
       "width_mm": 1850,
       "depth_mm": 200
@@ -601,6 +665,10 @@
     ],
     "price": 4800,
     "image": "https://houkiboshi.co/products/minamo/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/minamo/images/01.jpg",
+      "https://houkiboshi.co/products/minamo/images/02.jpg"
+    ],
     "size": {
       "width_mm": 220,
       "depth_mm": 120,
@@ -658,6 +726,10 @@
     ],
     "price": 3250,
     "image": "https://houkiboshi.co/products/osechi/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/osechi/images/01.jpg",
+      "https://houkiboshi.co/products/osechi/images/02.jpg"
+    ],
     "size": {
       "width_mm": 220,
       "depth_mm": 235
@@ -699,6 +771,10 @@
     ],
     "price": 18000,
     "image": "https://houkiboshi.co/products/oukyou/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/oukyou/images/01.jpg",
+      "https://houkiboshi.co/products/oukyou/images/02.jpg"
+    ],
     "size": {
       "width_mm": 1500,
       "depth_mm": 200
@@ -737,6 +813,11 @@
     ],
     "price": 23000,
     "image": "https://houkiboshi.co/products/rakuda/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/rakuda/images/01.jpg",
+      "https://houkiboshi.co/products/rakuda/images/02.jpg",
+      "https://houkiboshi.co/products/rakuda/images/03.jpg"
+    ],
     "size": {
       "width_mm": 1500,
       "depth_mm": 370
@@ -776,6 +857,10 @@
     ],
     "price": 1200,
     "image": "https://houkiboshi.co/products/shinkai/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/shinkai/images/01.jpg",
+      "https://houkiboshi.co/products/shinkai/images/02.jpg"
+    ],
     "size": {
       "width_mm": 60,
       "depth_mm": 90,
@@ -825,6 +910,12 @@
       "https://www.creema.jp/item/4626723/detail"
     ],
     "image": "https://houkiboshi.co/products/shirotsubaki/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/shirotsubaki/images/01.jpg",
+      "https://houkiboshi.co/products/shirotsubaki/images/02.jpg",
+      "https://houkiboshi.co/products/shirotsubaki/images/03.jpg",
+      "https://houkiboshi.co/products/shirotsubaki/images/04.jpg"
+    ],
     "price": 3900,
     "size": {
       "width_mm": 250,
@@ -884,6 +975,10 @@
       "https://www.creema.jp/item/4634952/detail"
     ],
     "image": "https://houkiboshi.co/products/shunbo/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/shunbo/images/01.jpg",
+      "https://houkiboshi.co/products/shunbo/images/02.jpg"
+    ],
     "size": {
       "width_mm": 220,
       "depth_mm": 235
@@ -923,6 +1018,9 @@
     ],
     "price": 4800,
     "image": "https://houkiboshi.co/products/sousasen/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/sousasen/images/01.jpg"
+    ],
     "size": {
       "width_mm": 250,
       "depth_mm": 150,
@@ -984,6 +1082,9 @@
     ],
     "price": 4800,
     "image": "https://houkiboshi.co/products/suna/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/suna/images/01.jpg"
+    ],
     "size": {
       "width_mm": 250,
       "depth_mm": 150,
@@ -1043,6 +1144,11 @@
       "https://minne.com/items/6598420"
     ],
     "image": "https://houkiboshi.co/products/tairinnohana/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/tairinnohana/images/01.jpg",
+      "https://houkiboshi.co/products/tairinnohana/images/02.jpg",
+      "https://houkiboshi.co/products/tairinnohana/images/03.jpg"
+    ],
     "size": {
       "width_mm": 450,
       "depth_mm": 450
@@ -1081,6 +1187,9 @@
     ],
     "price": 5700,
     "image": "https://houkiboshi.co/products/tenchi/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/tenchi/images/01.jpg"
+    ],
     "size": {
       "width_mm": 250,
       "depth_mm": 30,
@@ -1121,6 +1230,9 @@
     ],
     "price": 3250,
     "image": "https://houkiboshi.co/products/wakakusa-green-stripe/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/wakakusa-green-stripe/images/01.jpg"
+    ],
     "size": {
       "width_mm": 200,
       "depth_mm": 190
@@ -1159,6 +1271,9 @@
     ],
     "price": 3250,
     "image": "https://houkiboshi.co/products/wakakusa-white-stripe/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/wakakusa-white-stripe/images/01.jpg"
+    ],
     "size": {
       "width_mm": 200,
       "depth_mm": 190
@@ -1197,6 +1312,9 @@
     ],
     "price": 3250,
     "image": "https://houkiboshi.co/products/wakakusa-wide-border/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/wakakusa-wide-border/images/01.jpg"
+    ],
     "size": {
       "width_mm": 200,
       "depth_mm": 190
@@ -1234,6 +1352,9 @@
     ],
     "price": 6500,
     "image": "https://houkiboshi.co/products/yamanoodori/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/yamanoodori/images/01.jpg"
+    ],
     "size": {
       "width_mm": 1080,
       "depth_mm": 270
@@ -1272,6 +1393,10 @@
     ],
     "price": 3250,
     "image": "https://houkiboshi.co/products/youkou/images/main.jpg",
+    "images_alt": [
+      "https://houkiboshi.co/products/youkou/images/01.jpg",
+      "https://houkiboshi.co/products/youkou/images/02.jpg"
+    ],
     "size": {
       "width_mm": 220,
       "depth_mm": 235

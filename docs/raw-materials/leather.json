@@ -2,5 +2,7 @@
   "id": "leather",
   "name": "革",
   "name_kana": "かわ",
+  "image": null,
+  "images_alt": [],
   "description": "革です"
 }

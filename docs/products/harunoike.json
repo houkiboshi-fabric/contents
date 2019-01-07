@@ -10,6 +10,10 @@
   ],
   "price": 3250,
   "image": "https://houkiboshi.co/products/harunoike/images/main.jpg",
+  "images_alt": [
+    "https://houkiboshi.co/products/harunoike/images/01.jpg",
+    "https://houkiboshi.co/products/harunoike/images/02.jpg"
+  ],
   "size": {
     "width_mm": 220,
     "depth_mm": 235
@@ -35,5 +39,6 @@
         "ready-made"
       ]
     }
-  ]
+  ],
+  "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。\n市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。\n軽くてやわらかく、しなやかです。\n緯糸にはところどころに手紡ぎした伯州綿のスラブ糸を使っています。"
 }

@@ -3,5 +3,7 @@
   "name": "ローズマリー",
   "name_kana": "ろーずまりー",
   "dyeing_material_type_id": "plant-dye",
+  "image": null,
+  "images_alt": [],
   "description": "肉料理などに使うローズマリーは、染料にするとレモンイエローのような色に染められます。"
 }

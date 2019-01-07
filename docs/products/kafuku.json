@@ -10,6 +10,9 @@
   ],
   "price": 18000,
   "image": "https://houkiboshi.co/products/kafuku/images/main.jpg",
+  "images_alt": [
+    "https://houkiboshi.co/products/kafuku/images/01.jpg"
+  ],
   "size": {
     "width_mm": 1500,
     "depth_mm": 510

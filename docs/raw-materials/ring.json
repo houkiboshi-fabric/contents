@@ -2,5 +2,7 @@
   "id": "ring",
   "name": "リング",
   "name_kana": "りんぐ",
+  "image": null,
+  "images_alt": [],
   "description": "金属のリングです。"
 }

@@ -4,7 +4,16 @@
   "name_kana": "あおやぎ",
   "name_alt": "ポーチ",
   "name_alt_kana": "ぽーち",
+  "price": 4800,
+  "links_to_shop": [
+    "https://minne.com/items/14791895",
+    "https://www.creema.jp/item/5836792/detail"
+  ],
   "image": "https://houkiboshi.co/products/aoyagi/images/main.jpg",
+  "images_alt": [
+    "https://houkiboshi.co/products/aoyagi/images/01.jpg",
+    "https://houkiboshi.co/products/aoyagi/images/02.jpg"
+  ],
   "size": {
     "width_mm": 250,
     "depth_mm": 150,
@@ -48,5 +57,6 @@
         "ready-made"
       ]
     }
-  ]
+  ],
+  "description": "A4の紙を三つ折りして入れられるくらいの大きさで、ノートならB6、A6が入ります。\n母子手帳と予防接種などのお知らせの紙をいっしょに入れたり、メモ帳とペン、文庫本、いろいろ入ります。"
 }

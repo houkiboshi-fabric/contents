@@ -10,6 +10,9 @@
   ],
   "price": 4800,
   "image": "https://houkiboshi.co/products/suna/images/main.jpg",
+  "images_alt": [
+    "https://houkiboshi.co/products/suna/images/01.jpg"
+  ],
   "size": {
     "width_mm": 250,
     "depth_mm": 150,

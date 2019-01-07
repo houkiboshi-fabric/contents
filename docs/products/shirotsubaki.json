@@ -9,6 +9,12 @@
     "https://www.creema.jp/item/4626723/detail"
   ],
   "image": "https://houkiboshi.co/products/shirotsubaki/images/main.jpg",
+  "images_alt": [
+    "https://houkiboshi.co/products/shirotsubaki/images/01.jpg",
+    "https://houkiboshi.co/products/shirotsubaki/images/02.jpg",
+    "https://houkiboshi.co/products/shirotsubaki/images/03.jpg",
+    "https://houkiboshi.co/products/shirotsubaki/images/04.jpg"
+  ],
   "price": 3900,
   "size": {
     "width_mm": 250,
