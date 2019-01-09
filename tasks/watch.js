@@ -4,6 +4,8 @@ const chokidar = require('chokidar');
 const { resolve } = require('path');
 
 const build = require('./build.js');
+const validate = require('./validate-json.js');
+
 const { dirs } = require('./config.js');
 
 const paths = [
@@ -19,7 +21,12 @@ const watcher = chokidar.watch(paths, {
   ignoreInitial: true
 });
 
+const buildAndValidate = () => {
+  build();
+  validate();
+};
+
 watcher
-  .on('add', () => build())
-  .on('change', () => build())
-  .on('unlink', () => build());
+  .on('add', () => buildAndValidate())
+  .on('change', () => buildAndValidate())
+  .on('unlink', () => buildAndValidate());

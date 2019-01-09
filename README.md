@@ -36,8 +36,46 @@ $ yarn build
 
 ### Watch
 
+* Watch specific directories continually and run
+  Build and Validate json files except for `index.json`
+  * `docs/dyeing-material-types/**/!(index).json`
+  * `docs/dyeing-materials/**/!(index).json`
+  * `docs/products/**/!(index).json`
+  * `docs/raw-materials/**/!(index).json`
+
 ```console
 $ yarn watch
 // or
 $ yarn start
+```
+
+### Validate
+
+* Validate json files using Ajv
+* Validate json files except for `index.json`
+  * `docs/dyeing-material-types/**/!(index).json`
+  * `docs/dyeing-materials/**/!(index).json`
+  * `docs/products/**/!(index).json`
+  * `docs/raw-materials/**/!(index).json`
+
+```console
+$ yarn validate
+```
+
+### Test
+
+* Run JavaScript test using Jest
+
+```console
+$ yarn test
+// or
+$ yarn test:watch
+```
+
+### Lint
+
+* Lint JavaScript files using ESLint
+
+```console
+$ yarn lint
 ```
