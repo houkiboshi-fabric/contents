@@ -2,7 +2,7 @@
   "id": "benikanamemochi",
   "name": "ベニカナメモチ",
   "name_kana": "べにかなめもち",
-  "dyeing_material_type_id": "plant-dye",
+  "dyeing_material_type_id": "plant-dye-type",
   "image": null,
   "images_alt": [],
   "description": "新葉が赤くなるのが特徴の木です。赤い新葉で染めると、緑がかった黄色に染まります。"

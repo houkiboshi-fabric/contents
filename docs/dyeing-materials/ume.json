@@ -2,7 +2,7 @@
   "id": "ume",
   "name": "梅",
   "name_kana": "うめ",
-  "dyeing_material_type_id": "plant-dye",
+  "dyeing_material_type_id": "plant-dye-type",
   "image": null,
   "images_alt": [],
   "description": "桜とおなじく、枝や葉をアルカリ性で抽出するとピンク色に染まります。中性で抽出すると黄色系です。"

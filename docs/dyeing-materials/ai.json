@@ -2,7 +2,7 @@
   "id": "ai",
   "name": "藍",
   "name_kana": "あい",
-  "dyeing_material_type_id": "plant-dye",
+  "dyeing_material_type_id": "plant-dye-type",
   "image": "https://houkiboshi.co/dyeing-materials/ai/images/main.jpg",
   "images_alt": [
     "https://houkiboshi.co/dyeing-materials/ai/images/01.jpg"
