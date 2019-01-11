@@ -39,7 +39,7 @@ const pullDocIds = schemaData => {
   });
 };
 
-const generateSchema = schemaDict => {
+const generateNewSchema = schemaDict => {
   return schemaDict
     .map(schemaData => {
       return {
@@ -65,7 +65,7 @@ const generateSchema = schemaDict => {
     });
 };
 
-const writeSchemas = dict => {
+const buildSchemas = dict => {
   mkdirp.sync(dirs.schemas);
   dict.forEach(item => {
     const path = resolve(dirs.schemas, item.schema.$id);
@@ -75,7 +75,7 @@ const writeSchemas = dict => {
   });
 };
 
-const writeIndexFiles = () => {
+const buildIndexFiles = () => {
   const dirsToGenerateIndex = [...dirSchemaMap.keys()];
   dirsToGenerateIndex.forEach(dir => {
     const pattern = resolve(dirs.docs, dir, '**', '!(index).json');
@@ -95,9 +95,9 @@ const build = async () => {
   if (!schemaDict) {
     schemaDict = await fetchSchemas();
   }
-  const dict = generateSchema(schemaDict);
-  writeSchemas(dict);
-  writeIndexFiles();
+  const dict = generateNewSchema(schemaDict);
+  buildSchemas(dict);
+  buildIndexFiles();
 };
 
 module.exports = build;
