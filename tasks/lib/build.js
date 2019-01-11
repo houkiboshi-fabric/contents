@@ -8,16 +8,17 @@ const consola = require('consola');
 
 const { dirSchemaMap, dirs } = require('../config.js');
 
+const datasetDirNames = [...dirSchemaMap.keys()];
 const buildIndexFiles = () => {
   consola.info('Building index files...');
 
-  const dirsToGenerateIndex = [...dirSchemaMap.keys()];
+  const datasetDirNames = [...dirSchemaMap.keys()];
   const generated = [];
   const errors = [];
 
-  dirsToGenerateIndex.forEach(dir => {
-    const pattern = resolve(dirs.src, dir, '**', '*.json');
-    const contents = glob.sync(pattern).reduce((acm, path) => {
+  datasetDirNames.forEach(dirName => {
+    const pattern = resolve(dirs.src, dirName, '**', '*.json');
+    const docs = glob.sync(pattern).reduce((acm, path) => {
       const content = readFileSync(path, 'utf-8');
 
       let doc;
@@ -35,11 +36,11 @@ const buildIndexFiles = () => {
 
       return [...acm, doc];
     }, []);
-    const distDirPath = resolve(dirs.docs, dir);
-    const indexPath = resolve(distDirPath, 'index.json');
-    mkdirSync(distDirPath, { recursive: true });
-    writeFileSync(indexPath, JSON.stringify(contents, null, 2));
-    generated.push(indexPath);
+    const distDir = resolve(dirs.docs, dirName);
+    const distPath = resolve(distDir, 'index.json');
+    mkdirSync(distDir, { recursive: true });
+    writeFileSync(distPath, JSON.stringify(docs, null, 2));
+    generated.push(distPath);
   });
 
   consola.success('Building index files has finished.');
