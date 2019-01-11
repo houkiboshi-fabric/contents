@@ -1,6 +1,6 @@
 'use strict';
 
-const { readFileSync, writeFileSync } = require('fs');
+const { mkdirSync, readFileSync, writeFileSync } = require('fs');
 const { resolve, relative } = require('path');
 
 const glob = require('glob');
@@ -16,7 +16,7 @@ const buildIndexFiles = () => {
   const errors = [];
 
   dirsToGenerateIndex.forEach(dir => {
-    const pattern = resolve(dirs.docs, dir, '**', '!(index).json');
+    const pattern = resolve(dirs.src, dir, '**', '*.json');
     const contents = glob.sync(pattern).reduce((acm, path) => {
       const content = readFileSync(path, 'utf-8');
 
@@ -35,7 +35,9 @@ const buildIndexFiles = () => {
 
       return [...acm, doc];
     }, []);
-    const indexPath = resolve(dirs.docs, dir, 'index.json');
+    const distDirPath = resolve(dirs.docs, dir);
+    const indexPath = resolve(distDirPath, 'index.json');
+    mkdirSync(distDirPath, { recursive: true });
     writeFileSync(indexPath, JSON.stringify(contents, null, 2));
     generated.push(indexPath);
   });

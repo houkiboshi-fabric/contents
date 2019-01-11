@@ -80,5 +80,7 @@ typings/
 #DynamoDB Local files
 .dynamodb/
 
-# generated schemas
+# -----------------------------------------------------------------------------
+# build directories
 schemas/
+docs/

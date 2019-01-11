@@ -76,7 +76,7 @@ const validateAll = () => {
   errs.push(...errors);
 
   const validations = jsonDirs.reduce((acm, dirName) => {
-    const pattern = resolve(dirs.docs, dirName, '**', '!(index).json');
+    const pattern = resolve(dirs.src, dirName, '**', '*.json');
     const jsonPaths = glob.sync(pattern);
     const jsons = jsonPaths.map(filePath => {
       const { error, result } = readJson(filePath);

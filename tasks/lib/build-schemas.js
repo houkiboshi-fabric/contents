@@ -32,7 +32,7 @@ const idToPropName = id => {
 };
 
 const pullDocIds = schemaData => {
-  const pattern = resolve(dirs.docs, schemaData.dir, '**', '!(index).json');
+  const pattern = resolve(dirs.src, schemaData.dir, '**', '*.json');
   const errors = [];
   const results = glob
     .sync(pattern)

@@ -16,7 +16,7 @@ const paths = [
   'dyeing-materials',
   'products',
   'raw-materials'
-].map(p => resolve(dirs.docs, p, '**', '!(index).json'));
+].map(path => resolve(dirs.src, path, '**', '!(index).json'));
 
 const watcher = chokidar.watch(paths, {
   ignored: /(^|[/\\])\../,
