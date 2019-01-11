@@ -4,6 +4,7 @@ const chokidar = require('chokidar');
 const { resolve } = require('path');
 
 const build = require('./lib/build.js');
+const buildSchemas = require('./lib/build-schemas.js');
 const validate = require('./lib/validate-json.js');
 
 const { dirs } = require('./config.js');
@@ -22,7 +23,8 @@ const watcher = chokidar.watch(paths, {
 });
 
 const buildAndValidate = async () => {
-  await build();
+  await buildSchemas();
+  build();
   validate();
 };
 
@@ -31,4 +33,4 @@ watcher
   .on('change', () => buildAndValidate())
   .on('unlink', () => buildAndValidate());
 
-buildAndValidate();
+buildAndValidate().catch(reason => console.error(reason));

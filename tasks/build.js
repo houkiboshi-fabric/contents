@@ -1,3 +1,7 @@
 const build = require('./lib/build.js');
+const buildSchemas = require('./lib/build-schemas.js');
 
-build();
+(async () => {
+  await buildSchemas();
+  build();
+})();
