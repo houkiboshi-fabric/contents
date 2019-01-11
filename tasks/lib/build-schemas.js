@@ -5,6 +5,7 @@ const { resolve, relative } = require('path');
 
 const fetch = require('node-fetch');
 const glob = require('glob');
+const consola = require('consola');
 
 const { dirSchemaMap, dirs } = require('../config.js');
 const { addIdsAsEnum } = require('./add-ids-as-enum.js');
@@ -15,7 +16,7 @@ const fetchSchema = uri => fetch(uri).then(response => response.json());
 const fetchSchemas = async () => {
   return Promise.all(
     [...dirSchemaMap.entries()].map(async ([dirName, uri]) => {
-      console.log('Fetching', uri);
+      consola.log('Fetching: ', uri);
       const schema = await fetchSchema(uri);
       return {
         dir: dirName,
@@ -32,23 +33,58 @@ const idToPropName = id => {
 
 const pullDocIds = schemaData => {
   const pattern = resolve(dirs.docs, schemaData.dir, '**', '!(index).json');
-  return glob.sync(pattern).map(filePath => {
-    const doc = JSON.parse(readFileSync(filePath, 'utf8'));
-    return doc.id;
-  });
+  const errors = [];
+  const results = glob
+    .sync(pattern)
+    .map(filePath => {
+      const file = readFileSync(filePath, 'utf8');
+
+      let doc;
+
+      try {
+        doc = JSON.parse(file);
+      } catch (err) {
+        errors.push({
+          path: filePath,
+          in: 'pullDocIds',
+          error: err
+        });
+        return null;
+      }
+
+      if (!doc.id) {
+        errors.push({
+          path: filePath,
+          in: 'pullDocIds',
+          error: 'Property "id" is missing.'
+        });
+        return null;
+      }
+
+      return doc.id;
+    })
+    .filter(e => e);
+
+  return {
+    errors,
+    results
+  };
 };
 
-const generateNewSchema = schemaDict => {
-  return schemaDict
+const generateNewSchemas = schemaDict => {
+  const errs = [];
+  const results = schemaDict
     .map(schemaData => {
+      const { errors, results } = pullDocIds(schemaData);
+      errs.push(...errors);
       return {
         ...schemaData,
         propName: idToPropName(schemaData.id),
-        ids: pullDocIds(schemaData)
+        ids: results
       };
     })
     .map((item, _i, dict) => {
-      console.log(`Found ids of ${item.propName}`, item.ids);
+      consola.log(`Found ids of ${item.propName}`, item.ids); // TODO
       const propValuesList = dict.map(item => {
         return {
           pattern: new RegExp(`^${item.propName}s?$`),
@@ -62,26 +98,44 @@ const generateNewSchema = schemaDict => {
         newSchema
       };
     });
+
+  return {
+    errors: errs,
+    results
+  };
 };
 
 const writeSchemas = dict => {
   mkdirSync(dirs.schemas, { recursive: true });
-  dict.forEach(item => {
+  return dict.map(item => {
     const path = resolve(dirs.schemas, item.schema.$id);
     const data = JSON.stringify(item.newSchema, null, 2);
-    console.log(`Generated: ${relative(dirs.root, path)}`);
     writeFileSync(path, data);
+    return path;
   });
 };
 
 let schemaDict = null;
 
 const buildSchemas = async () => {
+  consola.info('Building schemas...');
   if (!schemaDict) {
     schemaDict = await fetchSchemas();
   }
-  const dict = generateNewSchema(schemaDict);
-  writeSchemas(dict);
+  const generatedSchemas = generateNewSchemas(schemaDict);
+  const dict = generatedSchemas.results;
+  const errors = generatedSchemas.errors.map(err => {
+    return {
+      ...err,
+      path: relative(dirs.root, err.path)
+    };
+  });
+  const results = writeSchemas(dict).map(p => relative(dirs.root, p));
+  consola.success('Building schemas has finished.');
+  return {
+    errors,
+    results
+  };
 };
 
 module.exports = buildSchemas;

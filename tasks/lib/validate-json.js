@@ -13,21 +13,50 @@ const jsonDirs = [...dirSchemaMap.keys()];
 
 const readJson = path => {
   const data = readFileSync(path, 'utf-8');
-  return JSON.parse(data);
+  let error;
+  let result;
+
+  try {
+    error = null;
+    result = JSON.parse(data);
+  } catch (err) {
+    error = err;
+    result = null;
+  }
+
+  return {
+    error,
+    result
+  };
 };
 
 // Exclude ref-parsed json from validation targets
 const schemaPattern = resolve(dirs.schemas, '*.json');
 
 const createAjv = () => {
-  const schemas = glob.sync(schemaPattern).map(readJson);
-  return new Ajv({
+  const errors = [];
+  const schemas = glob.sync(schemaPattern).map(filePath => {
+    const { error, result } = readJson(filePath);
+    if (error) {
+      errors.push({
+        path: filePath,
+        error
+      });
+    }
+    return result;
+  });
+  const ajv = new Ajv({
     schemas,
     allErrors: true,
     logger: consola,
     validateSchema: true,
     meta: require('ajv/lib/refs/json-schema-draft-06.json')
   });
+
+  return {
+    errors,
+    ajv
+  };
 };
 
 const validate = (data, ajv, schemaId, path) => {
@@ -42,33 +71,55 @@ const validate = (data, ajv, schemaId, path) => {
 };
 
 const validateAll = () => {
-  const ajv = createAjv();
+  const errs = [];
+  const { errors, ajv } = createAjv();
+  errs.push(...errors);
 
   const validations = jsonDirs.reduce((acm, dirName) => {
     const pattern = resolve(dirs.docs, dirName, '**', '!(index).json');
     const jsonPaths = glob.sync(pattern);
-    const jsons = jsonPaths.map(readJson);
+    const jsons = jsonPaths.map(filePath => {
+      const { error, result } = readJson(filePath);
+      if (error) {
+        errors.push({
+          path: filePath,
+          in: 'validateAll',
+          error
+        });
+      }
+      return result;
+    });
 
     const result = jsons.map((json, i) => {
       const jsonPath = jsonPaths[i];
       const schemaId = parse(dirSchemaMap.get(dirName)).base;
-      return validate(json, ajv, schemaId, relative(dirs.root, jsonPath));
+      return validate(json, ajv, schemaId, jsonPath);
     });
 
-    return [
-      ...acm,
-      ...result
-    ];
+    return [...acm, ...result];
   }, []);
 
-  if (validations.some(v => !v.isValid)) {
-    const errors = validations.filter(v => !v.isValid);
-    errors.forEach(err =>
-      consola.error(err.path, err.errors.map(error => error.message))
-    );
-    return;
-  }
-  consola.success('All json files are valid!');
+  errs.push(
+    ...validations
+      .filter(v => !v.isValid)
+      .map(v => {
+        return {
+          path: v.path,
+          in: 'validateAll',
+          error: v.errors.map(err => err.message)
+        };
+      })
+  );
+
+  return {
+    results: validations,
+    errors: errs.map(err => {
+      return {
+        ...err,
+        path: relative(dirs.root, err.path)
+      };
+    })
+  };
 };
 
 module.exports = validateAll;
