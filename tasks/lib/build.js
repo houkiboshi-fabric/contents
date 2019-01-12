@@ -1,14 +1,108 @@
 'use strict';
 
 const { mkdirSync, readFileSync, writeFileSync } = require('fs');
-const { resolve, relative } = require('path');
+const { parse, resolve, relative } = require('path');
 
-const glob = require('glob');
 const consola = require('consola');
+const glob = require('glob');
+const rimraf = require('rimraf');
 
 const { dirSchemaMap, dirs } = require('../config.js');
+const { getTimeStamps } = require('./get-time-stamps.js');
+
+const src = dirs.src;
+const dist = dirs.docs;
+
+const readJson = path => {
+  const data = readFileSync(path, 'utf-8');
+  let error;
+  let result;
+
+  try {
+    error = null;
+    result = JSON.parse(data);
+  } catch (err) {
+    error = err;
+    result = null;
+  }
+
+  return {
+    error,
+    result
+  };
+};
 
 const datasetDirNames = [...dirSchemaMap.keys()];
+
+// src to dist
+const buildDatasets = () => {
+  consola.info('Building dataset files...');
+
+  const errors = [];
+  const results = [];
+
+  const readJsonFile = path => {
+    const { error, result } = readJson(path);
+    if (error) {
+      errors.push({
+        path,
+        in: 'buildDatasets',
+        error
+      });
+      return null;
+    }
+    return {
+      path,
+      result
+    };
+  };
+
+  const addTimeStamps = ({ path, result }) => {
+    const { createdAt, modifiedAt } = getTimeStamps(path);
+
+    if (!createdAt || !modifiedAt) {
+      consola.error(path);
+      throw new Error('Cannot get time stamps.');
+    }
+
+    return {
+      path,
+      result: {
+        ...result,
+        created_at: createdAt,
+        modified_at: modifiedAt
+      }
+    };
+  };
+
+  const writeJsonFile = ({ path, result }) => {
+    const json = JSON.stringify(result, null, 2);
+    const distPath = path.replace(src, dist);
+    const distDir = parse(distPath).dir;
+    mkdirSync(distDir, { recursive: true });
+    writeFileSync(distPath, json);
+    results.push(relative(dirs.root, distPath));
+  };
+
+  datasetDirNames.forEach(dirName => {
+    const pattern = resolve(src, dirName, '**', '*.json');
+    glob
+      .sync(pattern)
+      .map(readJsonFile)
+      .filter(e => e)
+      .map(addTimeStamps)
+      .forEach(writeJsonFile);
+  });
+
+  consola.success('Building dataset files has finished.');
+
+  return {
+    errors,
+    results
+  };
+};
+
+// dist to dist
 const buildIndexFiles = () => {
   consola.info('Building index files...');
 
@@ -17,15 +111,11 @@ const buildIndexFiles = () => {
   const errors = [];
 
   datasetDirNames.forEach(dirName => {
-    const pattern = resolve(dirs.src, dirName, '**', '*.json');
+    const pattern = resolve(dist, dirName, '**', '*.json');
     const docs = glob.sync(pattern).reduce((acm, path) => {
-      const content = readFileSync(path, 'utf-8');
+      const { error, result } = readJson(path);
 
-      let doc;
-
-      try {
-        doc = JSON.parse(content);
-      } catch (error) {
+      if (error) {
         errors.push({
           path,
           in: 'buildIndexFiles',
@@ -34,9 +124,9 @@ const buildIndexFiles = () => {
         return acm;
       }
 
-      return [...acm, doc];
+      return [...acm, result];
     }, []);
-    const distDir = resolve(dirs.docs, dirName);
+    const distDir = resolve(dist, dirName);
     const distPath = resolve(distDir, 'index.json');
     mkdirSync(distDir, { recursive: true });
     writeFileSync(distPath, JSON.stringify(docs, null, 2));
@@ -56,8 +146,27 @@ const buildIndexFiles = () => {
   };
 };
 
-const build = () => {
-  return buildIndexFiles();
+const clean = () => {
+  return new Promise(resolve => {
+    consola.info('Cleaning...', relative(dirs.root, dist));
+    rimraf(dist, () => {
+      consola.success('Cleaning has finished.');
+      resolve();
+    });
+  });
+};
+
+const build = async () => {
+  await clean();
+  const bd = buildDatasets();
+  const bi = buildIndexFiles();
+  return {
+    errors: [...bd.errors, ...bi.errors],
+    results: {
+      'Generated dataset files': bd.results,
+      'Generated index files': bi.results
+    }
+  };
 };
 
 module.exports = build;

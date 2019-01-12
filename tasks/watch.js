@@ -1,11 +1,10 @@
 'use strict';
 
-const { resolve } = require('path');
+const { relative, resolve } = require('path');
 
 const chokidar = require('chokidar');
 const consola = require('consola');
 
-const build = require('./lib/build.js');
 const buildSchemas = require('./lib/build-schemas.js');
 const validate = require('./lib/validate-json.js');
 
@@ -16,7 +15,7 @@ const paths = [
   'dyeing-materials',
   'products',
   'raw-materials'
-].map(path => resolve(dirs.src, path, '**', '!(index).json'));
+].map(path => resolve(dirs.src, path, '**', '*.json'));
 
 const watcher = chokidar.watch(paths, {
   ignored: /(^|[/\\])\../,
@@ -24,29 +23,27 @@ const watcher = chokidar.watch(paths, {
   ignoreInitial: true
 });
 
-const buildAndValidate = async () => {
+consola.info('Watching paths:', paths.map(path => relative(dirs.root, path)));
+
+const buildSchemasAndValidate = async () => {
   const bs = await buildSchemas();
 
   consola.success('Generated schemas:', bs.results);
-
-  const b = build();
-
-  consola.success('Generated index files:', b.results);
 
   const v = validate();
   if (v.errors.length === 0) {
     consola.success('All json files are valid!');
   }
 
-  const errors = [...bs.errors, ...b.errors, ...v.errors];
+  const errors = [...bs.errors, ...v.errors];
   if (errors.length > 0) {
     errors.forEach(err => consola.error(err));
   }
 };
 
 watcher
-  .on('add', () => buildAndValidate())
-  .on('change', () => buildAndValidate())
-  .on('unlink', () => buildAndValidate());
+  .on('add', () => buildSchemasAndValidate())
+  .on('change', () => buildSchemasAndValidate())
+  .on('unlink', () => buildSchemasAndValidate());
 
-buildAndValidate().catch(reason => consola.error(reason));
+buildSchemasAndValidate().catch(reason => consola.error(reason));
