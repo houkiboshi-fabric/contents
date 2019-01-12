@@ -1,0 +1,47 @@
+{
+  "id": "rakuda",
+  "name": "駱駝",
+  "name_kana": "らくだ",
+  "name_alt": "草木染め糸のストール",
+  "name_alt_kana": "くさきぞめいとのすとーる",
+  "links_to_shop": [
+    "https://minne.com/items/6599453",
+    "https://www.creema.jp/item/4617691/detail"
+  ],
+  "price": 23000,
+  "image": "https://houkiboshi.co/products/rakuda/images/main.jpg",
+  "images_alt": [
+    "https://houkiboshi.co/products/rakuda/images/01.jpg",
+    "https://houkiboshi.co/products/rakuda/images/02.jpg",
+    "https://houkiboshi.co/products/rakuda/images/03.jpg"
+  ],
+  "size": {
+    "width_mm": 1500,
+    "depth_mm": 370
+  },
+  "weight_g": 50,
+  "raw_materials": [
+    {
+      "raw_material_ids": [
+        "cotton",
+        "hakushu-cotton"
+      ],
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      }
+    }
+  ],
+  "dyeing_materials": [
+    {
+      "dyeing_material_ids": [
+        "sakura",
+        "rosemary",
+        "ready-made"
+      ]
+    }
+  ],
+  "description": "草木染めした綿糸で手織りしたストールです。\n柔らかくて軽く、さらっとしていて、3シーズン使えます。\n落ち着いた渋い色なので、ウールやアクリルにはまだ早いかな、という頃の秋にぴったりです。\n緯糸に伯州綿をスラブ糸に手紡ぎしたものを使用し、全体が表情のある布になっています。\n緯糸のスラブ糸は両端は白、中央部分は経糸と同じローズマリーで染めたものを使っているため、1枚のなかに2色の部分があります。\n手紡ぎ糸をたくさん使用しているので、軽くて空気をよく含みます。",
+  "created_at": "2019-01-06T17:47:05.000Z",
+  "modified_at": "2019-01-11T15:39:25.000Z"
+}

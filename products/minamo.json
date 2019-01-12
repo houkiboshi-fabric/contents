@@ -1,0 +1,63 @@
+{
+  "id": "minamo",
+  "name": "水面",
+  "name_kana": "みなも",
+  "name_alt": "ポーチ",
+  "name_alt_kana": "ぽーち",
+  "links_to_shop": [
+    "https://minne.com/items/14938131",
+    "https://www.creema.jp/item/5890223/detail"
+  ],
+  "price": 4800,
+  "image": "https://houkiboshi.co/products/minamo/images/main.jpg",
+  "images_alt": [
+    "https://houkiboshi.co/products/minamo/images/01.jpg",
+    "https://houkiboshi.co/products/minamo/images/02.jpg"
+  ],
+  "size": {
+    "width_mm": 220,
+    "depth_mm": 120,
+    "notes": [
+      "開口部 約 20 cm"
+    ]
+  },
+  "weight_g": 47,
+  "raw_materials": [
+    {
+      "raw_material_ids": [
+        "cotton"
+      ],
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      },
+      "used_at": "表生地"
+    },
+    {
+      "raw_material_ids": [
+        "cotton"
+      ],
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      },
+      "used_at": "裏生地"
+    },
+    {
+      "raw_material_ids": [
+        "plastic-fastener"
+      ],
+      "used_at": "部品"
+    }
+  ],
+  "dyeing_materials": [
+    {
+      "dyeing_material_ids": [
+        "sakura"
+      ]
+    }
+  ],
+  "description": "水面のような織り柄の布を織りました。\n新書がすっぽり入るくらいの大きさのポーチです。",
+  "created_at": "2019-01-06T17:47:05.000Z",
+  "modified_at": "2019-01-11T15:39:25.000Z"
+}

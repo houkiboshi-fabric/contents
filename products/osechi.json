@@ -1,0 +1,48 @@
+{
+  "id": "osechi",
+  "name": "御節",
+  "name_kana": "おせち",
+  "name_alt": "草木染め糸のハンカチ",
+  "name_alt_kana": "くさきぞめいとのはんかち",
+  "links_to_shop": [
+    "https://minne.com/items/4402158",
+    "https://www.creema.jp/item/4635013/detail/"
+  ],
+  "price": 3250,
+  "image": "https://houkiboshi.co/products/osechi/images/main.jpg",
+  "images_alt": [
+    "https://houkiboshi.co/products/osechi/images/01.jpg",
+    "https://houkiboshi.co/products/osechi/images/02.jpg"
+  ],
+  "size": {
+    "width_mm": 220,
+    "depth_mm": 235
+  },
+  "weight_g": 7,
+  "raw_materials": [
+    {
+      "raw_material_ids": [
+        "cotton",
+        "hakushu-cotton"
+      ],
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      }
+    }
+  ],
+  "dyeing_materials": [
+    {
+      "dyeing_material_ids": [
+        "akane",
+        "tamanegi",
+        "ninjin",
+        "sakura",
+        "yuzu"
+      ]
+    }
+  ],
+  "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。\n市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。\n軽くてやわらかく、しなやかです。\n緯糸にはところどころに手紡ぎした伯州綿のスラブ糸を使っています。",
+  "created_at": "2019-01-06T17:47:05.000Z",
+  "modified_at": "2019-01-11T15:39:25.000Z"
+}

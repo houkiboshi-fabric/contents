@@ -1,0 +1,65 @@
+{
+  "id": "akatsubaki",
+  "name": "赤椿",
+  "name_kana": "あかつばき",
+  "name_alt": "ポーチ",
+  "name_alt_kana": "ぽーち",
+  "links_to_shop": [
+    "https://minne.com/items/10145632",
+    "https://www.creema.jp/item/4626679/detail"
+  ],
+  "price": 3900,
+  "image": "https://houkiboshi.co/products/akatsubaki/images/main.jpg",
+  "images_alt": [
+    "https://houkiboshi.co/products/akatsubaki/images/01.jpg",
+    "https://houkiboshi.co/products/akatsubaki/images/02.jpg",
+    "https://houkiboshi.co/products/akatsubaki/images/03.jpg"
+  ],
+  "size": {
+    "width_mm": 250,
+    "depth_mm": 150,
+    "notes": [
+      "開口部 約 23 cm"
+    ]
+  },
+  "weight_g": 41,
+  "raw_materials": [
+    {
+      "raw_material_ids": [
+        "cotton"
+      ],
+      "used_at": "表生地",
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      }
+    },
+    {
+      "raw_material_ids": [
+        "cotton"
+      ],
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      },
+      "used_at": "裏生地"
+    },
+    {
+      "raw_material_ids": [
+        "plastic-fastener"
+      ],
+      "used_at": "部品"
+    }
+  ],
+  "dyeing_materials": [
+    {
+      "dyeing_material_ids": [
+        "koucha",
+        "resin-pigment"
+      ]
+    }
+  ],
+  "description": "赤い椿のポーチをつくりました。\n内側の布は紅茶で染めて、ほんのり色づいています。\nA4の紙を三つ折りして入れられるくらいの大きさで、ノートならB6、A6が入ります（写真は文庫本)。\n母子手帳と予防接種などのお知らせの紙をいっしょに入れたり、メモ帳とペン、文庫本、いろいろ入ります。",
+  "created_at": "2019-01-06T17:47:05.000Z",
+  "modified_at": "2019-01-11T15:39:25.000Z"
+}

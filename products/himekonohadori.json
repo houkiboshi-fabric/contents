@@ -1,0 +1,46 @@
+{
+  "id": "himekonohadori",
+  "name": "姫木葉鳥",
+  "name_kana": "ひめこのはどり",
+  "name_alt": "草木染め糸のストール",
+  "name_alt_kana": "くさきぞめいとのすとーる",
+  "links_to_shop": [
+    "https://minne.com/items/12906579",
+    "https://www.creema.jp/item/5350170/detail"
+  ],
+  "price": 5500,
+  "image": "https://houkiboshi.co/products/himekonohadori/images/main.jpg",
+  "images_alt": [
+    "https://houkiboshi.co/products/himekonohadori/images/main.jpg"
+  ],
+  "size": {
+    "width_mm": 200,
+    "depth_mm": 1500
+  },
+  "weight_g": 52,
+  "raw_materials": [
+    {
+      "raw_material_ids": [
+        "cotton"
+      ],
+      "mixing_ratio": {
+        "decorator": "=",
+        "percentage": 100
+      }
+    }
+  ],
+  "dyeing_materials": [
+    {
+      "dyeing_material_ids": [
+        "kinkan",
+        "kuzu",
+        "ai",
+        "mint",
+        "sakura"
+      ]
+    }
+  ],
+  "description": "草木染めした綿糸で手織りしたストールです。ワッフル織りで作りました。\n柔らかくて軽く、さらっとしていて、3シーズン使えます。\n明るい色味なので、シンプルな服装にあわせるとすてきです。",
+  "created_at": "2019-01-06T17:47:05.000Z",
+  "modified_at": "2019-01-11T15:39:25.000Z"
+}
