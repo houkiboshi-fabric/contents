@@ -11,7 +11,7 @@ const { dirSchemaMap, dirs } = require('../config.js');
 const { getTimeStamps } = require('./get-time-stamps.js');
 
 const src = dirs.src;
-const dist = dirs.docs;
+const dist = dirs.dist;
 
 const readJson = path => {
   const data = readFileSync(path, 'utf-8');

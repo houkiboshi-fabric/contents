@@ -24,14 +24,14 @@ $ yarn install
 ### Build
 
 * Generate json files with timestamps
-  * import from under `src/`, export into `docs/`
+  * import from under `src/`, export into `dist/`
   * timestamps from git commit history
     * `created_at`
     * `modified_at`
-* Generate each index files per specified directory under `docs/`
-  * ex.) `docs/products/index.json`
+* Generate each index files per specified directory under `dist/`
+  * ex.) `dist/products/index.json`
   * ex.) https://houkiboshi-fabric.github.io/contents/dyeing-materials/index.json
-  * import from under `docs/`, export into `docs/`
+  * import from under `dist/`, export into `dist/`
   * useful to `fetch` dataset
 
 ```console

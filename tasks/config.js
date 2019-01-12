@@ -7,7 +7,7 @@ const ROOT_DIR = resolve(__dirname, '..');
 exports.dirs = {
   root: ROOT_DIR,
   src: resolve(ROOT_DIR, 'src'),
-  docs: resolve(ROOT_DIR, 'docs'),
+  dist: resolve(ROOT_DIR, 'dist'),
   schemas: resolve(ROOT_DIR, 'schemas')
 };
 
