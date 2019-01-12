@@ -92,3 +92,13 @@ $ yarn test:watch
 ```console
 $ yarn lint
 ```
+
+### Deploy
+
+* `yarn build` & commit files under `dist/` and push them to `gh-pages` branch
+* You don't need to run this task manually in most cases since
+  this task will be run automatically on CI.
+
+```console
+$ yarn deploy
+```
