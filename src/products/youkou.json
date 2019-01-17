@@ -9,10 +9,10 @@
     "https://www.creema.jp/item/4634995/detail"
   ],
   "price": 3250,
-  "image": "https://houkiboshi.co/products/youkou/images/main.jpg",
+  "image": "products/youkou/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/youkou/images/01.jpg",
-    "https://houkiboshi.co/products/youkou/images/02.jpg"
+    "products/youkou/01.jpg",
+    "products/youkou/02.jpg"
   ],
   "size": {
     "width_mm": 220,

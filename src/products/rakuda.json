@@ -9,11 +9,11 @@
     "https://www.creema.jp/item/4617691/detail"
   ],
   "price": 23000,
-  "image": "https://houkiboshi.co/products/rakuda/images/main.jpg",
+  "image": "products/rakuda/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/rakuda/images/01.jpg",
-    "https://houkiboshi.co/products/rakuda/images/02.jpg",
-    "https://houkiboshi.co/products/rakuda/images/03.jpg"
+    "products/rakuda/01.jpg",
+    "products/rakuda/02.jpg",
+    "products/rakuda/03.jpg"
   ],
   "size": {
     "width_mm": 1500,

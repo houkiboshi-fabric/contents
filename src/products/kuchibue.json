@@ -9,11 +9,11 @@
     "https://www.creema.jp/item/4617713/detail"
   ],
   "price": 15000,
-  "image": "https://houkiboshi.co/products/kuchibue/images/main.jpg",
+  "image": "products/kuchibue/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/kuchibue/images/01.jpg",
-    "https://houkiboshi.co/products/kuchibue/images/02.jpg",
-    "https://houkiboshi.co/products/kuchibue/images/03.jpg"
+    "products/kuchibue/01.jpg",
+    "products/kuchibue/02.jpg",
+    "products/kuchibue/03.jpg"
   ],
   "size": {
     "width_mm": 1850,

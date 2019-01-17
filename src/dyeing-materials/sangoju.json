@@ -3,7 +3,7 @@
   "name": "サンゴジュ",
   "name_kana": "さんごじゅ",
   "dyeing_material_type_id": "plant-dye-type",
-  "image": "https://houkiboshi.co/dyeing-materials/sangoju/images/main.jpg",
+  "image": "dyeing-materials/sangoju/main.jpg",
   "images_alt": [],
   "description": "葉で染めます。赤みがかったベージュのような色に染まります。"
 }

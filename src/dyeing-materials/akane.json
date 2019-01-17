@@ -3,7 +3,7 @@
   "name": "茜",
   "name_kana": "あかね",
   "dyeing_material_type_id": "plant-dye-type",
-  "image": "https://houkiboshi.co/dyeing-materials/akane/images/main.jpg",
+  "image": "dyeing-materials/akane/main.jpg",
   "images_alt": [],
   "description": "赤い色を染めるときに使います。堅牢度が高く、洗濯の必要があるアイテムにも使いやすい染料です。染液を煮出すときにあまり高温にしないこと、また、酸性で煮出すことで、きれいな赤を抽出できます。染料店で購入します。"
 }

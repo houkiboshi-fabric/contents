@@ -9,9 +9,9 @@
     "https://www.creema.jp/item/5349718/detail"
   ],
   "price": 4800,
-  "image": "https://houkiboshi.co/products/sousasen/images/main.jpg",
+  "image": "products/sousasen/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/sousasen/images/01.jpg"
+    "products/sousasen/01.jpg"
   ],
   "size": {
     "width_mm": 250,

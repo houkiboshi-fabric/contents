@@ -8,9 +8,9 @@
     "https://minne.com/items/6599719"
   ],
   "price": 6500,
-  "image": "https://houkiboshi.co/products/yamanoodori/images/main.jpg",
+  "image": "products/yamanoodori/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/yamanoodori/images/01.jpg"
+    "products/yamanoodori/01.jpg"
   ],
   "size": {
     "width_mm": 1080,

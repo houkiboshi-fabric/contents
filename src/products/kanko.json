@@ -9,11 +9,11 @@
     "https://www.creema.jp/item/4622801/detail"
   ],
   "price": 5300,
-  "image": "https://houkiboshi.co/products/kanko/images/main.jpg",
+  "image": "products/kanko/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/kanko/images/01.jpg",
-    "https://houkiboshi.co/products/kanko/images/02.jpg",
-    "https://houkiboshi.co/products/kanko/images/03.jpg"
+    "products/kanko/01.jpg",
+    "products/kanko/02.jpg",
+    "products/kanko/03.jpg"
   ],
   "size": {
     "width_mm": 5000,

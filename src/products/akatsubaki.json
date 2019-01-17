@@ -9,11 +9,11 @@
     "https://www.creema.jp/item/4626679/detail"
   ],
   "price": 3900,
-  "image": "https://houkiboshi.co/products/akatsubaki/images/main.jpg",
+  "image": "products/akatsubaki/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/akatsubaki/images/01.jpg",
-    "https://houkiboshi.co/products/akatsubaki/images/02.jpg",
-    "https://houkiboshi.co/products/akatsubaki/images/03.jpg"
+    "products/akatsubaki/01.jpg",
+    "products/akatsubaki/02.jpg",
+    "products/akatsubaki/03.jpg"
   ],
   "size": {
     "width_mm": 250,

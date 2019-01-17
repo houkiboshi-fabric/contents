@@ -9,10 +9,10 @@
     "https://www.creema.jp/item/4617361/detail"
   ],
   "price": 16000,
-  "image": "https://houkiboshi.co/products/aogai/images/main.jpg",
+  "image": "products/aogai/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/aogai/images/01.jpg",
-    "https://houkiboshi.co/products/aogai/images/02.jpg"
+    "products/aogai/01.jpg",
+    "products/aogai/02.jpg"
   ],
   "size": {
     "width_mm": 1600,

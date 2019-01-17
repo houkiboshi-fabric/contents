@@ -9,9 +9,9 @@
     "https://www.creema.jp/item/4622754/detail"
   ],
   "price": 28000,
-  "image": "https://houkiboshi.co/products/heian/images/main.jpg",
+  "image": "products/heian/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/heian/images/01.jpg"
+    "products/heian/01.jpg"
   ],
   "size": {
     "width_mm": 950,

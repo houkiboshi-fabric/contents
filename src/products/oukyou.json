@@ -8,10 +8,10 @@
     "https://minne.com/items/2747336"
   ],
   "price": 18000,
-  "image": "https://houkiboshi.co/products/oukyou/images/main.jpg",
+  "image": "products/oukyou/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/oukyou/images/01.jpg",
-    "https://houkiboshi.co/products/oukyou/images/02.jpg"
+    "products/oukyou/01.jpg",
+    "products/oukyou/02.jpg"
   ],
   "size": {
     "width_mm": 1500,

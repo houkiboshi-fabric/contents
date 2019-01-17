@@ -9,11 +9,11 @@
     "https://minne.com/items/6304338",
     "https://www.creema.jp/item/4617679/detail"
   ],
-  "image": "https://houkiboshi.co/products/chojo/images/main.jpg",
+  "image": "products/chojo/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/chojo/images/01.jpg",
-    "https://houkiboshi.co/products/chojo/images/02.jpg",
-    "https://houkiboshi.co/products/chojo/images/03.jpg"
+    "products/chojo/01.jpg",
+    "products/chojo/02.jpg",
+    "products/chojo/03.jpg"
   ],
   "size": {
     "width_mm": 1440,

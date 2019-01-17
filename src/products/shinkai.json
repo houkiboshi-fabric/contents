@@ -8,10 +8,10 @@
     "https://minne.com/items/1449933"
   ],
   "price": 1200,
-  "image": "https://houkiboshi.co/products/shinkai/images/main.jpg",
+  "image": "products/shinkai/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/shinkai/images/01.jpg",
-    "https://houkiboshi.co/products/shinkai/images/02.jpg"
+    "products/shinkai/01.jpg",
+    "products/shinkai/02.jpg"
   ],
   "size": {
     "width_mm": 60,

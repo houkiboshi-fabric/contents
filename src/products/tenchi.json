@@ -9,9 +9,9 @@
     "https://www.creema.jp/item/5916193/detail"
   ],
   "price": 5700,
-  "image": "https://houkiboshi.co/products/tenchi/images/main.jpg",
+  "image": "products/tenchi/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/tenchi/images/01.jpg"
+    "products/tenchi/01.jpg"
   ],
   "size": {
     "width_mm": 250,

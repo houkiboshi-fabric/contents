@@ -9,10 +9,10 @@
     "https://www.creema.jp/item/4634985/detail"
   ],
   "price": 3250,
-  "image": "https://houkiboshi.co/products/hakubutsukan/images/main.jpg",
+  "image": "products/hakubutsukan/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/hakubutsukan/images/01.jpg",
-    "https://houkiboshi.co/products/hakubutsukan/images/02.jpg"
+    "products/hakubutsukan/01.jpg",
+    "products/hakubutsukan/02.jpg"
   ],
   "size": {
     "width_mm": 220,

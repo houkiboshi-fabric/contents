@@ -3,7 +3,7 @@
   "name": "金柑",
   "name_kana": "きんかん",
   "dyeing_material_type_id": "plant-dye-type",
-  "image": "https://houkiboshi.co/dyeing-materials/kinkan/images/main.jpg",
+  "image": "dyeing-materials/kinkan/main.jpg",
   "images_alt": [],
   "description": "金柑の葉と枝を煮出して染液にします。明るい黄色に染まります。"
 }

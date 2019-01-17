@@ -9,10 +9,10 @@
     "https://www.creema.jp/item/5890223/detail"
   ],
   "price": 4800,
-  "image": "https://houkiboshi.co/products/minamo/images/main.jpg",
+  "image": "products/minamo/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/minamo/images/01.jpg",
-    "https://houkiboshi.co/products/minamo/images/02.jpg"
+    "products/minamo/01.jpg",
+    "products/minamo/02.jpg"
   ],
   "size": {
     "width_mm": 220,

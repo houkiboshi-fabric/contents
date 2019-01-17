@@ -9,10 +9,10 @@
     "https://minne.com/items/14791895",
     "https://www.creema.jp/item/5836792/detail"
   ],
-  "image": "https://houkiboshi.co/products/aoyagi/images/main.jpg",
+  "image": "products/aoyagi/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/aoyagi/images/01.jpg",
-    "https://houkiboshi.co/products/aoyagi/images/02.jpg"
+    "products/aoyagi/01.jpg",
+    "products/aoyagi/02.jpg"
   ],
   "size": {
     "width_mm": 250,

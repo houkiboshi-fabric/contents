@@ -9,9 +9,9 @@
     "https://www.creema.jp/item/5350170/detail"
   ],
   "price": 5500,
-  "image": "https://houkiboshi.co/products/himekonohadori/images/main.jpg",
+  "image": "products/himekonohadori/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/himekonohadori/images/main.jpg"
+    "products/himekonohadori/main.jpg"
   ],
   "size": {
     "width_mm": 200,

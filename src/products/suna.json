@@ -9,9 +9,9 @@
     "https://www.creema.jp/item/5349802/detail"
   ],
   "price": 4800,
-  "image": "https://houkiboshi.co/products/suna/images/main.jpg",
+  "image": "products/suna/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/suna/images/01.jpg"
+    "products/suna/01.jpg"
   ],
   "size": {
     "width_mm": 250,

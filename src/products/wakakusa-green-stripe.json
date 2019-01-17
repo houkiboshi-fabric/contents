@@ -8,9 +8,9 @@
     "https://minne.com/items/9080184"
   ],
   "price": 3250,
-  "image": "https://houkiboshi.co/products/wakakusa-green-stripe/images/main.jpg",
+  "image": "products/wakakusa-green-stripe/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/wakakusa-green-stripe/images/01.jpg"
+    "products/wakakusa-green-stripe/01.jpg"
   ],
   "size": {
     "width_mm": 200,

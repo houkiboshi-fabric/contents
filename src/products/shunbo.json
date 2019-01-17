@@ -9,10 +9,10 @@
     "https://minne.com/items/6595046",
     "https://www.creema.jp/item/4634952/detail"
   ],
-  "image": "https://houkiboshi.co/products/shunbo/images/main.jpg",
+  "image": "products/shunbo/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/shunbo/images/01.jpg",
-    "https://houkiboshi.co/products/shunbo/images/02.jpg"
+    "products/shunbo/01.jpg",
+    "products/shunbo/02.jpg"
   ],
   "size": {
     "width_mm": 220,

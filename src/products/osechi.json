@@ -9,10 +9,10 @@
     "https://www.creema.jp/item/4635013/detail/"
   ],
   "price": 3250,
-  "image": "https://houkiboshi.co/products/osechi/images/main.jpg",
+  "image": "products/osechi/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/osechi/images/01.jpg",
-    "https://houkiboshi.co/products/osechi/images/02.jpg"
+    "products/osechi/01.jpg",
+    "products/osechi/02.jpg"
   ],
   "size": {
     "width_mm": 220,

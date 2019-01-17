@@ -9,10 +9,10 @@
     "https://www.creema.jp/item/4622401/detail"
   ],
   "price": 18000,
-  "image": "https://houkiboshi.co/products/ankan/images/main.jpg",
+  "image": "products/ankan/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/ankan/images/01.jpg",
-    "https://houkiboshi.co/products/ankan/images/02.jpg"
+    "products/ankan/01.jpg",
+    "products/ankan/02.jpg"
   ],
   "size": {
     "width_mm": 1680,

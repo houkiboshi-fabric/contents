@@ -8,11 +8,11 @@
   "links_to_shop": [
     "https://minne.com/items/6598420"
   ],
-  "image": "https://houkiboshi.co/products/tairinnohana/images/main.jpg",
+  "image": "products/tairinnohana/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/tairinnohana/images/01.jpg",
-    "https://houkiboshi.co/products/tairinnohana/images/02.jpg",
-    "https://houkiboshi.co/products/tairinnohana/images/03.jpg"
+    "products/tairinnohana/01.jpg",
+    "products/tairinnohana/02.jpg",
+    "products/tairinnohana/03.jpg"
   ],
   "size": {
     "width_mm": 450,
