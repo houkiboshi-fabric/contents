@@ -9,9 +9,9 @@
     "https://www.creema.jp/item/5350170/detail"
   ],
   "price": 5500,
-  "image": "https://houkiboshi.co/products/himekonohadori/images/main.jpg",
+  "image": "products/himekonohadori/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/himekonohadori/images/main.jpg"
+    "products/himekonohadori/main.jpg"
   ],
   "size": {
     "width_mm": 200,
@@ -42,5 +42,5 @@
   ],
   "description": "草木染めした綿糸で手織りしたストールです。ワッフル織りで作りました。\n柔らかくて軽く、さらっとしていて、3シーズン使えます。\n明るい色味なので、シンプルな服装にあわせるとすてきです。",
   "created_at": "2019-01-06T17:47:05.000Z",
-  "modified_at": "2019-01-11T15:39:25.000Z"
+  "modified_at": "2019-01-17T22:20:52.000Z"
 }

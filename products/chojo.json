@@ -9,11 +9,11 @@
     "https://minne.com/items/6304338",
     "https://www.creema.jp/item/4617679/detail"
   ],
-  "image": "https://houkiboshi.co/products/chojo/images/main.jpg",
+  "image": "products/chojo/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/chojo/images/01.jpg",
-    "https://houkiboshi.co/products/chojo/images/02.jpg",
-    "https://houkiboshi.co/products/chojo/images/03.jpg"
+    "products/chojo/01.jpg",
+    "products/chojo/02.jpg",
+    "products/chojo/03.jpg"
   ],
   "size": {
     "width_mm": 1440,
@@ -41,5 +41,5 @@
   ],
   "description": "草木染めした綿糸で手織りした布です。\n柔らかくて軽く、さらっとしていて、首に巻くストールとして春〜秋に最適です。\nインテリアファブリックとして家具にかけたり飾ったりするのもおすすめです。",
   "created_at": "2019-01-06T17:47:05.000Z",
-  "modified_at": "2019-01-11T15:39:25.000Z"
+  "modified_at": "2019-01-17T22:20:52.000Z"
 }

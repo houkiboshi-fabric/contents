@@ -9,9 +9,9 @@
     "https://www.creema.jp/item/4617425/detail"
   ],
   "price": 18000,
-  "image": "https://houkiboshi.co/products/kafuku/images/main.jpg",
+  "image": "products/kafuku/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/kafuku/images/01.jpg"
+    "products/kafuku/01.jpg"
   ],
   "size": {
     "width_mm": 1500,
@@ -41,5 +41,5 @@
   ],
   "description": "草木染めしたウールで、既製品よりすこし短めのストールをつくりました。\n小柄な方や、軽く羽織る用途に最適です。\n経糸はオレンジ色とうぐいす色、緯糸は白で、両端にローズパスの織り模様をいれています。",
   "created_at": "2019-01-06T17:47:05.000Z",
-  "modified_at": "2019-01-11T15:39:25.000Z"
+  "modified_at": "2019-01-17T22:20:52.000Z"
 }

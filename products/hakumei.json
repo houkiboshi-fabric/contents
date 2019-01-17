@@ -5,10 +5,10 @@
   "name_alt": "ポーチ",
   "name_alt_kana": "ぽーち",
   "price": 4800,
-  "image": "https://houkiboshi.co/products/hakumei/images/main.jpg",
+  "image": "products/hakumei/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/hakumei/images/01.jpg",
-    "https://houkiboshi.co/products/hakumei/images/02.jpg"
+    "products/hakumei/01.jpg",
+    "products/hakumei/02.jpg"
   ],
   "size": {
     "width_mm": 250,
@@ -60,5 +60,5 @@
   ],
   "description": "A4の紙を三つ折りして入れられるくらいの大きさで、ノートならB6、A6が入ります。\n母子手帳と予防接種などのお知らせの紙をいっしょに入れたり、メモ帳とペン、文庫本、いろいろ入ります。",
   "created_at": "2019-01-06T17:47:05.000Z",
-  "modified_at": "2019-01-11T15:39:25.000Z"
+  "modified_at": "2019-01-17T22:20:52.000Z"
 }

@@ -9,10 +9,10 @@
     "https://www.creema.jp/item/4634995/detail"
   ],
   "price": 3250,
-  "image": "https://houkiboshi.co/products/youkou/images/main.jpg",
+  "image": "products/youkou/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/youkou/images/01.jpg",
-    "https://houkiboshi.co/products/youkou/images/02.jpg"
+    "products/youkou/01.jpg",
+    "products/youkou/02.jpg"
   ],
   "size": {
     "width_mm": 220,
@@ -40,5 +40,5 @@
   ],
   "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。\n市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。 \n軽くてやわらかく、しなやかです。\n緯糸にはところどころに手紡ぎした伯州綿のスラブ糸を使っています。",
   "created_at": "2019-01-06T17:47:05.000Z",
-  "modified_at": "2019-01-11T15:39:25.000Z"
+  "modified_at": "2019-01-17T22:20:52.000Z"
 }

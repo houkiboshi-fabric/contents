@@ -8,11 +8,11 @@
   "links_to_shop": [
     "https://minne.com/items/6598420"
   ],
-  "image": "https://houkiboshi.co/products/tairinnohana/images/main.jpg",
+  "image": "products/tairinnohana/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/tairinnohana/images/01.jpg",
-    "https://houkiboshi.co/products/tairinnohana/images/02.jpg",
-    "https://houkiboshi.co/products/tairinnohana/images/03.jpg"
+    "products/tairinnohana/01.jpg",
+    "products/tairinnohana/02.jpg",
+    "products/tairinnohana/03.jpg"
   ],
   "size": {
     "width_mm": 450,
@@ -40,5 +40,5 @@
   ],
   "description": "綿ローンのハンカチに型染めで柄を重ね、草木染めで同系色の地の色を入れました。\n型染めからイメージされる力強くパキッとした柄ではなくて、水彩で描いたような透明感があって地色となじむ柄が出したいなと考えて作りました。かっこいい感じになりました。",
   "created_at": "2019-01-06T17:47:05.000Z",
-  "modified_at": "2019-01-11T15:39:25.000Z"
+  "modified_at": "2019-01-17T22:20:52.000Z"
 }

@@ -9,10 +9,10 @@
     "https://www.creema.jp/item/4617397/detail"
   ],
   "price": 16000,
-  "image": "https://houkiboshi.co/products/awayuki/images/main.jpg",
+  "image": "products/awayuki/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/awayuki/images/01.jpg",
-    "https://houkiboshi.co/products/awayuki/images/02.jpg"
+    "products/awayuki/01.jpg",
+    "products/awayuki/02.jpg"
   ],
   "size": {
     "width_mm": 1400,
@@ -39,5 +39,5 @@
   ],
   "description": "綿のスラブ糸で織ったスクエアモチーフをつなげたミニストールです。\nやわらかでふわっとあたたかく、一年中使えます。\n甘すぎず、シンプルすぎずの使いやすいデザインになりました。\n糸は草木染めでほんのり生成りのニュアンスを加えました。",
   "created_at": "2019-01-06T17:47:05.000Z",
-  "modified_at": "2019-01-11T15:39:25.000Z"
+  "modified_at": "2019-01-17T22:20:52.000Z"
 }

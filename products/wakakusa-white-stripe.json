@@ -9,9 +9,9 @@
     "https://www.creema.jp/item/4622867/detail"
   ],
   "price": 3250,
-  "image": "https://houkiboshi.co/products/wakakusa-white-stripe/images/main.jpg",
+  "image": "products/wakakusa-white-stripe/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/wakakusa-white-stripe/images/01.jpg"
+    "products/wakakusa-white-stripe/01.jpg"
   ],
   "size": {
     "width_mm": 200,
@@ -39,5 +39,5 @@
   ],
   "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。\n中央部はストライプで、周囲がチェックになるよう織りました。\n市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。\nさらっとしています。\n緯糸には手紡ぎした伯州綿のスラブ糸を使っています。手紡ぎ綿に黒い点が混じることがありますが、綿の種の一部です。",
   "created_at": "2019-01-06T17:47:05.000Z",
-  "modified_at": "2019-01-11T15:39:25.000Z"
+  "modified_at": "2019-01-17T22:20:52.000Z"
 }

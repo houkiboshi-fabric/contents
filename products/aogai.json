@@ -9,10 +9,10 @@
     "https://www.creema.jp/item/4617361/detail"
   ],
   "price": 16000,
-  "image": "https://houkiboshi.co/products/aogai/images/main.jpg",
+  "image": "products/aogai/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/aogai/images/01.jpg",
-    "https://houkiboshi.co/products/aogai/images/02.jpg"
+    "products/aogai/01.jpg",
+    "products/aogai/02.jpg"
   ],
   "size": {
     "width_mm": 1600,
@@ -35,5 +35,5 @@
   ],
   "description": "表と裏とで色の違う綿のミニストールをつくりました。\nやわらかく、軽めですが、二重になっているので春先の少し肌寒いときにも重宝します。\n首に一巻きしたり、肩に羽織ったりできる大きさです。\n裏面の白糸は草木染めでほんのり生成りがかったニュアンスを加えています。",
   "created_at": "2019-01-06T17:47:05.000Z",
-  "modified_at": "2019-01-11T15:39:25.000Z"
+  "modified_at": "2019-01-17T22:20:52.000Z"
 }

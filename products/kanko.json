@@ -9,11 +9,11 @@
     "https://www.creema.jp/item/4622801/detail"
   ],
   "price": 5300,
-  "image": "https://houkiboshi.co/products/kanko/images/main.jpg",
+  "image": "products/kanko/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/kanko/images/01.jpg",
-    "https://houkiboshi.co/products/kanko/images/02.jpg",
-    "https://houkiboshi.co/products/kanko/images/03.jpg"
+    "products/kanko/01.jpg",
+    "products/kanko/02.jpg",
+    "products/kanko/03.jpg"
   ],
   "size": {
     "width_mm": 5000,
@@ -40,5 +40,5 @@
   ],
   "description": "妊婦のおなかを支えるために昔から使われてきた腹帯に、白無地以外の選択肢があればいいのに、と思ったので水彩のような淡い色で染めました。\n約5 mありますが、柄が染めてあるのは両端のみです。柄はおよそ1 m前後あります。中央部約3 mは白の無地です。\n腹帯を巻くと、巻き方にも寄りますが柄のある部分がいちばん上に1〜1.5 周分くらい見えるかんじになると思います。上手くすればボトムスの上からちらっと見えてしまっても腹帯っぽさが少なくていいかもしれません。",
   "created_at": "2019-01-06T17:47:05.000Z",
-  "modified_at": "2019-01-11T15:39:25.000Z"
+  "modified_at": "2019-01-17T22:20:52.000Z"
 }

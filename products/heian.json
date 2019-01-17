@@ -9,9 +9,9 @@
     "https://www.creema.jp/item/4622754/detail"
   ],
   "price": 28000,
-  "image": "https://houkiboshi.co/products/heian/images/main.jpg",
+  "image": "products/heian/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/heian/images/01.jpg"
+    "products/heian/01.jpg"
   ],
   "size": {
     "width_mm": 950,
@@ -39,5 +39,5 @@
   ],
   "description": "草木染めした綿糸で手織りした布です。 \nコシがあるので、テーブルセンターや家具にかけるなどのインテリアファブリックとして飾るのに最適です。",
   "created_at": "2019-01-06T17:47:05.000Z",
-  "modified_at": "2019-01-11T15:39:25.000Z"
+  "modified_at": "2019-01-17T22:20:52.000Z"
 }

@@ -9,10 +9,10 @@
     "https://www.creema.jp/item/4622401/detail"
   ],
   "price": 18000,
-  "image": "https://houkiboshi.co/products/ankan/images/main.jpg",
+  "image": "products/ankan/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/ankan/images/01.jpg",
-    "https://houkiboshi.co/products/ankan/images/02.jpg"
+    "products/ankan/01.jpg",
+    "products/ankan/02.jpg"
   ],
   "size": {
     "width_mm": 1680,
@@ -43,5 +43,5 @@
   ],
   "description": "草木染めした綿糸で手織りしたストールです。\n柔らかくて軽く、さらっとしていて、3シーズン使えます。\n明るい色味なので、シンプルな服装にあわせるときっとすてきです。\n経糸に金柑、葛、藍、ミント、桜の糸を、緯糸に藍の糸を使っています。",
   "created_at": "2019-01-06T17:47:05.000Z",
-  "modified_at": "2019-01-11T15:39:25.000Z"
+  "modified_at": "2019-01-17T22:20:52.000Z"
 }

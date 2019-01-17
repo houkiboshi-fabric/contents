@@ -9,11 +9,11 @@
     "https://www.creema.jp/item/4617713/detail"
   ],
   "price": 15000,
-  "image": "https://houkiboshi.co/products/kuchibue/images/main.jpg",
+  "image": "products/kuchibue/main.jpg",
   "images_alt": [
-    "https://houkiboshi.co/products/kuchibue/images/01.jpg",
-    "https://houkiboshi.co/products/kuchibue/images/02.jpg",
-    "https://houkiboshi.co/products/kuchibue/images/03.jpg"
+    "products/kuchibue/01.jpg",
+    "products/kuchibue/02.jpg",
+    "products/kuchibue/03.jpg"
   ],
   "size": {
     "width_mm": 1850,
@@ -41,5 +41,5 @@
   ],
   "description": "首まわりにさらっと巻ける、夏にも使える布を織りました。\nさらさらとした風合いでハリがありながら、くったりとしたやわらかさがあります。\n身につける用途以外にも、テーブルセンターなどとして使うのも良いかもしれません。\n桜で染めた糸を3色と、葛で染めた緑の糸を使用しています。",
   "created_at": "2019-01-06T17:47:05.000Z",
-  "modified_at": "2019-01-11T15:39:25.000Z"
+  "modified_at": "2019-01-17T22:20:52.000Z"
 }
