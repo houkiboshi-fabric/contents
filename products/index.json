@@ -514,7 +514,7 @@
     "price": 5500,
     "image": "products/himekonohadori/main.jpg",
     "images_alt": [
-      "products/himekonohadori/main.jpg"
+      "products/himekonohadori/01.jpg"
     ],
     "size": {
       "width_mm": 200,
@@ -545,7 +545,7 @@
     ],
     "description": "草木染めした綿糸で手織りしたストールです。ワッフル織りで作りました。\n柔らかくて軽く、さらっとしていて、3シーズン使えます。\n明るい色味なので、シンプルな服装にあわせるとすてきです。",
     "created_at": "2019-01-06T17:47:05.000Z",
-    "modified_at": "2019-01-17T22:20:52.000Z"
+    "modified_at": "2019-01-18T10:55:39.000Z"
   },
   {
     "id": "kafuku",
