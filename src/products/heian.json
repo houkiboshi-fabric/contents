@@ -10,9 +10,7 @@
   ],
   "price": 28000,
   "image": "products/heian/main.jpg",
-  "images_alt": [
-    "products/heian/01.jpg"
-  ],
+  "images_alt": ["products/heian/01.jpg"],
   "size": {
     "width_mm": 950,
     "depth_mm": 230
@@ -20,9 +18,7 @@
   "weight_g": 42,
   "raw_materials": [
     {
-      "raw_material_ids": [
-        "cotton"
-      ],
+      "raw_material_ids": ["cotton"],
       "mixing_ratio": {
         "decorator": "=",
         "percentage": 100
@@ -31,10 +27,7 @@
   ],
   "dyeing_materials": [
     {
-      "dyeing_material_ids": [
-        "kuzu",
-        "sakura"
-      ]
+      "dyeing_material_ids": ["kuzu", "sakura"]
     }
   ],
   "description": "草木染めした綿糸で手織りした布です。 \nコシがあるので、テーブルセンターや家具にかけるなどのインテリアファブリックとして飾るのに最適です。"

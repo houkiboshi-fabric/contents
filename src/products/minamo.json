@@ -10,10 +10,7 @@
   ],
   "price": 4800,
   "image": "products/minamo/main.jpg",
-  "images_alt": [
-    "products/minamo/01.jpg",
-    "products/minamo/02.jpg"
-  ],
+  "images_alt": ["products/minamo/01.jpg", "products/minamo/02.jpg"],
   "size": {
     "width_mm": 220,
     "depth_mm": 120,
@@ -22,9 +19,7 @@
   "weight_g": 47,
   "raw_materials": [
     {
-      "raw_material_ids": [
-        "cotton"
-      ],
+      "raw_material_ids": ["cotton"],
       "mixing_ratio": {
         "decorator": "=",
         "percentage": 100
@@ -32,9 +27,7 @@
       "used_at": "表生地"
     },
     {
-      "raw_material_ids": [
-        "cotton"
-      ],
+      "raw_material_ids": ["cotton"],
       "mixing_ratio": {
         "decorator": "=",
         "percentage": 100
@@ -42,17 +35,13 @@
       "used_at": "裏生地"
     },
     {
-      "raw_material_ids": [
-        "plastic-fastener"
-      ],
+      "raw_material_ids": ["plastic-fastener"],
       "used_at": "部品"
     }
   ],
   "dyeing_materials": [
     {
-      "dyeing_material_ids": [
-        "sakura"
-      ]
+      "dyeing_material_ids": ["sakura"]
     }
   ],
   "description": "水面のような織り柄の布を織りました。\n新書がすっぽり入るくらいの大きさのポーチです。"

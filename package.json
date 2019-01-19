@@ -8,7 +8,7 @@
   "private": true,
   "husky": {
     "hooks": {
-      "pre-commit": "yarn validate && yarn test && yarn lint"
+      "pre-commit": "yarn format && yarn validate && yarn test && yarn lint"
     }
   },
   "scripts": {
@@ -19,6 +19,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint ./**/*.js",
+    "format": " prettier --write '{README.md,{docs,src,tasks}/**/*.{json,js,md}}'",
     "validate": "node ./tasks/validate-json.js",
     "deploy": "NODE_DEBUG=gh-pages node ./tasks/deploy.js"
   },

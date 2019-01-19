@@ -10,10 +10,7 @@
   ],
   "price": 18000,
   "image": "products/ankan/main.jpg",
-  "images_alt": [
-    "products/ankan/01.jpg",
-    "products/ankan/02.jpg"
-  ],
+  "images_alt": ["products/ankan/01.jpg", "products/ankan/02.jpg"],
   "size": {
     "width_mm": 1680,
     "depth_mm": 230
@@ -21,9 +18,7 @@
   "weight_g": 45,
   "raw_materials": [
     {
-      "raw_material_ids": [
-        "cotton"
-      ],
+      "raw_material_ids": ["cotton"],
       "mixing_ratio": {
         "decorator": "=",
         "percentage": 100
@@ -32,13 +27,7 @@
   ],
   "dyeing_materials": [
     {
-      "dyeing_material_ids": [
-        "kinkan",
-        "kuzu",
-        "mint",
-        "ai",
-        "sakura"
-      ]
+      "dyeing_material_ids": ["kinkan", "kuzu", "mint", "ai", "sakura"]
     }
   ],
   "description": "草木染めした綿糸で手織りしたストールです。\n柔らかくて軽く、さらっとしていて、3シーズン使えます。\n明るい色味なので、シンプルな服装にあわせるときっとすてきです。\n経糸に金柑、葛、藍、ミント、桜の糸を、緯糸に藍の糸を使っています。"

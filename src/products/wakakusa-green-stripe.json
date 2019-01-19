@@ -4,14 +4,10 @@
   "name_kana": "わかくさみどりすとらいぷ",
   "name_alt": "草木染め糸のハンカチ",
   "name_alt_kana": "くさきぞめいとのはんかち",
-  "links_to_shop": [
-    "https://minne.com/items/9080184"
-  ],
+  "links_to_shop": ["https://minne.com/items/9080184"],
   "price": 3250,
   "image": "products/wakakusa-green-stripe/main.jpg",
-  "images_alt": [
-    "products/wakakusa-green-stripe/01.jpg"
-  ],
+  "images_alt": ["products/wakakusa-green-stripe/01.jpg"],
   "size": {
     "width_mm": 200,
     "depth_mm": 190
@@ -19,10 +15,7 @@
   "weight_g": 7,
   "raw_materials": [
     {
-      "raw_material_ids": [
-        "cotton",
-        "hakushu-cotton"
-      ],
+      "raw_material_ids": ["cotton", "hakushu-cotton"],
       "mixing_ratio": {
         "decorator": "=",
         "percentage": 100
@@ -31,9 +24,7 @@
   ],
   "dyeing_materials": [
     {
-      "dyeing_material_ids": [
-        "kuzu"
-      ]
+      "dyeing_material_ids": ["kuzu"]
     }
   ],
   "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。\n中央部はストライプで、周囲がチェックになるよう織りました。\n市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。\nさらっとしています。\n緯糸には手紡ぎした伯州綿のスラブ糸を使っています。手紡ぎ綿に黒い点が混じることがありますが、綿の種の一部です。"

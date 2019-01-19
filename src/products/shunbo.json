@@ -10,10 +10,7 @@
     "https://www.creema.jp/item/4634952/detail"
   ],
   "image": "products/shunbo/main.jpg",
-  "images_alt": [
-    "products/shunbo/01.jpg",
-    "products/shunbo/02.jpg"
-  ],
+  "images_alt": ["products/shunbo/01.jpg", "products/shunbo/02.jpg"],
   "size": {
     "width_mm": 220,
     "depth_mm": 235
@@ -21,10 +18,7 @@
   "weight_g": 7,
   "raw_materials": [
     {
-      "raw_material_ids": [
-        "cotton",
-        "hakushu-cotton"
-      ],
+      "raw_material_ids": ["cotton", "hakushu-cotton"],
       "mixing_ratio": {
         "decorator": "=",
         "percentage": 100
@@ -33,10 +27,7 @@
   ],
   "dyeing_materials": [
     {
-      "dyeing_material_ids": [
-        "sakura",
-        "akane"
-      ]
+      "dyeing_material_ids": ["sakura", "akane"]
     }
   ],
   "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。\n市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。\n軽くてやわらかく、しなやかです。\n緯糸にはところどころに手紡ぎした伯州綿のスラブ糸を使っています。"

@@ -10,19 +10,15 @@
   ],
   "price": 5500,
   "image": "products/himekonohadori/main.jpg",
-  "images_alt": [
-    "products/himekonohadori/01.jpg"
-  ],
+  "images_alt": ["products/himekonohadori/01.jpg"],
   "size": {
     "width_mm": 200,
-    "depth_mm":1500
+    "depth_mm": 1500
   },
   "weight_g": 52,
   "raw_materials": [
     {
-      "raw_material_ids": [
-        "cotton"
-      ],
+      "raw_material_ids": ["cotton"],
       "mixing_ratio": {
         "decorator": "=",
         "percentage": 100
@@ -31,13 +27,7 @@
   ],
   "dyeing_materials": [
     {
-      "dyeing_material_ids": [
-        "kinkan",
-        "kuzu",
-        "ai",
-        "mint",
-        "sakura"
-      ]
+      "dyeing_material_ids": ["kinkan", "kuzu", "ai", "mint", "sakura"]
     }
   ],
   "description": "草木染めした綿糸で手織りしたストールです。ワッフル織りで作りました。\n柔らかくて軽く、さらっとしていて、3シーズン使えます。\n明るい色味なので、シンプルな服装にあわせるとすてきです。"

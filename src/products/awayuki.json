@@ -10,10 +10,7 @@
   ],
   "price": 16000,
   "image": "products/awayuki/main.jpg",
-  "images_alt": [
-    "products/awayuki/01.jpg",
-    "products/awayuki/02.jpg"
-  ],
+  "images_alt": ["products/awayuki/01.jpg", "products/awayuki/02.jpg"],
   "size": {
     "width_mm": 1400,
     "depth_mm": 250
@@ -21,9 +18,7 @@
   "weight_g": 113,
   "raw_materials": [
     {
-      "raw_material_ids": [
-        "cotton"
-      ],
+      "raw_material_ids": ["cotton"],
       "mixing_ratio": {
         "decorator": "=",
         "percentage": 100
@@ -32,9 +27,7 @@
   ],
   "dyeing_materials": [
     {
-      "dyeing_material_ids": [
-        "biwa"
-      ]
+      "dyeing_material_ids": ["biwa"]
     }
   ],
   "description": "綿のスラブ糸で織ったスクエアモチーフをつなげたミニストールです。\nやわらかでふわっとあたたかく、一年中使えます。\n甘すぎず、シンプルすぎずの使いやすいデザインになりました。\n糸は草木染めでほんのり生成りのニュアンスを加えました。"

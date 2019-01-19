@@ -22,9 +22,7 @@
   "weight_g": 60,
   "raw_materials": [
     {
-      "raw_material_ids": [
-        "cotton"
-      ],
+      "raw_material_ids": ["cotton"],
       "mixing_ratio": {
         "decorator": "=",
         "percentage": 100
@@ -33,10 +31,7 @@
   ],
   "dyeing_materials": [
     {
-      "dyeing_material_ids": [
-        "sakura",
-        "kuzu"
-      ]
+      "dyeing_material_ids": ["sakura", "kuzu"]
     }
   ],
   "description": "首まわりにさらっと巻ける、夏にも使える布を織りました。\nさらさらとした風合いでハリがありながら、くったりとしたやわらかさがあります。\n身につける用途以外にも、テーブルセンターなどとして使うのも良いかもしれません。\n桜で染めた糸を3色と、葛で染めた緑の糸を使用しています。"

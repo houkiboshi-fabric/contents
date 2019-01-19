@@ -22,9 +22,7 @@
   "weight_g": 52,
   "raw_materials": [
     {
-      "raw_material_ids": [
-        "cotton"
-      ],
+      "raw_material_ids": ["cotton"],
       "mixing_ratio": {
         "decorator": "=",
         "percentage": 100
@@ -33,10 +31,7 @@
   ],
   "dyeing_materials": [
     {
-      "dyeing_material_ids": [
-        "kuzu",
-        "rosemary"
-      ]
+      "dyeing_material_ids": ["kuzu", "rosemary"]
     }
   ],
   "description": "草木染めした綿糸で手織りした布です。\n柔らかくて軽く、さらっとしていて、首に巻くストールとして春〜秋に最適です。\nインテリアファブリックとして家具にかけたり飾ったりするのもおすすめです。"

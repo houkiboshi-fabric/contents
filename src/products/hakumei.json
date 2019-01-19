@@ -6,23 +6,16 @@
   "name_alt_kana": "ぽーち",
   "price": 4800,
   "image": "products/hakumei/main.jpg",
-  "images_alt": [
-    "products/hakumei/01.jpg",
-    "products/hakumei/02.jpg"
-  ],
+  "images_alt": ["products/hakumei/01.jpg", "products/hakumei/02.jpg"],
   "size": {
     "width_mm": 250,
     "depth_mm": 150,
-    "notes": [
-      "開口部 約 23 cm"
-    ]
+    "notes": ["開口部 約 23 cm"]
   },
   "weight_g": 43,
   "raw_materials": [
     {
-      "raw_material_ids": [
-        "cotton"
-      ],
+      "raw_material_ids": ["cotton"],
       "mixing_ratio": {
         "decorator": "=",
         "percentage": 100
@@ -30,9 +23,7 @@
       "used_at": "表生地"
     },
     {
-      "raw_material_ids": [
-        "cotton"
-      ],
+      "raw_material_ids": ["cotton"],
       "mixing_ratio": {
         "decorator": "=",
         "percentage": 100
@@ -40,18 +31,13 @@
       "used_at": "裏生地"
     },
     {
-      "raw_material_ids": [
-        "plastic-fastener"
-      ],
+      "raw_material_ids": ["plastic-fastener"],
       "used_at": "部品"
     }
   ],
   "dyeing_materials": [
     {
-      "dyeing_material_ids": [
-        "sakura",
-        "koucha"
-      ]
+      "dyeing_material_ids": ["sakura", "koucha"]
     }
   ],
   "links_to_shop": [
