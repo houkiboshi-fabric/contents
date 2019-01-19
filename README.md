@@ -4,19 +4,25 @@ houkiboshi-fabric dataset
 
 ## Requirements
 
-- Node.js
-  - See `.node-version`
-- yarn
-- Git
+- [Node.js](https://nodejs.org/)
+  - See [.node-version](./.node-version)
+- [Yarn](https://yarnpkg.com/)
+- [Git](https://git-scm.com/)
   - to get timestamps from git history
+
+## Recommended
+
+- [nodenv/nodenv](https://github.com/nodenv/nodenv)
+- [nodenv/node-build](https://github.com/nodenv/node-build)
+- [EditorConfig](https://editorconfig.org/)
 
 ## Install
 
-``` console
-$ git clone git@github.com:houkiboshi-fabric/contents.git
-$ cd contents/
-$ nodenv install # <-- optional
-$ yarn install
+```console
+git clone git@github.com:houkiboshi-fabric/contents.git
+cd contents/
+nodenv update-version-defs && nodenv install # <-- optional
+yarn install
 ```
 
 ## Tasks
@@ -35,7 +41,7 @@ $ yarn install
   * useful to `fetch` dataset
 
 ```console
-$ yarn build
+yarn build
 ```
 
 ### Build schemas
@@ -46,7 +52,7 @@ $ yarn build
     in your editor like Visual Studio Code.
 
 ```console
-$ yarn build-schemas
+yarn build-schemas
 ```
 
 ### Validate
@@ -58,7 +64,7 @@ $ yarn build-schemas
   * `src/raw-materials/**/*.json`
 
 ```console
-$ yarn validate
+yarn validate
 ```
 
 ### Watch
@@ -70,9 +76,9 @@ $ yarn validate
   * `src/raw-materials/**/*.json`
 
 ```console
-$ yarn watch
+yarn watch
 // or
-$ yarn start
+yarn start
 ```
 
 ### Test
@@ -80,9 +86,9 @@ $ yarn start
 * Run JavaScript test using Jest
 
 ```console
-$ yarn test
+yarn test
 // or
-$ yarn test:watch
+yarn test:watch
 ```
 
 ### Lint
@@ -90,7 +96,7 @@ $ yarn test:watch
 * Lint JavaScript files using ESLint
 
 ```console
-$ yarn lint
+yarn lint
 ```
 
 ### Deploy
@@ -100,5 +106,9 @@ $ yarn lint
   this task will be run automatically on CI.
 
 ```console
-$ yarn deploy
+yarn deploy
 ```
+
+## Author
+
+[houkiboshi-fabric](https://github.com/houkiboshi-fabric)
