@@ -5,17 +5,20 @@ const { relative, resolve } = require('path');
 const chokidar = require('chokidar');
 const consola = require('consola');
 
-const buildSchemas = require('./lib/build-schemas.js');
-const validate = require('./lib/validate-json.js');
+const { buildSchemas } = require('./lib/build-schemas.js');
+const { validateJson } = require('./lib/validate-json.js');
 
-const { dirs } = require('./config.js');
+const {
+  dirs: { root, src, schemas },
+  schemaConfigs
+} = require('./config.js');
 
 const paths = [
   'dyeing-material-types',
   'dyeing-materials',
   'products',
   'raw-materials'
-].map(path => resolve(dirs.src, path, '**', '*.json'));
+].map(path => resolve(src, path, '**', '*.json'));
 
 const watcher = chokidar.watch(paths, {
   ignored: /(^|[/\\])\../,
@@ -23,14 +26,22 @@ const watcher = chokidar.watch(paths, {
   ignoreInitial: true
 });
 
-consola.info('Watching paths:', paths.map(path => relative(dirs.root, path)));
-
 const buildSchemasAndValidate = async () => {
-  const bs = await buildSchemas();
+  const bs = await buildSchemas({
+    src,
+    dist: schemas,
+    baseDir: root,
+    schemaConfigs
+  });
 
   consola.success('Generated schemas:', bs.results);
 
-  const v = validate();
+  const v = validateJson({
+    src,
+    schemaDir: schemas,
+    schemaConfigs,
+    baseDir: root
+  });
   if (v.errors.length === 0) {
     consola.success('All json files are valid!');
   }
@@ -41,9 +52,13 @@ const buildSchemasAndValidate = async () => {
   }
 };
 
-watcher
-  .on('add', () => buildSchemasAndValidate())
-  .on('change', () => buildSchemasAndValidate())
-  .on('unlink', () => buildSchemasAndValidate());
+const logError = err => consola.error(err);
 
-buildSchemasAndValidate().catch(reason => consola.error(reason));
+watcher
+  .on('add', () => buildSchemasAndValidate().catch(logError))
+  .on('change', () => buildSchemasAndValidate().catch(logError))
+  .on('unlink', () => buildSchemasAndValidate().catch(logError));
+
+buildSchemasAndValidate().catch(logError);
+
+consola.info('Watching paths:', paths.map(path => relative(root, path)));

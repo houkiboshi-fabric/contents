@@ -7,22 +7,25 @@ const fetch = require('node-fetch');
 const glob = require('glob');
 const consola = require('consola');
 
-const { dirSchemaMap, dirs } = require('../config.js');
 const { addIdsAsEnum } = require('./add-ids-as-enum.js');
 const { addDefaultSnippets } = require('./add-default-snippets.js');
+const { diff } = require('./array-diff.js');
 
 const fetchSchema = uri => fetch(uri).then(response => response.json());
-
-const fetchSchemas = async () => {
+const fetchSchemas = async remoteSchemaConfigs => {
   return Promise.all(
-    [...dirSchemaMap.entries()].map(async ([dirName, uri]) => {
-      consola.log('Fetching: ', uri);
-      const schema = await fetchSchema(uri);
-      return {
-        dir: dirName,
-        id: schema['$id'],
-        schema
-      };
+    remoteSchemaConfigs.map(async ({ distDirName, uri }) => {
+      try {
+        const schema = await fetchSchema(uri);
+        consola.success(`Fetched: ${uri}`);
+        return {
+          dir: distDirName,
+          id: schema['$id'],
+          schema
+        };
+      } catch (err) {
+        throw new Error(err);
+      }
     })
   );
 };
@@ -31,8 +34,8 @@ const idToPropName = id => {
   return `${id.replace(/\..+$/, '').replace(/-/g, '_')}_id`;
 };
 
-const pullDocIds = schemaData => {
-  const pattern = resolve(dirs.src, schemaData.dir, '**', '*.json');
+const pullDocIds = docDir => {
+  const pattern = resolve(docDir, '**', '*.json');
   const errors = [];
   const results = glob
     .sync(pattern)
@@ -71,20 +74,20 @@ const pullDocIds = schemaData => {
   };
 };
 
-const generateNewSchemas = schemaDict => {
+const generateNewSchemas = (fetchedSchemas, srcDir) => {
   const errs = [];
-  const results = schemaDict
-    .map(schemaData => {
-      const { errors, results } = pullDocIds(schemaData);
+  const results = fetchedSchemas
+    .map(fetchedSchema => {
+      const docDir = resolve(srcDir, fetchedSchema.dir);
+      const { errors, results: ids } = pullDocIds(docDir);
       errs.push(...errors);
       return {
-        ...schemaData,
-        propName: idToPropName(schemaData.id),
-        ids: results
+        ...fetchedSchema,
+        propName: idToPropName(fetchedSchema.id),
+        ids
       };
     })
     .map((item, _i, dict) => {
-      consola.log(`Found ids of ${item.propName}`, item.ids); // TODO
       const propValuesList = dict.map(item => {
         return {
           pattern: new RegExp(`^${item.propName}s?$`),
@@ -105,32 +108,49 @@ const generateNewSchemas = schemaDict => {
   };
 };
 
-const writeSchemas = dict => {
-  mkdirSync(dirs.schemas, { recursive: true });
+const writeSchemas = (dist, dict) => {
+  mkdirSync(dist, { recursive: true });
   return dict.map(item => {
-    const path = resolve(dirs.schemas, item.schema.$id);
+    const path = resolve(dist, item.schema.$id);
     const data = JSON.stringify(item.newSchema, null, 2);
     writeFileSync(path, data);
     return path;
   });
 };
 
-let schemaDict = null;
+// Do not fetch while watching task is running
+let fetchedSchemas = null;
 
-const buildSchemas = async () => {
+// Logging only diff while watching task is running
+let prevIds = {};
+
+const buildSchemas = async ({ src, dist, baseDir, schemaConfigs }) => {
   consola.info('Building schemas...');
-  if (!schemaDict) {
-    schemaDict = await fetchSchemas();
+  if (!fetchedSchemas) {
+    fetchedSchemas = await fetchSchemas(schemaConfigs);
   }
-  const generatedSchemas = generateNewSchemas(schemaDict);
-  const dict = generatedSchemas.results;
-  const errors = generatedSchemas.errors.map(err => {
+  const { results: gnsResults, errors: gnsErrors } = generateNewSchemas(
+    fetchedSchemas,
+    src
+  );
+
+  gnsResults.forEach(({ schema: { $id }, ids }) => {
+    const label = $id.replace('.json', '');
+    const prev = prevIds[label];
+    const { added, deleted } = diff(prev, ids);
+    added.length > 0 && consola.success(`Added ids in ${label}:`, added);
+    deleted.length > 0 && consola.success(`Deleted ids in ${label}:`, deleted);
+    prevIds[label] = ids;
+  });
+
+  const errors = gnsErrors.map(err => {
     return {
       ...err,
-      path: relative(dirs.root, err.path)
+      path: relative(baseDir, err.path)
     };
   });
-  const results = writeSchemas(dict).map(p => relative(dirs.root, p));
+
+  const results = writeSchemas(dist, gnsResults).map(p => relative(baseDir, p));
   consola.success('Building schemas has finished.');
   return {
     errors,
@@ -138,4 +158,6 @@ const buildSchemas = async () => {
   };
 };
 
-module.exports = buildSchemas;
+module.exports = {
+  buildSchemas
+};

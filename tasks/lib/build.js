@@ -7,11 +7,7 @@ const consola = require('consola');
 const glob = require('glob');
 const rimraf = require('rimraf');
 
-const { dirSchemaMap, dirs } = require('../config.js');
 const { getTimeStamps } = require('./get-time-stamps.js');
-
-const src = dirs.src;
-const dist = dirs.dist;
 
 const readJson = path => {
   const data = readFileSync(path, 'utf-8');
@@ -32,10 +28,8 @@ const readJson = path => {
   };
 };
 
-const datasetDirNames = [...dirSchemaMap.keys()];
-
 // src to dist
-const buildDatasets = () => {
+const buildDatasets = ({ src, dist, datasetDirNames, baseDir }) => {
   consola.info('Building dataset files...');
 
   const errors = [];
@@ -81,7 +75,7 @@ const buildDatasets = () => {
     const distDir = parse(distPath).dir;
     mkdirSync(distDir, { recursive: true });
     writeFileSync(distPath, json);
-    results.push(relative(dirs.root, distPath));
+    results.push(relative(baseDir, distPath));
   };
 
   datasetDirNames.forEach(dirName => {
@@ -103,10 +97,9 @@ const buildDatasets = () => {
 };
 
 // dist to dist
-const buildIndexFiles = () => {
+const buildIndexFiles = ({ src, dist, datasetDirNames, baseDir }) => {
   consola.info('Building index files...');
 
-  const datasetDirNames = [...dirSchemaMap.keys()];
   const generated = [];
   const errors = [];
 
@@ -137,18 +130,15 @@ const buildIndexFiles = () => {
 
   return {
     errors: errors.map(err => {
-      return {
-        ...err,
-        path: relative(dirs.root, err.path)
-      };
+      return { ...err, path: relative(baseDir, err.path) };
     }),
-    results: generated.map(p => relative(dirs.root, p))
+    results: generated.map(p => relative(baseDir, p))
   };
 };
 
-const clean = () => {
+const clean = (dist, baseDir) => {
   return new Promise(resolve => {
-    consola.info('Cleaning...', relative(dirs.root, dist));
+    consola.info('Cleaning...', relative(baseDir, dist));
     rimraf(dist, () => {
       consola.success('Cleaning has finished.');
       resolve();
@@ -156,17 +146,23 @@ const clean = () => {
   });
 };
 
-const build = async () => {
-  await clean();
-  const bd = buildDatasets();
-  const bi = buildIndexFiles();
-  return {
-    errors: [...bd.errors, ...bi.errors],
-    results: {
-      'Generated dataset files': bd.results,
-      'Generated index files': bi.results
-    }
-  };
+const build = async ({ src, dist, datasetDirNames, baseDir }) => {
+  try {
+    await clean(dist, baseDir);
+    const bd = buildDatasets({ src, dist, datasetDirNames, baseDir });
+    const bi = buildIndexFiles({ src, dist, datasetDirNames, baseDir });
+    return {
+      errors: [...bd.errors, ...bi.errors],
+      results: {
+        'Generated dataset files': bd.results,
+        'Generated index files': bi.results
+      }
+    };
+  } catch (err) {
+    throw new Error(err);
+  }
 };
 
-module.exports = build;
+module.exports = {
+  build
+};

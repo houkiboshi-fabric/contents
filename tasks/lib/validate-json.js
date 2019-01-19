@@ -7,10 +7,6 @@ const Ajv = require('ajv');
 const consola = require('consola');
 const glob = require('glob');
 
-const { dirs, dirSchemaMap } = require('../config.js');
-
-const jsonDirs = [...dirSchemaMap.keys()];
-
 const readJson = path => {
   const data = readFileSync(path, 'utf-8');
   let error;
@@ -30,10 +26,7 @@ const readJson = path => {
   };
 };
 
-// Exclude ref-parsed json from validation targets
-const schemaPattern = resolve(dirs.schemas, '*.json');
-
-const createAjv = () => {
+const createAjv = schemaPattern => {
   const errors = [];
   const schemas = glob.sync(schemaPattern).map(filePath => {
     const { error, result } = readJson(filePath);
@@ -70,20 +63,23 @@ const validate = (data, ajv, schemaId, path) => {
   };
 };
 
-const validateAll = () => {
+const validateJson = ({ src, schemaDir, schemaConfigs, baseDir }) => {
   const errs = [];
-  const { errors, ajv } = createAjv();
+  const schemaPattern = resolve(schemaDir, '*.json'); // Exclude ref-parsed json from validation targets
+  const { errors, ajv } = createAjv(schemaPattern);
   errs.push(...errors);
 
-  const validations = jsonDirs.reduce((acm, dirName) => {
-    const pattern = resolve(dirs.src, dirName, '**', '*.json');
+  const dirNames = schemaConfigs.map(e => e.distDirName);
+
+  const validations = dirNames.reduce((acm, dirName) => {
+    const pattern = resolve(src, dirName, '**', '*.json');
     const jsonPaths = glob.sync(pattern);
     const jsons = jsonPaths.map(filePath => {
       const { error, result } = readJson(filePath);
       if (error) {
         errors.push({
           path: filePath,
-          in: 'validateAll',
+          in: 'validateJson',
           error
         });
       }
@@ -92,7 +88,8 @@ const validateAll = () => {
 
     const result = jsons.map((json, i) => {
       const jsonPath = jsonPaths[i];
-      const schemaId = parse(dirSchemaMap.get(dirName)).base;
+      const { uri } = schemaConfigs.find(c => c.distDirName === dirName);
+      const schemaId = parse(uri).base;
       return validate(json, ajv, schemaId, jsonPath);
     });
 
@@ -105,7 +102,7 @@ const validateAll = () => {
       .map(v => {
         return {
           path: v.path,
-          in: 'validateAll',
+          in: 'validateJson',
           error: v.errors.map(err => err.message)
         };
       })
@@ -116,10 +113,12 @@ const validateAll = () => {
     errors: errs.map(err => {
       return {
         ...err,
-        path: relative(dirs.root, err.path)
+        path: relative(baseDir, err.path)
       };
     })
   };
 };
 
-module.exports = validateAll;
+module.exports = {
+  validateJson
+};
