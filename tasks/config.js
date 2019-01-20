@@ -2,14 +2,21 @@
 
 const { resolve } = require('path');
 
-const ROOT_DIR = resolve(__dirname, '..');
+const root = resolve(__dirname, '..');
+const src = resolve(root, 'src');
+const dist = resolve(root, 'dist');
+const schemas = resolve(root, 'schemas');
+const tmp = resolve(dist, 'contents');
 
 exports.dirs = {
-  root: ROOT_DIR,
-  src: resolve(ROOT_DIR, 'src'),
-  dist: resolve(ROOT_DIR, 'dist'),
-  schemas: resolve(ROOT_DIR, 'schemas')
+  root,
+  src,
+  dist,
+  schemas,
+  tmp
 };
+
+exports.archiveDistPath = resolve(dist, 'contents.tar.gz');
 
 exports.schemaConfigs = [
   {

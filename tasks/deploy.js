@@ -8,28 +8,33 @@ const ghpagesClean = require('gh-pages/bin/gh-pages-clean.js');
 const { copySync } = require('fs-extra');
 
 const {
-  dirs: { src, dist, root },
-  schemaConfigs
+  dirs: { src, dist, root, tmp },
+  schemaConfigs,
+  archiveDistPath
 } = require('./config.js');
 const { build } = require('./lib/build.js');
+const { pack } = require('./lib/pack.js');
 
 const additionalDeploymentTargets = ['.circleci'];
-const datasetDirNames = schemaConfigs.map(e => e.distDirName);
 
 (async () => {
   try {
     const { errors, results } = await build({
       src,
-      dist,
-      baseDir: root,
-      datasetDirNames
+      dist: tmp,
+      datasetDirNames: schemaConfigs.map(e => e.distDirName),
+      baseDir: root
     });
-
     consola.success(results);
-
     if (errors.length > 0) {
-      return new Error(errors);
+      return Error(errors);
     }
+
+    await pack({
+      src: tmp,
+      dist: archiveDistPath,
+      baseDir: root
+    });
 
     additionalDeploymentTargets
       .map(item => {
@@ -41,7 +46,12 @@ const datasetDirNames = schemaConfigs.map(e => e.distDirName);
       .forEach(item => {
         try {
           copySync(item.src, item.dist);
-          consola.success(`Copied: ${relative(root, item.dist)}`);
+          consola.success(
+            'Copied:',
+            relative(root, item.src),
+            '=>',
+            relative(root, item.dist)
+          );
         } catch (err) {
           throw new Error(err);
         }
