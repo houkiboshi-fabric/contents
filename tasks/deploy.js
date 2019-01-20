@@ -68,8 +68,7 @@ const additionalDeploymentTargets = ['.circleci'];
     ghpagesClean();
     ghpages.publish(dist, config, err => {
       if (err) {
-        consola.error(err);
-        return;
+        throw new Error(err);
       }
       consola.success('Publishing has finished successfully.');
     });
