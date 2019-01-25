@@ -8,8 +8,9 @@ const ghpagesClean = require('gh-pages/bin/gh-pages-clean.js');
 const { copySync } = require('fs-extra');
 
 const {
-  dirs: { src, dist, root, tmp },
-  archiveDistPath
+  dirs: { src, dist, root, schemas, tmp },
+  archiveDistPath,
+  SCHEMA_URI
 } = require('./config.js');
 const { build } = require('./lib/build.js');
 const { pack } = require('./lib/pack.js');
@@ -21,6 +22,8 @@ const additionalDeploymentTargets = ['.circleci'];
     const { errors, results } = await build({
       src,
       dist: tmp,
+      schemaDir: schemas,
+      schemaUri: SCHEMA_URI,
       baseDir: root
     });
     consola.success(results);

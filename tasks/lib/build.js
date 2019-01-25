@@ -8,6 +8,7 @@ const glob = require('glob');
 const rimraf = require('rimraf');
 
 const { getTimeStamps } = require('./get-time-stamps.js');
+const { formatDocs } = require('./format-docs.js');
 
 const readJson = path => {
   const data = readFileSync(path, 'utf-8');
@@ -29,7 +30,7 @@ const readJson = path => {
 };
 
 // src to dist
-const buildContents = ({ src, dist, baseDir }) => {
+const buildContents = ({ src, dist, schemaDir, schemaUri, baseDir }) => {
   consola.info('Building content files...');
 
   const errors = [];
@@ -100,6 +101,8 @@ const buildContents = ({ src, dist, baseDir }) => {
 
   consola.success('Building content files has finished.');
 
+  formatDocs(dist, schemaDir);
+
   return {
     errors,
     results
@@ -116,10 +119,16 @@ const clean = (dist, baseDir) => {
   });
 };
 
-const build = async ({ src, dist, baseDir }) => {
+const build = async ({ src, dist, schemaDir, schemaUri, baseDir }) => {
   try {
     await clean(dist, baseDir);
-    const { errors, results } = buildContents({ src, dist, baseDir });
+    const { errors, results } = buildContents({
+      src,
+      dist,
+      schemaDir,
+      schemaUri,
+      baseDir
+    });
     return {
       errors,
       results: {
