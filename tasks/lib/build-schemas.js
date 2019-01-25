@@ -40,11 +40,6 @@ const pullDocIds = docDir => {
       }
 
       if (!doc.id) {
-        errors.push({
-          path: filePath,
-          in: 'pullDocIds',
-          error: new Error('Property "id" is missing .')
-        });
         return null;
       }
 
