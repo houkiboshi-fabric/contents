@@ -1,17 +1,22 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "tairinnohana",
   "name": "大輪の花",
   "name_kana": "たいりんのはな",
   "name_alt": "型染めと草木染めのハンカチ",
   "name_alt_kana": "かたぞめとくさきぞめのはんかち",
-  "price": 2300,
-  "links_to_shop": ["https://minne.com/items/6598420"],
+  "title": "大輪の花",
+  "description": "綿ローンのハンカチに型染めで柄を重ね、草木染めで同系色の地の色を入れました。\n型染めからイメージされる力強くパキッとした柄ではなくて、水彩で描いたような透明感があって地色となじむ柄が出したいなと考えて作りました。かっこいい感じになりました。",
+  "body": null,
+  "media_image": "products/tairinnohana/main.jpg",
   "image": "products/tairinnohana/main.jpg",
   "images_alt": [
     "products/tairinnohana/01.jpg",
     "products/tairinnohana/02.jpg",
     "products/tairinnohana/03.jpg"
   ],
+  "price": 2300,
+  "links_to_shop": ["https://minne.com/items/6598420"],
   "size": {
     "width_mm": 450,
     "depth_mm": 450
@@ -30,6 +35,5 @@
     {
       "dyeing_material_ids": ["resin-pigment", "tamanegi"]
     }
-  ],
-  "description": "綿ローンのハンカチに型染めで柄を重ね、草木染めで同系色の地の色を入れました。\n型染めからイメージされる力強くパキッとした柄ではなくて、水彩で描いたような透明感があって地色となじむ柄が出したいなと考えて作りました。かっこいい感じになりました。"
+  ]
 }

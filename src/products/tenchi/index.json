@@ -1,16 +1,21 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "tenchi",
   "name": "天地",
   "name_kana": "てんち",
   "name_alt": "壁飾り",
   "name_alt_kana": "かべかざり",
+  "title": "天地",
+  "description": "壁に飾る織物です。織物は四角になりがちですが、丸くて立体感あるものが飾りたいなあと考えてつくりました。同じものをつくることが難しいので、一点物です。",
+  "body": null,
+  "media_image": "products/tenchi/main.jpg",
+  "image": "products/tenchi/main.jpg",
+  "images_alt": ["products/tenchi/01.jpg"],
+  "price": 5700,
   "links_to_shop": [
     "https://minne.com/items/15007450",
     "https://www.creema.jp/item/5916193/detail"
   ],
-  "price": 5700,
-  "image": "products/tenchi/main.jpg",
-  "images_alt": ["products/tenchi/01.jpg"],
   "size": {
     "width_mm": 250,
     "depth_mm": 30,
@@ -35,6 +40,5 @@
         "logwood"
       ]
     }
-  ],
-  "description": "壁に飾る織物です。織物は四角になりがちですが、丸くて立体感あるものが飾りたいなあと考えてつくりました。同じものをつくることが難しいので、一点物です。"
+  ]
 }

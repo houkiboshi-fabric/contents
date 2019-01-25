@@ -1,9 +1,13 @@
 {
+  "$schema": "../../../schemas/dyeing-material.json",
   "id": "mint",
   "name": "ミント",
   "name_kana": "みんと",
-  "dyeing_material_type_id": "plant-dye-type",
+  "title": "ミント",
+  "description": "繁殖力の高いミントは、煮出して染料にすると茶系の色に染められます。煮ているときの匂いが良いので好きです。",
+  "body": null,
+  "media_image": "dyeing-materials/mint/main.jpg",
   "image": "dyeing-materials/mint/main.jpg",
   "images_alt": [],
-  "description": "繁殖力の高いミントは、煮出して染料にすると茶系の色に染められます。煮ているときの匂いが良いので好きです。"
+  "dyeing_material_type_id": "plant-dye-type"
 }

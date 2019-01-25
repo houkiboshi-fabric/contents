@@ -1,16 +1,21 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "aogai",
   "name": "青貝",
   "name_kana": "あおがい",
   "name_alt": "手織りミニストール",
   "name_alt_kana": "ておりみにすとーる",
+  "title": "青貝",
+  "description": "表と裏とで色の違う綿のミニストールをつくりました。\nやわらかく、軽めですが、二重になっているので春先の少し肌寒いときにも重宝します。\n首に一巻きしたり、肩に羽織ったりできる大きさです。\n裏面の白糸は草木染めでほんのり生成りがかったニュアンスを加えています。",
+  "body": null,
+  "media_image": "products/aogai/main.jpg",
+  "image": "products/aogai/main.jpg",
+  "images_alt": ["products/aogai/01.jpg", "products/aogai/02.jpg"],
+  "price": 16000,
   "links_to_shop": [
     "https://minne.com/items/1467053",
     "https://www.creema.jp/item/4617361/detail"
   ],
-  "price": 16000,
-  "image": "products/aogai/main.jpg",
-  "images_alt": ["products/aogai/01.jpg", "products/aogai/02.jpg"],
   "size": {
     "width_mm": 1600,
     "depth_mm": 400
@@ -25,6 +30,5 @@
     {
       "dyeing_material_ids": ["biwa"]
     }
-  ],
-  "description": "表と裏とで色の違う綿のミニストールをつくりました。\nやわらかく、軽めですが、二重になっているので春先の少し肌寒いときにも重宝します。\n首に一巻きしたり、肩に羽織ったりできる大きさです。\n裏面の白糸は草木染めでほんのり生成りがかったニュアンスを加えています。"
+  ]
 }

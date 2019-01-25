@@ -1,13 +1,18 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "shinkai",
   "name": "深海",
   "name_kana": "しんかい",
   "name_alt": "織りフェルトのキーホルダー",
   "name_alt_kana": "おりふぇるとのきーほるだー",
-  "links_to_shop": ["https://minne.com/items/1449933"],
-  "price": 1200,
+  "title": "深海",
+  "description": "織った羊毛を少し縮絨させてつくったフェルトのキーホルダーです。\n青緑系のミックス色と灰色の組み合わせでつくりました。\nかばんなどにひっかけておくとかわいいし便利です。\n個体差ありますが、おおよそ6.5 cm以内の長さの鍵であれば収まると思います。サイズを必ずご確認ください。 ",
+  "body": null,
+  "media_image": "products/shinkai/main.jpg",
   "image": "products/shinkai/main.jpg",
   "images_alt": ["products/shinkai/01.jpg", "products/shinkai/02.jpg"],
+  "price": 1200,
+  "links_to_shop": ["https://minne.com/items/1449933"],
   "size": {
     "width_mm": 60,
     "depth_mm": 90,
@@ -33,6 +38,5 @@
     {
       "dyeing_material_ids": ["ready-made"]
     }
-  ],
-  "description": "織った羊毛を少し縮絨させてつくったフェルトのキーホルダーです。\n青緑系のミックス色と灰色の組み合わせでつくりました。\nかばんなどにひっかけておくとかわいいし便利です。\n個体差ありますが、おおよそ6.5 cm以内の長さの鍵であれば収まると思います。サイズを必ずご確認ください。 "
+  ]
 }

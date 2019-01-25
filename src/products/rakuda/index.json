@@ -1,19 +1,24 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "rakuda",
   "name": "駱駝",
   "name_kana": "らくだ",
   "name_alt": "草木染め糸のストール",
   "name_alt_kana": "くさきぞめいとのすとーる",
-  "links_to_shop": [
-    "https://minne.com/items/6599453",
-    "https://www.creema.jp/item/4617691/detail"
-  ],
-  "price": 23000,
+  "title": "駱駝",
+  "description": "草木染めした綿糸で手織りしたストールです。\n柔らかくて軽く、さらっとしていて、3シーズン使えます。\n落ち着いた渋い色なので、ウールやアクリルにはまだ早いかな、という頃の秋にぴったりです。\n緯糸に伯州綿をスラブ糸に手紡ぎしたものを使用し、全体が表情のある布になっています。\n緯糸のスラブ糸は両端は白、中央部分は経糸と同じローズマリーで染めたものを使っているため、1枚のなかに2色の部分があります。\n手紡ぎ糸をたくさん使用しているので、軽くて空気をよく含みます。",
+  "body": null,
+  "media_image": "products/rakuda/main.jpg",
   "image": "products/rakuda/main.jpg",
   "images_alt": [
     "products/rakuda/01.jpg",
     "products/rakuda/02.jpg",
     "products/rakuda/03.jpg"
+  ],
+  "price": 23000,
+  "links_to_shop": [
+    "https://minne.com/items/6599453",
+    "https://www.creema.jp/item/4617691/detail"
   ],
   "size": {
     "width_mm": 1500,
@@ -33,6 +38,5 @@
     {
       "dyeing_material_ids": ["sakura", "rosemary", "ready-made"]
     }
-  ],
-  "description": "草木染めした綿糸で手織りしたストールです。\n柔らかくて軽く、さらっとしていて、3シーズン使えます。\n落ち着いた渋い色なので、ウールやアクリルにはまだ早いかな、という頃の秋にぴったりです。\n緯糸に伯州綿をスラブ糸に手紡ぎしたものを使用し、全体が表情のある布になっています。\n緯糸のスラブ糸は両端は白、中央部分は経糸と同じローズマリーで染めたものを使っているため、1枚のなかに2色の部分があります。\n手紡ぎ糸をたくさん使用しているので、軽くて空気をよく含みます。"
+  ]
 }

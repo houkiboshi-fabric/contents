@@ -1,19 +1,24 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "chojo",
   "name": "長城",
   "name_kana": "ちょうじょう",
   "name_alt": "草木染め糸の手織り布",
   "name_alt_kana": "くさきぞめいとのておりぬの",
-  "price": 23000,
-  "links_to_shop": [
-    "https://minne.com/items/6304338",
-    "https://www.creema.jp/item/4617679/detail"
-  ],
+  "title": "長城",
+  "description": "草木染めした綿糸で手織りした布です。\n柔らかくて軽く、さらっとしていて、首に巻くストールとして春〜秋に最適です。\nインテリアファブリックとして家具にかけたり飾ったりするのもおすすめです。",
+  "body": null,
+  "media_image": "products/chojo/main.jpg",
   "image": "products/chojo/main.jpg",
   "images_alt": [
     "products/chojo/01.jpg",
     "products/chojo/02.jpg",
     "products/chojo/03.jpg"
+  ],
+  "price": 23000,
+  "links_to_shop": [
+    "https://minne.com/items/6304338",
+    "https://www.creema.jp/item/4617679/detail"
   ],
   "size": {
     "width_mm": 1440,
@@ -33,6 +38,5 @@
     {
       "dyeing_material_ids": ["kuzu", "rosemary"]
     }
-  ],
-  "description": "草木染めした綿糸で手織りした布です。\n柔らかくて軽く、さらっとしていて、首に巻くストールとして春〜秋に最適です。\nインテリアファブリックとして家具にかけたり飾ったりするのもおすすめです。"
+  ]
 }

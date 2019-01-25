@@ -1,8 +1,12 @@
 {
+  "$schema": "../../../schemas/raw-material.json",
   "id": "metal-fastener",
   "name": "金属ファスナー",
   "name_kana": "きんぞくふぁすなー",
+  "title": "金属ファスナー",
+  "description": "務歯や取っ手が金属のファスナーです。",
+  "body": null,
+  "media_image": null,
   "image": null,
-  "images_alt": [],
-  "description": "務歯や取っ手が金属のファスナーです。"
+  "images_alt": []
 }

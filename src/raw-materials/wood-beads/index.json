@@ -1,8 +1,12 @@
 {
+  "$schema": "../../../schemas/raw-material.json",
   "id": "wood-beads",
   "name": "ウッドビーズ",
   "name_kana": "うっどびーず",
+  "title": "ウッドビーズ",
+  "description": "木でできたビーズです。",
+  "body": null,
+  "media_image": null,
   "image": null,
-  "images_alt": [],
-  "description": "木でできたビーズです。"
+  "images_alt": []
 }

@@ -1,9 +1,13 @@
 {
+  "$schema": "../../../schemas/dyeing-material.json",
   "id": "rosemary",
   "name": "ローズマリー",
   "name_kana": "ろーずまりー",
-  "dyeing_material_type_id": "plant-dye-type",
+  "title": "ローズマリー",
+  "description": "肉料理などに使うローズマリーは、染料にするとレモンイエローのような色に染められます。",
+  "body": null,
+  "media_image": "dyeing-materials/rosemary/main.jpg",
   "image": "dyeing-materials/rosemary/main.jpg",
   "images_alt": [],
-  "description": "肉料理などに使うローズマリーは、染料にするとレモンイエローのような色に染められます。"
+  "dyeing_material_type_id": "plant-dye-type"
 }

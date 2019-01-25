@@ -1,9 +1,13 @@
 {
+  "$schema": "../../../schemas/dyeing-material.json",
   "id": "logwood",
   "name": "ログウッド",
   "name_kana": "ろぐうっど",
-  "dyeing_material_type_id": "plant-dye-type",
+  "title": "ログウッド",
+  "description": "紫色に染まります。pHによっては赤くなる説もあります（したことない）。植物名はアカミノキで、ログウッドは別名。染料店で購入します。他の染料との掛け合わせや媒染を工夫することで、黒に近い色を作り出す染料です。",
+  "body": null,
+  "media_image": null,
   "image": null,
   "images_alt": [],
-  "description": "紫色に染まります。pHによっては赤くなる説もあります（したことない）。植物名はアカミノキで、ログウッドは別名。染料店で購入します。他の染料との掛け合わせや媒染を工夫することで、黒に近い色を作り出す染料です。"
+  "dyeing_material_type_id": "plant-dye-type"
 }

@@ -1,9 +1,13 @@
 {
+  "$schema": "../../../schemas/dyeing-material.json",
   "id": "koucha",
   "name": "紅茶",
   "name_kana": "こうちゃ",
-  "dyeing_material_type_id": "plant-dye-type",
+  "title": "紅茶",
+  "description": "紅茶です。一煎目は飲む用にして、そのあとは染液抽出用に乾かしておくと二度美味しいです。紅茶のような色に染まります。",
+  "body": null,
+  "media_image": "dyeing-materials/koucha/main.jpg",
   "image": "dyeing-materials/koucha/main.jpg",
   "images_alt": [],
-  "description": "紅茶です。一煎目は飲む用にして、そのあとは染液抽出用に乾かしておくと二度美味しいです。紅茶のような色に染まります。"
+  "dyeing_material_type_id": "plant-dye-type"
 }

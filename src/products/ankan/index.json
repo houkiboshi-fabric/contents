@@ -1,16 +1,21 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "ankan",
   "name": "安閑",
   "name_kana": "あんかん",
   "name_alt": "草木染め糸のストール",
   "name_alt_kana": "くさきぞめいとのすとーる",
+  "title": "安閑",
+  "description": "草木染めした綿糸で手織りしたストールです。\n柔らかくて軽く、さらっとしていて、3シーズン使えます。\n明るい色味なので、シンプルな服装にあわせるときっとすてきです。\n経糸に金柑、葛、藍、ミント、桜の糸を、緯糸に藍の糸を使っています。",
+  "body": null,
+  "media_image": "products/ankan/main.jpg",
+  "image": "products/ankan/main.jpg",
+  "images_alt": ["products/ankan/01.jpg", "products/ankan/02.jpg"],
+  "price": 18000,
   "links_to_shop": [
     "https://minne.com/items/10918338",
     "https://www.creema.jp/item/4622401/detail"
   ],
-  "price": 18000,
-  "image": "products/ankan/main.jpg",
-  "images_alt": ["products/ankan/01.jpg", "products/ankan/02.jpg"],
   "size": {
     "width_mm": 1680,
     "depth_mm": 230
@@ -29,6 +34,5 @@
     {
       "dyeing_material_ids": ["kinkan", "kuzu", "mint", "ai", "sakura"]
     }
-  ],
-  "description": "草木染めした綿糸で手織りしたストールです。\n柔らかくて軽く、さらっとしていて、3シーズン使えます。\n明るい色味なので、シンプルな服装にあわせるときっとすてきです。\n経糸に金柑、葛、藍、ミント、桜の糸を、緯糸に藍の糸を使っています。"
+  ]
 }

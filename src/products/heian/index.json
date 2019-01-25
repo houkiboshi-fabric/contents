@@ -1,16 +1,21 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "heian",
   "name": "平安",
   "name_kana": "へいあん",
   "name_alt": "飾る布",
   "name_alt_kana": "かざるぬの",
+  "title": "平安",
+  "description": "草木染めした綿糸で手織りした布です。 \nコシがあるので、テーブルセンターや家具にかけるなどのインテリアファブリックとして飾るのに最適です。",
+  "body": null,
+  "media_image": "products/heian/main.jpg",
+  "image": "products/heian/main.jpg",
+  "images_alt": ["products/heian/01.jpg"],
+  "price": 28000,
   "links_to_shop": [
     "https://minne.com/items/6599310",
     "https://www.creema.jp/item/4622754/detail"
   ],
-  "price": 28000,
-  "image": "products/heian/main.jpg",
-  "images_alt": ["products/heian/01.jpg"],
   "size": {
     "width_mm": 950,
     "depth_mm": 230
@@ -29,6 +34,5 @@
     {
       "dyeing_material_ids": ["kuzu", "sakura"]
     }
-  ],
-  "description": "草木染めした綿糸で手織りした布です。 \nコシがあるので、テーブルセンターや家具にかけるなどのインテリアファブリックとして飾るのに最適です。"
+  ]
 }

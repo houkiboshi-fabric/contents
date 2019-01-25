@@ -1,19 +1,24 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "akatsubaki",
   "name": "赤椿",
   "name_kana": "あかつばき",
   "name_alt": "ポーチ",
   "name_alt_kana": "ぽーち",
-  "links_to_shop": [
-    "https://minne.com/items/10145632",
-    "https://www.creema.jp/item/4626679/detail"
-  ],
-  "price": 3900,
+  "title": "赤椿",
+  "description": "赤い椿のポーチをつくりました。\n内側の布は紅茶で染めて、ほんのり色づいています。\nA4の紙を三つ折りして入れられるくらいの大きさで、ノートならB6、A6が入ります（写真は文庫本)。\n母子手帳と予防接種などのお知らせの紙をいっしょに入れたり、メモ帳とペン、文庫本、いろいろ入ります。",
+  "body": null,
+  "media_image": "products/akatsubaki/main.jpg",
   "image": "products/akatsubaki/main.jpg",
   "images_alt": [
     "products/akatsubaki/01.jpg",
     "products/akatsubaki/02.jpg",
     "products/akatsubaki/03.jpg"
+  ],
+  "price": 3900,
+  "links_to_shop": [
+    "https://minne.com/items/10145632",
+    "https://www.creema.jp/item/4626679/detail"
   ],
   "size": {
     "width_mm": 250,
@@ -47,6 +52,5 @@
     {
       "dyeing_material_ids": ["koucha", "resin-pigment"]
     }
-  ],
-  "description": "赤い椿のポーチをつくりました。\n内側の布は紅茶で染めて、ほんのり色づいています。\nA4の紙を三つ折りして入れられるくらいの大きさで、ノートならB6、A6が入ります（写真は文庫本)。\n母子手帳と予防接種などのお知らせの紙をいっしょに入れたり、メモ帳とペン、文庫本、いろいろ入ります。"
+  ]
 }

@@ -1,9 +1,13 @@
 {
+  "$schema": "../../../schemas/dyeing-material.json",
   "id": "nazuna",
   "name": "なずな",
   "name_kana": "なずな",
-  "dyeing_material_type_id": "plant-dye-type",
+  "title": "なずな",
+  "description": "春の七草のひとつ、なずなは、別名ぺんぺん草です。淡い黄色に染まります。日光堅牢度も良いらしいです。",
+  "body": null,
+  "media_image": null,
   "image": null,
   "images_alt": [],
-  "description": "春の七草のひとつ、なずなは、別名ぺんぺん草です。淡い黄色に染まります。日光堅牢度も良いらしいです。"
+  "dyeing_material_type_id": "plant-dye-type"
 }

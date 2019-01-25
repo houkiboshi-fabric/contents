@@ -1,8 +1,12 @@
 {
+  "$schema": "../../../schemas/raw-material.json",
   "id": "ring",
   "name": "リング",
   "name_kana": "りんぐ",
+  "title": "リング",
+  "description": "金属のリングです。",
+  "body": null,
+  "media_image": null,
   "image": null,
-  "images_alt": [],
-  "description": "金属のリングです。"
+  "images_alt": []
 }

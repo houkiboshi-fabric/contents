@@ -1,9 +1,13 @@
 {
+  "$schema": "../../../schemas/dyeing-material.json",
   "id": "yomogi",
   "name": "ヨモギ",
   "name_kana": "よもぎ",
-  "dyeing_material_type_id": "plant-dye-type",
+  "title": "ヨモギ",
+  "description": "やや緑がかった黄色に染まります。緑を強くしたいときには、アルカリ性で抽出します。",
+  "body": null,
+  "media_image": null,
   "image": null,
   "images_alt": [],
-  "description": "やや緑がかった黄色に染まります。緑を強くしたいときには、アルカリ性で抽出します。"
+  "dyeing_material_type_id": "plant-dye-type"
 }

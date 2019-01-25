@@ -1,16 +1,21 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "minamo",
   "name": "水面",
   "name_kana": "みなも",
   "name_alt": "ポーチ",
   "name_alt_kana": "ぽーち",
+  "title": "水面",
+  "description": "水面のような織り柄の布を織りました。\n新書がすっぽり入るくらいの大きさのポーチです。",
+  "body": null,
+  "media_image": "products/minamo/main.jpg",
+  "image": "products/minamo/main.jpg",
+  "images_alt": ["products/minamo/01.jpg", "products/minamo/02.jpg"],
+  "price": 4800,
   "links_to_shop": [
     "https://minne.com/items/14938131",
     "https://www.creema.jp/item/5890223/detail"
   ],
-  "price": 4800,
-  "image": "products/minamo/main.jpg",
-  "images_alt": ["products/minamo/01.jpg", "products/minamo/02.jpg"],
   "size": {
     "width_mm": 220,
     "depth_mm": 120,
@@ -43,6 +48,5 @@
     {
       "dyeing_material_ids": ["sakura"]
     }
-  ],
-  "description": "水面のような織り柄の布を織りました。\n新書がすっぽり入るくらいの大きさのポーチです。"
+  ]
 }

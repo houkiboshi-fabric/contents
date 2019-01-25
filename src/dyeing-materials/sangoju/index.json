@@ -1,9 +1,13 @@
 {
+  "$schema": "../../../schemas/dyeing-material.json",
   "id": "sangoju",
   "name": "サンゴジュ",
   "name_kana": "さんごじゅ",
-  "dyeing_material_type_id": "plant-dye-type",
+  "title": "サンゴジュ",
+  "description": "葉で染めます。赤みがかったベージュのような色に染まります。",
+  "body": null,
+  "media_image": "dyeing-materials/sangoju/main.jpg",
   "image": "dyeing-materials/sangoju/main.jpg",
   "images_alt": [],
-  "description": "葉で染めます。赤みがかったベージュのような色に染まります。"
+  "dyeing_material_type_id": "plant-dye-type"
 }

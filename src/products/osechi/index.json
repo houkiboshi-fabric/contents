@@ -1,16 +1,21 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "osechi",
   "name": "御節",
   "name_kana": "おせち",
   "name_alt": "草木染め糸のハンカチ",
   "name_alt_kana": "くさきぞめいとのはんかち",
+  "title": "御節",
+  "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。\n市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。\n軽くてやわらかく、しなやかです。\n緯糸にはところどころに手紡ぎした伯州綿のスラブ糸を使っています。",
+  "body": null,
+  "media_image": "products/osechi/main.jpg",
+  "image": "products/osechi/main.jpg",
+  "images_alt": ["products/osechi/01.jpg", "products/osechi/02.jpg"],
+  "price": 3250,
   "links_to_shop": [
     "https://minne.com/items/4402158",
     "https://www.creema.jp/item/4635013/detail/"
   ],
-  "price": 3250,
-  "image": "products/osechi/main.jpg",
-  "images_alt": ["products/osechi/01.jpg", "products/osechi/02.jpg"],
   "size": {
     "width_mm": 220,
     "depth_mm": 235
@@ -29,6 +34,5 @@
     {
       "dyeing_material_ids": ["akane", "tamanegi", "ninjin", "sakura", "yuzu"]
     }
-  ],
-  "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。\n市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。\n軽くてやわらかく、しなやかです。\n緯糸にはところどころに手紡ぎした伯州綿のスラブ糸を使っています。"
+  ]
 }

@@ -1,16 +1,21 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "kafuku",
   "name": "禍福",
   "name_kana": "かふく",
   "name_alt": "草木染め糸のストール",
   "name_alt_kana": "くさきぞめいとのすとーる",
+  "title": "禍福",
+  "description": "草木染めしたウールで、既製品よりすこし短めのストールをつくりました。\n小柄な方や、軽く羽織る用途に最適です。\n経糸はオレンジ色とうぐいす色、緯糸は白で、両端にローズパスの織り模様をいれています。",
+  "body": null,
+  "media_image": "products/kafuku/main.jpg",
+  "image": "products/kafuku/main.jpg",
+  "images_alt": ["products/kafuku/01.jpg"],
+  "price": 18000,
   "links_to_shop": [
     "https://minne.com/items/3686757",
     "https://www.creema.jp/item/4617425/detail"
   ],
-  "price": 18000,
-  "image": "products/kafuku/main.jpg",
-  "images_alt": ["products/kafuku/01.jpg"],
   "size": {
     "width_mm": 1500,
     "depth_mm": 510
@@ -29,6 +34,5 @@
     {
       "dyeing_material_ids": ["akane", "ai", "tamanegi", "ready-made"]
     }
-  ],
-  "description": "草木染めしたウールで、既製品よりすこし短めのストールをつくりました。\n小柄な方や、軽く羽織る用途に最適です。\n経糸はオレンジ色とうぐいす色、緯糸は白で、両端にローズパスの織り模様をいれています。"
+  ]
 }

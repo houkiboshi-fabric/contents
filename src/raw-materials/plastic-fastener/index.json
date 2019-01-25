@@ -1,8 +1,12 @@
 {
+  "$schema": "../../../schemas/raw-material.json",
   "id": "plastic-fastener",
   "name": "プラスティックファスナー",
   "name_kana": "ぷらすてぃっくふぁすなー",
+  "title": "プラスティックファスナー",
+  "description": "務歯や持ち手がプラスティックのファスナーです。",
+  "body": null,
+  "media_image": null,
   "image": null,
-  "images_alt": [],
-  "description": "務歯や持ち手がプラスティックのファスナーです。"
+  "images_alt": []
 }

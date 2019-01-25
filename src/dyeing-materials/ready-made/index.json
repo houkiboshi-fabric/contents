@@ -1,9 +1,13 @@
 {
+  "$schema": "../../../schemas/dyeing-material.json",
   "id": "ready-made",
   "name": "既製の素材",
   "name_kana": "きせいのそざい",
-  "dyeing_material_type_id": "ready-made-type",
+  "title": "既製の素材",
+  "description": "予め染めてある糸や布、または染めていない糸や布などを材料として用いています。",
+  "body": null,
+  "media_image": null,
   "image": null,
   "images_alt": [],
-  "description": "予め染めてある糸や布、または染めていない糸や布などを材料として用いています。"
+  "dyeing_material_type_id": "ready-made-type"
 }

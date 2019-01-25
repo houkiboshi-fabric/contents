@@ -1,8 +1,12 @@
 {
+  "$schema": "../../../schemas/raw-material.json",
   "id": "leather",
   "name": "革",
   "name_kana": "かわ",
+  "title": "革",
+  "description": "革です",
+  "body": null,
+  "media_image": null,
   "image": null,
-  "images_alt": [],
-  "description": "革です"
+  "images_alt": []
 }

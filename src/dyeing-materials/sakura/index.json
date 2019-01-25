@@ -1,9 +1,13 @@
 {
+  "$schema": "../../../schemas/dyeing-material.json",
   "id": "sakura",
   "name": "桜",
   "name_kana": "さくら",
-  "dyeing_material_type_id": "plant-dye-type",
+  "title": "桜",
+  "description": "桜はアルカリ性で抽出することでピンク色に染まります。使うのは花びらではなく、枝や樹皮です。中性の水で煮出すと、黃〜茶系の色に染まります。桜にはいろんな抽出方法を研究している人がいて、発酵させたり抽出後に寝かせたりなど様々な方法があるようです。",
+  "body": null,
+  "media_image": "dyeing-materials/sakura/main.jpg",
   "image": "dyeing-materials/sakura/main.jpg",
   "images_alt": [],
-  "description": "桜はアルカリ性で抽出することでピンク色に染まります。使うのは花びらではなく、枝や樹皮です。中性の水で煮出すと、黃〜茶系の色に染まります。桜にはいろんな抽出方法を研究している人がいて、発酵させたり抽出後に寝かせたりなど様々な方法があるようです。"
+  "dyeing_material_type_id": "plant-dye-type"
 }

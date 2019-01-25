@@ -1,13 +1,18 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "oukyou",
   "name": "桜鏡",
   "name_kana": "おうきょう",
   "name_alt": "草木染め糸のストール",
   "name_alt_kana": "くさきぞめいとのすとーる",
-  "links_to_shop": ["https://minne.com/items/2747336"],
-  "price": 18000,
+  "title": "桜鏡",
+  "description": "茜で染めたコットンミニストールです。\nところどころ手紡ぎのウールをいれることでギャザーがより、立体感がでています。\n薄手で軽いので、一年中使えます。",
+  "body": null,
+  "media_image": "products/oukyou/main.jpg",
   "image": "products/oukyou/main.jpg",
   "images_alt": ["products/oukyou/01.jpg", "products/oukyou/02.jpg"],
+  "price": 18000,
+  "links_to_shop": ["https://minne.com/items/2747336"],
   "size": {
     "width_mm": 1500,
     "depth_mm": 200
@@ -26,6 +31,5 @@
     {
       "dyeing_material_ids": ["akane"]
     }
-  ],
-  "description": "茜で染めたコットンミニストールです。\nところどころ手紡ぎのウールをいれることでギャザーがより、立体感がでています。\n薄手で軽いので、一年中使えます。"
+  ]
 }

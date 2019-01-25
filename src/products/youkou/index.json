@@ -1,16 +1,21 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "youkou",
   "name": "陽光",
   "name_kana": "ようこう",
   "name_alt": "草木染め糸のハンカチ",
   "name_alt_kana": "くさきぞめいとのはんかち",
+  "title": "陽光",
+  "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。\n市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。 \n軽くてやわらかく、しなやかです。\n緯糸にはところどころに手紡ぎした伯州綿のスラブ糸を使っています。",
+  "body": null,
+  "media_image": "products/youkou/main.jpg",
+  "image": "products/youkou/main.jpg",
+  "images_alt": ["products/youkou/01.jpg", "products/youkou/02.jpg"],
+  "price": 3250,
   "links_to_shop": [
     "https://minne.com/items/4370501",
     "https://www.creema.jp/item/4634995/detail"
   ],
-  "price": 3250,
-  "image": "products/youkou/main.jpg",
-  "images_alt": ["products/youkou/01.jpg", "products/youkou/02.jpg"],
   "size": {
     "width_mm": 220,
     "depth_mm": 235
@@ -31,6 +36,5 @@
         "ready-made"
       ]
     }
-  ],
-  "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。\n市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。 \n軽くてやわらかく、しなやかです。\n緯糸にはところどころに手紡ぎした伯州綿のスラブ糸を使っています。"
+  ]
 }

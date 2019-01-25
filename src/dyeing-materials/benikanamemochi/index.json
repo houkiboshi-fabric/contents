@@ -1,9 +1,13 @@
 {
+  "$schema": "../../../schemas/dyeing-material.json",
   "id": "benikanamemochi",
   "name": "ベニカナメモチ",
   "name_kana": "べにかなめもち",
-  "dyeing_material_type_id": "plant-dye-type",
+  "title": "ベニカナメモチ",
+  "description": "新葉が赤くなるのが特徴の木です。赤い新葉で染めると、緑がかった黄色に染まります。",
+  "body": null,
+  "media_image": "dyeing-materials/benikanamemochi/main.jpg",
   "image": "dyeing-materials/benikanamemochi/main.jpg",
   "images_alt": [],
-  "description": "新葉が赤くなるのが特徴の木です。赤い新葉で染めると、緑がかった黄色に染まります。"
+  "dyeing_material_type_id": "plant-dye-type"
 }

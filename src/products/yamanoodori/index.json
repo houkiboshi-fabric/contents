@@ -1,13 +1,18 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "yamanoodori",
   "name": "山の踊り",
   "name_kana": "やまのおどり",
   "name_alt": "飾る布",
   "name_alt_kana": "かざるぬの",
-  "links_to_shop": ["https://minne.com/items/6599719"],
-  "price": 6500,
+  "title": "山の踊り",
+  "description": "草木染めした綿糸で手織りした布です。\n太めの糸で織った柔らかい布で、テーブルセンターや家具にかけるなどのインテリアファブリックとして飾るのに最適です。\nフリンジがコイルのようになっていて特徴的です。",
+  "body": null,
+  "media_image": "products/yamanoodori/main.jpg",
   "image": "products/yamanoodori/main.jpg",
   "images_alt": ["products/yamanoodori/01.jpg"],
+  "price": 6500,
+  "links_to_shop": ["https://minne.com/items/6599719"],
   "size": {
     "width_mm": 1080,
     "depth_mm": 270
@@ -26,6 +31,5 @@
     {
       "dyeing_material_ids": ["rosemary", "sakura"]
     }
-  ],
-  "description": "草木染めした綿糸で手織りした布です。\n太めの糸で織った柔らかい布で、テーブルセンターや家具にかけるなどのインテリアファブリックとして飾るのに最適です。\nフリンジがコイルのようになっていて特徴的です。"
+  ]
 }

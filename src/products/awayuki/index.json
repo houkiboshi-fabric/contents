@@ -1,16 +1,21 @@
 {
+  "$schema": "../../../schemas/product.json",
   "id": "awayuki",
   "name": "淡雪",
   "name_kana": "あわゆき",
   "name_alt": "手織りミニストール",
   "name_alt_kana": "ておりみにすとーる",
+  "title": "淡雪",
+  "description": "綿のスラブ糸で織ったスクエアモチーフをつなげたミニストールです。\nやわらかでふわっとあたたかく、一年中使えます。\n甘すぎず、シンプルすぎずの使いやすいデザインになりました。\n糸は草木染めでほんのり生成りのニュアンスを加えました。",
+  "body": null,
+  "media_image": "products/awayuki/main.jpg",
+  "image": "products/awayuki/main.jpg",
+  "images_alt": ["products/awayuki/01.jpg", "products/awayuki/02.jpg"],
+  "price": 16000,
   "links_to_shop": [
     "https://minne.com/items/1467329",
     "https://www.creema.jp/item/4617397/detail"
   ],
-  "price": 16000,
-  "image": "products/awayuki/main.jpg",
-  "images_alt": ["products/awayuki/01.jpg", "products/awayuki/02.jpg"],
   "size": {
     "width_mm": 1400,
     "depth_mm": 250
@@ -29,6 +34,5 @@
     {
       "dyeing_material_ids": ["biwa"]
     }
-  ],
-  "description": "綿のスラブ糸で織ったスクエアモチーフをつなげたミニストールです。\nやわらかでふわっとあたたかく、一年中使えます。\n甘すぎず、シンプルすぎずの使いやすいデザインになりました。\n糸は草木染めでほんのり生成りのニュアンスを加えました。"
+  ]
 }
