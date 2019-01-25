@@ -6,6 +6,12 @@
 	],
 	"settings": {
 		"json.schemas": [
+      {
+        "fileMatch": [
+          "/src/*.json"
+        ],
+        "url": "./schemas/page.json"
+      },
 			{
 				"fileMatch": [
 					"/src/dyeing-material-types/*.json"
