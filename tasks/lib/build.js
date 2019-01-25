@@ -1,6 +1,6 @@
 'use strict';
 
-const { mkdirSync, readFileSync, writeFileSync } = require('fs');
+const { copyFileSync, mkdirSync, readFileSync, writeFileSync } = require('fs');
 const { basename, dirname, parse, resolve, relative } = require('path');
 
 const consola = require('consola');
@@ -89,15 +89,22 @@ const buildContents = ({ src, dist, schemaDir, schemaUri, baseDir }) => {
     results.push(relative(baseDir, distPath));
   };
 
-  const pattern = resolve(src, '**', '*.json');
+  const jsonPattern = resolve(src, '**', '*.json');
+  const filePattern = resolve(src, '**', '*.!(json)');
 
   glob
-    .sync(pattern)
+    .sync(jsonPattern)
     .map(readJsonFile)
     .filter(e => e)
     .map(addTimeStamps)
     .map(changeSchemaPathToRemote)
     .forEach(writeJsonFile);
+
+  glob.sync(filePattern).forEach(srcPath => {
+    const distPath = srcPath.replace(src, dist);
+    copyFileSync(srcPath, distPath);
+    results.push(relative(baseDir, distPath));
+  });
 
   consola.success('Building content files has finished.');
 
