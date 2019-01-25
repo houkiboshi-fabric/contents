@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schemas/page.json",
+  "title": "染色材",
+  "description": "染色剤の一覧です",
+  "media_image": "dyeing-materials/akane/main.jpg",
+  "body": "body.md"
+}

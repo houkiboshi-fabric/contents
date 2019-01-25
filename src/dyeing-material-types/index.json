@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schemas/page.json",
+  "title": "染色材分類",
+  "description": "染色材の分類の一覧です",
+  "media_image": "products/chojo/main.jpg",
+  "body": "body.md"
+}

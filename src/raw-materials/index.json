@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schemas/page.json",
+  "title": "素材",
+  "description": "素材の一覧です。",
+  "media_image": null,
+  "body": "body.md"
+}
