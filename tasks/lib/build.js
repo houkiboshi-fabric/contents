@@ -1,7 +1,7 @@
 'use strict';
 
 const { mkdirSync, readFileSync, writeFileSync } = require('fs');
-const { parse, resolve, relative } = require('path');
+const { basename, dirname, parse, resolve, relative } = require('path');
 
 const consola = require('consola');
 const glob = require('glob');
@@ -69,6 +69,16 @@ const buildContents = ({ src, dist, baseDir }) => {
     };
   };
 
+  const changeSchemaPathToRemote = ({ path, result }) => {
+    return {
+      path,
+      result: {
+        ...result,
+        $schema: `${dirname(schemaUri)}/${basename(result.$schema)}`
+      }
+    };
+  };
+
   const writeJsonFile = ({ path, result }) => {
     const json = JSON.stringify(result, null, 2);
     const distPath = path.replace(src, dist);
@@ -85,6 +95,7 @@ const buildContents = ({ src, dist, baseDir }) => {
     .map(readJsonFile)
     .filter(e => e)
     .map(addTimeStamps)
+    .map(changeSchemaPathToRemote)
     .forEach(writeJsonFile);
 
   consola.success('Building content files has finished.');
