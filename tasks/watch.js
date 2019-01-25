@@ -8,25 +8,15 @@ const consola = require('consola');
 const { buildSchemas } = require('./lib/build-schemas.js');
 const { validateJsons } = require('./lib/validate-jsons.js');
 
+const { formatDocs } = require('./lib/format-docs.js');
 const {
   dirs: { root, src, schemas },
   SCHEMA_URI
 } = require('./config.js');
 
-const paths = [
-  'dyeing-material-types',
-  'dyeing-materials',
-  'products',
-  'raw-materials'
-].map(path => resolve(src, path, '**', '*.json'));
+const watchPathPattern = resolve(src, '**', '*.json');
 
-const watcher = chokidar.watch(paths, {
-  ignored: /(^|[/\\])\../,
-  persistent: true,
-  ignoreInitial: true
-});
-
-const buildSchemasAndValidate = async () => {
+const runTasks = async (watcher, startWatching) => {
   const {
     errors: errorsInBuildSchemas,
     results: builtSchemas
@@ -52,15 +42,38 @@ const buildSchemasAndValidate = async () => {
   if (errors.length > 0) {
     errors.forEach(err => consola.error(err));
   }
+
+  watcher.close();
+
+  const { results: formatResults } = formatDocs(src, schemas);
+
+  if (formatResults.length > 0) {
+    consola.success(
+      'Formatted documents:',
+      formatResults.map(p => relative(root, p))
+    );
+  }
+
+  startWatching();
 };
 
 const logError = err => consola.error(err);
 
-watcher
-  .on('add', () => buildSchemasAndValidate().catch(logError))
-  .on('change', () => buildSchemasAndValidate().catch(logError))
-  .on('unlink', () => buildSchemasAndValidate().catch(logError));
+const watchOptions = {
+  ignored: /(^|[/\\])\../,
+  persistent: true,
+  ignoreInitial: true
+};
 
-buildSchemasAndValidate().catch(logError);
+const watcher = chokidar.watch(watchPathPattern, watchOptions);
+const startWatching = () => {
+  const watcher = chokidar.watch(watchPathPattern, watchOptions);
+  watcher
+    .on('add', () => runTasks(watcher, startWatching).catch(logError))
+    .on('change', () => runTasks(watcher, startWatching).catch(logError))
+    .on('unlink', () => runTasks(watcher, startWatching).catch(logError));
+};
 
-consola.info('Watching paths:', paths.map(path => relative(root, path)));
+runTasks(watcher, startWatching).catch(logError);
+
+consola.info('Watching paths:', relative(root, watchPathPattern));

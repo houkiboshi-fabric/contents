@@ -19,7 +19,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint ./**/*.js",
-    "format": " prettier --write '{README.md,{docs,src,tasks}/**/*.{json,js,md}}'",
+    "format": " prettier --write '{README.md,{docs,src,tasks}/**/*.{json,js,md}}' && node ./tasks/format-docs.js",
     "validate": "node ./tasks/validate-jsons.js",
     "deploy": "NODE_DEBUG=gh-pages node ./tasks/deploy.js"
   },
