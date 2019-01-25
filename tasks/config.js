@@ -16,26 +16,7 @@ exports.dirs = {
   tmp
 };
 
-exports.archiveDistPath = resolve(dist, 'contents.tar.gz');
+exports.SCHEMA_URI =
+  'https://houkiboshi-fabric.github.io/schema/ref-parsed/index.json';
 
-exports.schemaConfigs = [
-  {
-    distDirName: 'dyeing-material-types',
-    uri:
-      'https://houkiboshi-fabric.github.io/schema/ref-parsed/dyeing-material-type.json'
-  },
-  {
-    distDirName: 'dyeing-materials',
-    uri:
-      'https://houkiboshi-fabric.github.io/schema/ref-parsed/dyeing-material.json'
-  },
-  {
-    distDirName: 'products',
-    uri: 'https://houkiboshi-fabric.github.io/schema/ref-parsed/product.json'
-  },
-  {
-    distDirName: 'raw-materials',
-    uri:
-      'https://houkiboshi-fabric.github.io/schema/ref-parsed/raw-material.json'
-  }
-];
+exports.archiveDistPath = resolve(dist, 'contents.tar.gz');

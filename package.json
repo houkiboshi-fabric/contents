@@ -20,7 +20,7 @@
     "test:watch": "jest --watch",
     "lint": "eslint ./**/*.js",
     "format": " prettier --write '{README.md,{docs,src,tasks}/**/*.{json,js,md}}'",
-    "validate": "node ./tasks/validate-json.js",
+    "validate": "node ./tasks/validate-jsons.js",
     "deploy": "NODE_DEBUG=gh-pages node ./tasks/deploy.js"
   },
   "devDependencies": {
@@ -44,6 +44,7 @@
     "lodash.clonedeep": "^4.5.0",
     "luxon": "^1.10.0",
     "node-fetch": "^2.3.0",
+    "pluralize": "^7.0.0",
     "prettier": "^1.15.3",
     "prettier-eslint": "^8.8.2",
     "rimraf": "^2.6.3",

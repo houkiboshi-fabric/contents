@@ -3,19 +3,19 @@
 const consola = require('consola');
 
 const { buildSchemas } = require('./lib/build-schemas.js');
-const { validateJson } = require('./lib/validate-json.js');
+const { validateJsons } = require('./lib/validate-jsons.js');
 
 const {
   dirs: { root, src, schemas },
-  schemaConfigs
+  SCHEMA_URI
 } = require('./config.js');
 
 (async () => {
   const bs = await buildSchemas({
     src,
     dist: schemas,
-    baseDir: root,
-    schemaConfigs
+    schemaUri: SCHEMA_URI,
+    baseDir: root
   });
 
   consola.success('Generated schemas:', bs.results);
@@ -24,10 +24,9 @@ const {
     bs.errors.forEach(err => consola.error(err));
   }
 
-  const v = validateJson({
+  const v = validateJsons({
     src,
     schemaDir: schemas,
-    schemaConfigs,
     baseDir: root
   });
 

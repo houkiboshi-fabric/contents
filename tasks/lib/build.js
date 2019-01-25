@@ -29,8 +29,8 @@ const readJson = path => {
 };
 
 // src to dist
-const buildDatasets = ({ src, dist, datasetDirNames, baseDir }) => {
-  consola.info('Building dataset files...');
+const buildContents = ({ src, dist, baseDir }) => {
+  consola.info('Building content files...');
 
   const errors = [];
   const results = [];
@@ -78,61 +78,20 @@ const buildDatasets = ({ src, dist, datasetDirNames, baseDir }) => {
     results.push(relative(baseDir, distPath));
   };
 
-  datasetDirNames.forEach(dirName => {
-    const pattern = resolve(src, dirName, '**', '*.json');
-    glob
-      .sync(pattern)
-      .map(readJsonFile)
-      .filter(e => e)
-      .map(addTimeStamps)
-      .forEach(writeJsonFile);
-  });
+  const pattern = resolve(src, '**', '*.json');
 
-  consola.success('Building dataset files has finished.');
+  glob
+    .sync(pattern)
+    .map(readJsonFile)
+    .filter(e => e)
+    .map(addTimeStamps)
+    .forEach(writeJsonFile);
+
+  consola.success('Building content files has finished.');
 
   return {
     errors,
     results
-  };
-};
-
-// dist to dist
-const buildIndexFiles = ({ src, dist, datasetDirNames, baseDir }) => {
-  consola.info('Building index files...');
-
-  const generated = [];
-  const errors = [];
-
-  datasetDirNames.forEach(dirName => {
-    const pattern = resolve(dist, dirName, '**', '*.json');
-    const docs = glob.sync(pattern).reduce((acm, path) => {
-      const { error, result } = readJson(path);
-
-      if (error) {
-        errors.push({
-          path,
-          in: 'buildIndexFiles',
-          error
-        });
-        return acm;
-      }
-
-      return [...acm, result];
-    }, []);
-    const distDir = resolve(dist, dirName);
-    const distPath = resolve(distDir, 'index.json');
-    mkdirSync(distDir, { recursive: true });
-    writeFileSync(distPath, JSON.stringify(docs, null, 2));
-    generated.push(distPath);
-  });
-
-  consola.success('Building index files has finished.');
-
-  return {
-    errors: errors.map(err => {
-      return { ...err, path: relative(baseDir, err.path) };
-    }),
-    results: generated.map(p => relative(baseDir, p))
   };
 };
 
@@ -146,16 +105,14 @@ const clean = (dist, baseDir) => {
   });
 };
 
-const build = async ({ src, dist, datasetDirNames, baseDir }) => {
+const build = async ({ src, dist, baseDir }) => {
   try {
     await clean(dist, baseDir);
-    const bd = buildDatasets({ src, dist, datasetDirNames, baseDir });
-    const bi = buildIndexFiles({ src, dist, datasetDirNames, baseDir });
+    const { errors, results } = buildContents({ src, dist, baseDir });
     return {
-      errors: [...bd.errors, ...bi.errors],
+      errors,
       results: {
-        'Generated dataset files': bd.results,
-        'Generated index files': bi.results
+        'Generated content files': results
       }
     };
   } catch (err) {

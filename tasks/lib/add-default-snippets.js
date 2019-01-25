@@ -2,11 +2,32 @@
 
 const cloneDeep = require('lodash.clonedeep');
 
+const fallbackMap = {
+  string: '',
+  number: 0,
+  integer: 0,
+  boolean: true,
+  null: null
+};
+
+const findTypedScope = schema => {
+  if (schema.type) {
+    return schema;
+  }
+
+  const keyword = Object.keys(schema).find(key => {
+    return ['oneOf', 'allOf', 'anyOf'].includes(key);
+  });
+
+  return schema[keyword].find(prop => prop.type);
+};
+
 const getExampleValues = schema => {
-  const { type } = schema;
+  const typed = findTypedScope(schema);
+  const { type } = typed;
 
   if (type === 'object') {
-    const { required, properties } = schema;
+    const { required, properties } = typed;
     if (required && required.length > 0) {
       return required.reduce((acm, cur) => {
         return {
@@ -18,14 +39,20 @@ const getExampleValues = schema => {
   }
 
   if (type === 'array') {
-    const { items } = schema;
+    const { items } = typed;
     return [getExampleValues(items)];
   }
 
-  const exampleValue = schema.examples[0];
+  const exampleValue = schema.examples
+    ? schema.examples[0]
+    : schema.default
+    ? schema.default
+    : fallbackMap[type];
 
   if (typeof exampleValue === 'undefined') {
-    throw new Error(`Cannot find examples in ${schema}`);
+    console.warn(`Cannot find examples or default value.`);
+    console.dir(schema);
+    return null;
   }
 
   return exampleValue;

@@ -6,11 +6,11 @@ const chokidar = require('chokidar');
 const consola = require('consola');
 
 const { buildSchemas } = require('./lib/build-schemas.js');
-const { validateJson } = require('./lib/validate-json.js');
+const { validateJsons } = require('./lib/validate-jsons.js');
 
 const {
   dirs: { root, src, schemas },
-  schemaConfigs
+  SCHEMA_URI
 } = require('./config.js');
 
 const paths = [
@@ -27,26 +27,28 @@ const watcher = chokidar.watch(paths, {
 });
 
 const buildSchemasAndValidate = async () => {
-  const bs = await buildSchemas({
+  const {
+    errors: errorsInBuildSchemas,
+    results: builtSchemas
+  } = await buildSchemas({
     src,
     dist: schemas,
-    baseDir: root,
-    schemaConfigs
-  });
-
-  consola.success('Generated schemas:', bs.results);
-
-  const v = validateJson({
-    src,
-    schemaDir: schemas,
-    schemaConfigs,
+    schemaUri: SCHEMA_URI,
     baseDir: root
   });
-  if (v.errors.length === 0) {
+
+  consola.success('Generated schemas:', builtSchemas);
+
+  const { errors: errorsInValidateJson } = validateJsons({
+    src,
+    schemaDir: schemas,
+    baseDir: root
+  });
+  if (errorsInValidateJson.length === 0) {
     consola.success('All json files are valid!');
   }
 
-  const errors = [...bs.errors, ...v.errors];
+  const errors = [...errorsInBuildSchemas, ...errorsInValidateJson];
   if (errors.length > 0) {
     errors.forEach(err => consola.error(err));
   }

@@ -1,7 +1,7 @@
 'use strict';
 
 const { readFileSync } = require('fs');
-const { parse, resolve, relative } = require('path');
+const { basename, parse, resolve, relative } = require('path');
 
 const Ajv = require('ajv');
 const consola = require('consola');
@@ -26,8 +26,9 @@ const readJson = path => {
   };
 };
 
-const createAjv = schemaPattern => {
+const createValidator = schemaPattern => {
   const errors = [];
+
   const schemas = glob.sync(schemaPattern).map(filePath => {
     const { error, result } = readJson(filePath);
     if (error) {
@@ -38,7 +39,7 @@ const createAjv = schemaPattern => {
     }
     return result;
   });
-  const ajv = new Ajv({
+  const validator = new Ajv({
     schemas,
     allErrors: true,
     logger: consola,
@@ -48,12 +49,12 @@ const createAjv = schemaPattern => {
 
   return {
     errors,
-    ajv
+    validator
   };
 };
 
-const validate = (data, ajv, schemaId, path) => {
-  const validation = ajv.getSchema(schemaId);
+const validate = (data, validator, schemaId, path) => {
+  const validation = validator.getSchema(schemaId);
   const isValid = validation(data);
 
   return {
@@ -63,53 +64,48 @@ const validate = (data, ajv, schemaId, path) => {
   };
 };
 
-const validateJson = ({ src, schemaDir, schemaConfigs, baseDir }) => {
+const validateJsons = ({ src, schemaDir, baseDir }) => {
   const errs = [];
-  const schemaPattern = resolve(schemaDir, '*.json'); // Exclude ref-parsed json from validation targets
-  const { errors, ajv } = createAjv(schemaPattern);
+
+  const schemaPattern = resolve(schemaDir, '*.json');
+  const { errors, validator } = createValidator(schemaPattern);
   errs.push(...errors);
 
-  const dirNames = schemaConfigs.map(e => e.distDirName);
+  const docPattern = resolve(src, '**', '*.json');
+  const docPaths = glob.sync(docPattern);
 
-  const validations = dirNames.reduce((acm, dirName) => {
-    const pattern = resolve(src, dirName, '**', '*.json');
-    const jsonPaths = glob.sync(pattern);
-    const jsons = jsonPaths.map(filePath => {
-      const { error, result } = readJson(filePath);
-      if (error) {
-        errors.push({
-          path: filePath,
-          in: 'validateJson',
-          error
-        });
-      }
-      return result;
-    });
+  const results = docPaths.map(docPath => {
+    const { error, result: doc } = readJson(docPath);
 
-    const result = jsons.map((json, i) => {
-      const jsonPath = jsonPaths[i];
-      const { uri } = schemaConfigs.find(c => c.distDirName === dirName);
-      const schemaId = parse(uri).base;
-      return validate(json, ajv, schemaId, jsonPath);
-    });
+    if (error) {
+      errs.push(error);
+    }
+    if (!doc.$schema) {
+      errs.push({
+        path: docPath,
+        in: 'validateJsons',
+        error: new Error('"$schema" property is missing.')
+      });
+    }
 
-    return [...acm, ...result];
-  }, []);
+    const docSchemaId = basename(doc.$schema);
+    return validate(doc, validator, docSchemaId, docPath);
+  });
 
   errs.push(
-    ...validations
+    ...results
       .filter(v => !v.isValid)
       .map(v => {
         return {
           path: v.path,
-          in: 'validateJson',
+          in: 'validateJsons',
           error: v.errors.map(err => err.message)
         };
       })
   );
 
   return {
-    results: validations,
+    results,
     errors: errs.map(err => {
       return {
         ...err,
@@ -120,5 +116,5 @@ const validateJson = ({ src, schemaDir, schemaConfigs, baseDir }) => {
 };
 
 module.exports = {
-  validateJson
+  validateJsons
 };

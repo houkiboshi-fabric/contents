@@ -9,7 +9,6 @@ const { copySync } = require('fs-extra');
 
 const {
   dirs: { src, dist, root, tmp },
-  schemaConfigs,
   archiveDistPath
 } = require('./config.js');
 const { build } = require('./lib/build.js');
@@ -22,7 +21,6 @@ const additionalDeploymentTargets = ['.circleci'];
     const { errors, results } = await build({
       src,
       dist: tmp,
-      datasetDirNames: schemaConfigs.map(e => e.distDirName),
       baseDir: root
     });
     consola.success(results);
