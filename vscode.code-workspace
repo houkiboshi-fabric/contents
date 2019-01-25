@@ -10,7 +10,7 @@
 				"fileMatch": [
 					"/src/dyeing-material-types/*.json"
 				],
-				"url": "https://houkiboshi-fabric.github.io/schema/ref-parsed/dyeing-material-type.json"
+				"url": "./schemas/dyeing-material-type.json"
 			},
 			{
 				"fileMatch": [
