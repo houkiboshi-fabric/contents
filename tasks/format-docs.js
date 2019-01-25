@@ -12,9 +12,7 @@ const {
 const { errors, results } = formatDocs(src, schemas);
 
 if (results.length > 0) {
-  results.forEach(path =>
-    consola.success('Document was formatted.', relative(root, path))
-  );
+  results.forEach(path => consola.success('Formatted:', relative(root, path)));
 }
 
 if (errors.length > 0) {

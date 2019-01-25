@@ -35,9 +35,11 @@ const formatDocs = (srcDir, schemasDir) => {
       return acm;
     }
   }, {});
-  const docPattern = resolve(srcDir, '**', '*.json');
 
-  glob.sync(docPattern).forEach(path => {
+  const jsonPattern = resolve(srcDir, '**', '*.json');
+  const mdPattern = resolve(srcDir, '**', '*.md');
+
+  glob.sync(jsonPattern).forEach(path => {
     try {
       const docString = readFileSync(path, 'utf8');
       const doc = JSON.parse(docString);
@@ -53,6 +55,23 @@ const formatDocs = (srcDir, schemasDir) => {
         }
       );
 
+      const hasModified = formatted !== docString;
+
+      if (hasModified) {
+        writeFileSync(path, formatted);
+        results.push(path);
+      }
+    } catch (err) {
+      errors.push(err);
+    }
+  });
+
+  glob.sync(mdPattern).forEach(path => {
+    try {
+      const docString = readFileSync(path, 'utf8');
+      const formatted = prettier.format(docString, {
+        parser: 'markdown'
+      });
       const hasModified = formatted !== docString;
 
       if (hasModified) {
