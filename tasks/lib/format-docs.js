@@ -20,35 +20,51 @@ const sortDocProperties = (doc, orderList) => {
 
 const formatDocs = (srcDir, schemasDir) => {
   const results = [];
+  const errors = [];
+
   const schemaPattern = resolve(schemasDir, '**', '*.json');
   const schemaMap = glob.sync(schemaPattern).reduce((acm, path) => {
-    const schema = JSON.parse(readFileSync(path));
-    return {
-      ...acm,
-      [schema.$id]: schema
-    };
+    try {
+      const schema = JSON.parse(readFileSync(path));
+      return {
+        ...acm,
+        [schema.$id]: schema
+      };
+    } catch (err) {
+      errors.push(err);
+      return acm;
+    }
   }, {});
   const docPattern = resolve(srcDir, '**', '*.json');
+
   glob.sync(docPattern).forEach(path => {
-    const docString = readFileSync(path, 'utf8');
-    const doc = JSON.parse(docString);
-    const schemaId = basename(doc.$schema);
-    const schema = schemaMap[schemaId];
-    const schemaOrderList = Object.keys(schema.properties);
-    const sorted = sortDocProperties(doc, schemaOrderList);
-    const formatted = prettier.format(JSON.stringify(sorted, null, 2) + '\n', {
-      parser: 'json'
-    });
+    try {
+      const docString = readFileSync(path, 'utf8');
+      const doc = JSON.parse(docString);
 
-    const hasModified = formatted !== docString;
+      const schemaId = basename(doc.$schema);
+      const schema = schemaMap[schemaId];
+      const schemaOrderList = Object.keys(schema.properties);
+      const sorted = sortDocProperties(doc, schemaOrderList);
+      const formatted = prettier.format(
+        JSON.stringify(sorted, null, 2) + '\n',
+        {
+          parser: 'json'
+        }
+      );
 
-    if (hasModified) {
-      writeFileSync(path, formatted);
-      results.push(path);
+      const hasModified = formatted !== docString;
+
+      if (hasModified) {
+        writeFileSync(path, formatted);
+        results.push(path);
+      }
+    } catch (err) {
+      errors.push(err);
     }
   });
 
-  return { results };
+  return { errors, results };
 };
 
 module.exports = {

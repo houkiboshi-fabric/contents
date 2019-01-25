@@ -101,8 +101,6 @@ const buildContents = ({ src, dist, schemaDir, schemaUri, baseDir }) => {
 
   consola.success('Building content files has finished.');
 
-  formatDocs(dist, schemaDir);
-
   return {
     errors,
     results
@@ -122,17 +120,27 @@ const clean = (dist, baseDir) => {
 const build = async ({ src, dist, schemaDir, schemaUri, baseDir }) => {
   try {
     await clean(dist, baseDir);
-    const { errors, results } = buildContents({
+    const {
+      errors: buildContentsErrors,
+      results: buildContentsResults
+    } = buildContents({
       src,
       dist,
       schemaDir,
       schemaUri,
       baseDir
     });
+
+    const { errors: formatDocsErrors, results: formatDocsResults } = formatDocs(
+      dist,
+      schemaDir
+    );
+
     return {
-      errors,
+      errors: [...buildContentsErrors, ...formatDocsErrors],
       results: {
-        'Generated content files': results
+        built: buildContentsResults,
+        formatted: formatDocsResults.map(p => relative(baseDir, p))
       }
     };
   } catch (err) {

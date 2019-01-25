@@ -68,17 +68,24 @@ const validateJsons = ({ src, schemaDir, baseDir }) => {
   const errs = [];
 
   const schemaPattern = resolve(schemaDir, '*.json');
-  const { errors, validator } = createValidator(schemaPattern);
-  errs.push(...errors);
+  const { errors: createValidatorErrors, validator } = createValidator(
+    schemaPattern
+  );
+  errs.push(...createValidatorErrors);
 
   const docPattern = resolve(src, '**', '*.json');
   const docPaths = glob.sync(docPattern);
 
-  const results = docPaths.map(docPath => {
-    const { error, result: doc } = readJson(docPath);
+  const results = docPaths.reduce((acm, docPath) => {
+    const { error: readJsonError, result: doc } = readJson(docPath);
 
-    if (error) {
-      errs.push(error);
+    if (readJsonError) {
+      errs.push({
+        path: docPath,
+        in: 'readJson',
+        error: readJsonError
+      });
+      return acm;
     }
     if (!doc.$schema) {
       errs.push({
@@ -86,11 +93,12 @@ const validateJsons = ({ src, schemaDir, baseDir }) => {
         in: 'validateJsons',
         error: new Error('"$schema" property is missing.')
       });
+      return acm;
     }
 
     const docSchemaId = basename(doc.$schema);
-    return validate(doc, validator, docSchemaId, docPath);
-  });
+    return [...acm, validate(doc, validator, docSchemaId, docPath)];
+  }, []);
 
   errs.push(
     ...results
