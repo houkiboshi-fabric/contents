@@ -11,27 +11,30 @@ const {
 } = require('./config.js');
 
 (async () => {
-  const bs = await buildSchemas({
+  const {
+    errors: errorsInBuildSchemas,
+    results: builtSchemas
+  } = await buildSchemas({
     src,
     dist: schemas,
     schemaUri: SCHEMA_URI,
     baseDir: root
   });
 
-  consola.success('Generated schemas:', bs.results);
+  consola.success('Generated schemas:', builtSchemas);
 
-  if (bs.errors.length > 0) {
-    bs.errors.forEach(err => consola.error(err));
+  if (errorsInBuildSchemas.length > 0) {
+    errorsInBuildSchemas.forEach(err => consola.error(err));
   }
 
-  const v = validateJsons({
+  const { errors: errorsInValidateJson } = validateJsons({
     src,
     schemaDir: schemas,
     baseDir: root
   });
 
-  if (v.errors.length > 0) {
-    consola.error(v.errors);
+  if (errorsInValidateJson.length > 0) {
+    consola.error(errorsInValidateJson);
   } else {
     consola.success('All json files are valid!');
   }
