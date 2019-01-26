@@ -9,7 +9,7 @@ jobs:
       ignore:
         - gh-pages
     docker:
-      - image: circleci/node:11.6
+      - image: node:11.8.0
         environment:
           TZ: '/usr/share/zoneinfo/Asia/Tokyo'
           LANG: ja_JP.UTF-8
