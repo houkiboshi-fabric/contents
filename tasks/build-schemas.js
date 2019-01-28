@@ -2,7 +2,7 @@
 
 const consola = require('consola');
 
-const { buildSchemas } = require('./lib/build-schemas.js');
+const { buildSchemas } = require('./lib/build-schemas');
 const {
   dirs: { root, src, schemas },
   SCHEMA_URI

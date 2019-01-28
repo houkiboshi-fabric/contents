@@ -5,7 +5,7 @@ const { relative, resolve } = require('path');
 const chokidar = require('chokidar');
 const consola = require('consola');
 
-const { buildSchemas } = require('./lib/build-schemas.js');
+const { buildSchemas } = require('./lib/build-schemas');
 const { validateJsons } = require('./lib/validate-jsons.js');
 
 const { formatDocs } = require('./lib/format-docs.js');
