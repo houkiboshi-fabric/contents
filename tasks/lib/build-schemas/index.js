@@ -7,6 +7,7 @@ const fetch = require('node-fetch');
 const glob = require('glob');
 const consola = require('consola');
 const pluralize = require('pluralize');
+const rimraf = require('rimraf');
 
 const { addIdsAsEnum } = require('./add-ids-as-enum.js');
 const { addDefaultSnippets } = require('./add-default-snippets.js');
@@ -109,6 +110,16 @@ const writeSchemas = (dist, dict) => {
   });
 };
 
+const clean = (dist, baseDir) => {
+  return new Promise(resolve => {
+    consola.info('Cleaning...', relative(baseDir, dist));
+    rimraf(dist, () => {
+      consola.success('Cleaning has finished.');
+      resolve();
+    });
+  });
+};
+
 // Do not fetch while watching task is running
 let schemas = null;
 
@@ -116,6 +127,7 @@ let schemas = null;
 let prevIds = {};
 
 const buildSchemas = async ({ src, dist, schemaUri, baseDir }) => {
+  await clean(dist, baseDir);
   consola.info('Building schemas...');
   if (!schemas) {
     schemas = await fetch(schemaUri)
