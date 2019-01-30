@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../schemas/page.json",
+  "title": "Posts - Blog",
+  "description": "ブログポストの一覧です。",
+  "media_image": null,
+  "body": null
+}

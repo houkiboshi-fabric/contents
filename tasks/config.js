@@ -23,8 +23,8 @@ exports.SCHEMA_URI =
 
 exports.archiveDistPath = resolve(dist, 'contents.tar.gz');
 
-const pullIdsFromIndex = (dirName, readJson) => {
-  const pattern = resolve(src, dirName, '**', 'index.json');
+const pullIdsFromIndex = (dirPath, readJson) => {
+  const pattern = resolve(dirPath, '**', 'index.json');
   return glob
     .sync(pattern)
     .map(path => {
@@ -37,18 +37,20 @@ const pullIdsFromIndex = (dirName, readJson) => {
 
 exports.addingEnumConfig = {
   dyeing_material_ids: readJson => {
-    return pullIdsFromIndex('dyeing-materials', readJson);
+    const dirPath = resolve(src, 'dyeing-materials');
+    return pullIdsFromIndex(dirPath, readJson);
   },
   dyeing_material_type_ids: readJson => {
-    return pullIdsFromIndex('dyeing-material-types', readJson);
+    const dirPath = resolve(src, 'dyeing-material-types');
+    return pullIdsFromIndex(dirPath, readJson);
   },
   raw_material_ids: readJson => {
-    return pullIdsFromIndex('raw-materials', readJson);
+    const dirPath = resolve(src, 'raw-materials');
+    return pullIdsFromIndex(dirPath, readJson);
   },
   tag_ids: readJson => {
-    const { result, error } = readJson(resolve(src, 'config', 'tags.json'));
-    if (error) return;
-    return result.tags.map(tag => tag.id);
+    const dirPath = resolve(src, 'blog', 'tags');
+    return pullIdsFromIndex(dirPath, readJson);
   }
 };
 
@@ -91,10 +93,10 @@ exports.joinJsonConfigs = [
   {
     property: 'tag_ids',
     refer: (id, dataList) => {
-      const def = dataList.find(({ result }) => {
-        return /tags\.json/i.test(result.$schema);
+      const found = dataList.find(({ result }) => {
+        return result.id === id && /tag\.json/i.test(result.$schema);
       });
-      return def.result.tags.find(tag => tag.id === id);
+      return found.result;
     },
     entityProperty: 'tag_entities'
   }

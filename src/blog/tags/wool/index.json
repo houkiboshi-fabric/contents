@@ -1,0 +1,9 @@
+{
+  "$schema": "../../../../schemas/tag.json",
+  "id": "tag-wool",
+  "name": "Wool",
+  "title": "Wool",
+  "description": "ウールを使った製作について書きます。",
+  "media_image": null,
+  "body": null
+}

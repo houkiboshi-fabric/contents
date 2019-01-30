@@ -1,0 +1,9 @@
+{
+  "$schema": "../../../../schemas/tag.json",
+  "id": "tag-notifications",
+  "name": "Notifications",
+  "title": "Notifications",
+  "description": "お知らせです。",
+  "media_image": null,
+  "body": null
+}

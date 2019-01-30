@@ -1,0 +1,9 @@
+{
+  "$schema": "../../../../schemas/tag.json",
+  "id": "tag-events",
+  "name": "Events",
+  "title": "Events",
+  "description": "イベントへの出展や感想について書きます。",
+  "media_image": null,
+  "body": null
+}

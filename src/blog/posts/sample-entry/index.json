@@ -1,8 +1,8 @@
 {
-  "$schema": "../../../schemas/blog-entry.json",
+  "$schema": "../../../../schemas/blog-entry.json",
   "title": "Sample",
   "description": "Sample description",
   "body": "body.md",
   "media_image": null,
-  "tag_ids": ["tag-01"]
+  "tag_ids": ["tag-notifications"]
 }
