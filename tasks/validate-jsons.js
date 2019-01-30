@@ -7,7 +7,8 @@ const { validateJsons } = require('./lib/validate-jsons.js');
 
 const {
   dirs: { root, src, schemas },
-  SCHEMA_URI
+  SCHEMA_URI,
+  addingEnumConfig
 } = require('./config.js');
 
 (async () => {
@@ -18,6 +19,7 @@ const {
     src,
     dist: schemas,
     schemaUri: SCHEMA_URI,
+    addingEnumConfig,
     baseDir: root
   });
 

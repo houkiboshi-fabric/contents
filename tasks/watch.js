@@ -11,7 +11,8 @@ const { validateJsons } = require('./lib/validate-jsons.js');
 const { formatDocs } = require('./lib/format-docs.js');
 const {
   dirs: { root, src, schemas },
-  SCHEMA_URI
+  SCHEMA_URI,
+  addingEnumConfig
 } = require('./config.js');
 
 const watchPathPattern = resolve(src, '**', '*.json');
@@ -24,6 +25,7 @@ const runTasks = async (watcher, startWatching) => {
     src,
     dist: schemas,
     schemaUri: SCHEMA_URI,
+    addingEnumConfig,
     baseDir: root
   });
 
