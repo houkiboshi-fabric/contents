@@ -4,6 +4,7 @@ const { readFileSync } = require('fs');
 const { basename, parse, resolve, relative } = require('path');
 
 const Ajv = require('ajv');
+const jsonSchemaDraft06 = require('ajv/lib/refs/json-schema-draft-06.json');
 const consola = require('consola');
 const glob = require('glob');
 
@@ -44,7 +45,7 @@ const createValidator = schemaPattern => {
     allErrors: true,
     logger: consola,
     validateSchema: true,
-    meta: require('ajv/lib/refs/json-schema-draft-06.json')
+    meta: jsonSchemaDraft06
   });
 
   return {
