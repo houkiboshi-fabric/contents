@@ -6,7 +6,8 @@ const { build } = require('./lib/build.js');
 
 const {
   dirs: { root, src, schemas, tmp },
-  SCHEMA_URI
+  SCHEMA_URI,
+  joinJsonConfigs
 } = require('./config.js');
 
 (async () => {
@@ -15,6 +16,7 @@ const {
     dist: tmp,
     schemaDir: schemas,
     schemaUri: SCHEMA_URI,
+    joinJsonConfigs,
     baseDir: root
   });
   consola.success(results);

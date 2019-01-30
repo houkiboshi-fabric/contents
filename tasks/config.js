@@ -52,3 +52,50 @@ exports.addingEnumConfig = {
   }
 };
 
+exports.joinJsonConfigs = [
+  {
+    property: 'dyeing_material_type_id',
+    refer: (id, dataList) => {
+      const found = dataList.find(({ result }) => {
+        return (
+          result.id === id &&
+          /dyeing-material-type\.json$/i.test(result.$schema)
+        );
+      });
+      return found.result;
+    },
+    entityProperty: 'dyeing_material_type_entity'
+  },
+  {
+    property: 'dyeing_material_ids',
+    refer: (id, dataList) => {
+      const found = dataList.find(({ result }) => {
+        return (
+          result.id === id && /dyeing-material\.json/i.test(result.$schema)
+        );
+      });
+      return found.result;
+    },
+    entityProperty: 'dyeing_material_entities'
+  },
+  {
+    property: 'raw_material_ids',
+    refer: (id, dataList) => {
+      const found = dataList.find(({ result }) => {
+        return result.id === id && /raw-material\.json/i.test(result.$schema);
+      });
+      return found.result;
+    },
+    entityProperty: 'raw_material_entities'
+  },
+  {
+    property: 'tag_ids',
+    refer: (id, dataList) => {
+      const def = dataList.find(({ result }) => {
+        return /tags\.json/i.test(result.$schema);
+      });
+      return def.result.tags.find(tag => tag.id === id);
+    },
+    entityProperty: 'tag_entities'
+  }
+];

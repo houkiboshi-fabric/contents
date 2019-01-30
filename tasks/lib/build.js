@@ -9,6 +9,7 @@ const rimraf = require('rimraf');
 
 const { getTimeStamps } = require('./get-time-stamps.js');
 const { formatDocs } = require('./format-docs.js');
+const { joinJson } = require('./join-json.js');
 
 const readJson = path => {
   const data = readFileSync(path, 'utf-8');
@@ -30,7 +31,14 @@ const readJson = path => {
 };
 
 // src to dist
-const buildContents = ({ src, dist, schemaDir, schemaUri, baseDir }) => {
+const buildContents = ({
+  src,
+  dist,
+  schemaDir,
+  schemaUri,
+  joinJsonConfigs,
+  baseDir
+}) => {
   consola.info('Building content files...');
 
   const errors = [];
@@ -41,7 +49,7 @@ const buildContents = ({ src, dist, schemaDir, schemaUri, baseDir }) => {
     if (error) {
       errors.push({
         path,
-        in: 'buildDatasets',
+        in: 'buildContents',
         error
       });
       return null;
@@ -70,13 +78,24 @@ const buildContents = ({ src, dist, schemaDir, schemaUri, baseDir }) => {
     };
   };
 
-  const changeSchemaPathToRemote = ({ path, result }) => {
+  const replaceSchemaPathToRemote = ({ path, result }) => {
+    if (!result.$schema) {
+      throw 'Cannot find "$schema" property.';
+    }
+    const replaced = `${dirname(schemaUri)}/${basename(result.$schema)}`;
     return {
       path,
       result: {
         ...result,
-        $schema: `${dirname(schemaUri)}/${basename(result.$schema)}`
+        $schema: replaced
       }
+    };
+  };
+
+  const joinJsons = ({ path, result: data }, _i, dataList) => {
+    return {
+      path,
+      result: joinJson({ data, configs: joinJsonConfigs, dataList })
     };
   };
 
@@ -97,7 +116,8 @@ const buildContents = ({ src, dist, schemaDir, schemaUri, baseDir }) => {
     .map(readJsonFile)
     .filter(e => e)
     .map(addTimeStamps)
-    .map(changeSchemaPathToRemote)
+    .map(replaceSchemaPathToRemote)
+    .map(joinJsons)
     .forEach(writeJsonFile);
 
   glob.sync(filePattern).forEach(srcPath => {
@@ -124,7 +144,14 @@ const clean = (dist, baseDir) => {
   });
 };
 
-const build = async ({ src, dist, schemaDir, schemaUri, baseDir }) => {
+const build = async ({
+  src,
+  dist,
+  schemaDir,
+  schemaUri,
+  joinJsonConfigs,
+  baseDir
+}) => {
   try {
     await clean(dist, baseDir);
     const {
@@ -135,6 +162,7 @@ const build = async ({ src, dist, schemaDir, schemaUri, baseDir }) => {
       dist,
       schemaDir,
       schemaUri,
+      joinJsonConfigs,
       baseDir
     });
 
