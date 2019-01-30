@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/tags.json",
+  "tags": [
+    {
+      "id": "tag-01",
+      "label": "Tag 01",
+      "description": "Tag 01 description"
+    },
+    {
+      "id": "tag-02",
+      "label": "Tag 02",
+      "description": "Tag 02 description"
+    }
+  ]
+}
