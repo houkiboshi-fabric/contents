@@ -11,6 +11,7 @@ const {
   dirs: { src, dist, root, schemas, tmp },
   archiveDistPath,
   SCHEMA_URI,
+  addPathPropertyConfig,
   joinJsonConfigs
 } = require('./config.js');
 const { build } = require('./lib/build.js');
@@ -25,6 +26,7 @@ const additionalDeploymentTargets = ['.circleci'];
       dist: tmp,
       schemaDir: schemas,
       schemaUri: SCHEMA_URI,
+      addPathPropertyConfig,
       joinJsonConfigs,
       baseDir: root
     });

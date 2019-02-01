@@ -2,6 +2,7 @@
 
 const { copyFileSync, mkdirSync, readFileSync, writeFileSync } = require('fs');
 const { basename, dirname, parse, resolve, relative } = require('path');
+const { URL } = require('url');
 
 const consola = require('consola');
 const glob = require('glob');
@@ -37,6 +38,7 @@ const buildContents = ({
   schemaDir,
   schemaUri,
   joinJsonConfigs,
+  addPathPropertyConfig,
   baseDir
 }) => {
   consola.info('Building content files...');
@@ -57,6 +59,32 @@ const buildContents = ({
     return {
       path,
       result
+    };
+  };
+
+  const addPathProperty = ({ path, result }) => {
+    if (addPathPropertyConfig.exclude.length > 0) {
+      const shouldExclude = addPathPropertyConfig.exclude.some(ePath => {
+        return path.startsWith(ePath);
+      });
+      if (shouldExclude) {
+        return {
+          path,
+          result
+        };
+      }
+    }
+
+    const localPath = path.replace(src, '');
+    const pagePath = new URL(localPath, 'relative:///').pathname
+      .replace('index.json', '')
+      .replace(/(.)\/$/, '$1'); // Remove trailing slash except for root page '/'
+    return {
+      path,
+      result: {
+        ...result,
+        path: pagePath
+      }
     };
   };
 
@@ -115,6 +143,7 @@ const buildContents = ({
     .sync(jsonPattern)
     .map(readJsonFile)
     .filter(e => e)
+    .map(addPathProperty)
     .map(addTimeStamps)
     .map(replaceSchemaPathToRemote)
     .map(joinJsons)
@@ -149,6 +178,7 @@ const build = async ({
   dist,
   schemaDir,
   schemaUri,
+  addPathPropertyConfig,
   joinJsonConfigs,
   baseDir
 }) => {
@@ -162,6 +192,7 @@ const build = async ({
       dist,
       schemaDir,
       schemaUri,
+      addPathPropertyConfig,
       joinJsonConfigs,
       baseDir
     });

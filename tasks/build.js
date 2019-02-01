@@ -7,6 +7,7 @@ const { build } = require('./lib/build.js');
 const {
   dirs: { root, src, schemas, tmp },
   SCHEMA_URI,
+  addPathPropertyConfig,
   joinJsonConfigs
 } = require('./config.js');
 
@@ -16,6 +17,7 @@ const {
     dist: tmp,
     schemaDir: schemas,
     schemaUri: SCHEMA_URI,
+    addPathPropertyConfig,
     joinJsonConfigs,
     baseDir: root
   });

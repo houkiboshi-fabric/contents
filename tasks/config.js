@@ -35,6 +35,10 @@ const pullIdsFromIndex = (dirPath, readJson) => {
     .filter(e => e);
 };
 
+exports.addPathPropertyConfig = {
+  exclude: []
+};
+
 exports.addingEnumConfig = {
   dyeing_material_ids: readJson => {
     const dirPath = resolve(src, 'dyeing-materials');
