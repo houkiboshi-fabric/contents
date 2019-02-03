@@ -2,7 +2,7 @@
 
 const consola = require('consola');
 
-const { build } = require('./lib/build.js');
+const { build } = require('./lib/build');
 
 const {
   dirs: { root, src, schemas, tmp },

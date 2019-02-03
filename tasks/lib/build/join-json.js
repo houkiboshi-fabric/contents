@@ -9,7 +9,7 @@ const cloneDeep = require('lodash.clonedeep');
 const { resolve } = require('path');
 const {
   dirs: { src }
-} = require('../config.js');
+} = require('../../config.js');
 
 const readJson = path => {
   try {

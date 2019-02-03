@@ -14,7 +14,7 @@ const {
   addPathPropertyConfig,
   joinJsonConfigs
 } = require('./config.js');
-const { build } = require('./lib/build.js');
+const { build } = require('./lib/build');
 const { pack } = require('./lib/pack.js');
 
 const additionalDeploymentTargets = ['.circleci'];

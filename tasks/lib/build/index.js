@@ -9,7 +9,7 @@ const glob = require('glob');
 const rimraf = require('rimraf');
 
 const { getTimeStamps } = require('./get-time-stamps.js');
-const { formatDocs } = require('./format-docs.js');
+const { formatDocs } = require('../format-docs.js');
 const { joinJson } = require('./join-json.js');
 
 const readJson = path => {
