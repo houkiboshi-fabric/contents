@@ -19,4 +19,7 @@ if (errors.length > 0) {
   errors.forEach(err => {
     consola.error(err);
   });
+  process.on('exit', () => {
+    process.exit(1);
+  });
 }

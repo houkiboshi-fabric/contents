@@ -37,6 +37,9 @@ const {
 
   if (errorsInValidateJson.length > 0) {
     consola.error(errorsInValidateJson);
+    process.on('exit', () => {
+      process.exit(1);
+    });
   } else {
     consola.success('All json files are valid!');
   }
