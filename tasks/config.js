@@ -55,6 +55,10 @@ exports.addingEnumConfig = {
   tag_ids: readJson => {
     const dirPath = resolve(src, 'blog', 'tags');
     return pullIdsFromIndex(dirPath, readJson);
+  },
+  process_ids: readJson => {
+    const dirPath = resolve(src, 'processes');
+    return pullIdsFromIndex(dirPath, readJson);
   }
 };
 
