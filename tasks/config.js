@@ -1,6 +1,6 @@
 'use strict';
 
-const { resolve } = require('path');
+const { basename, resolve } = require('path');
 
 const glob = require('glob');
 
@@ -65,7 +65,7 @@ exports.joinJsonConfigs = [
       const found = dataList.find(({ result }) => {
         return (
           result.id === id &&
-          /dyeing-material-type\.json$/i.test(result.$schema)
+          basename(result.$schema) === 'dyeing-material-type.json'
         );
       });
       return found.result;
@@ -77,7 +77,8 @@ exports.joinJsonConfigs = [
     refer: (id, dataList) => {
       const found = dataList.find(({ result }) => {
         return (
-          result.id === id && /dyeing-material\.json/i.test(result.$schema)
+          result.id === id &&
+          basename(result.$schema) === 'dyeing-material.json'
         );
       });
       return found.result;
@@ -88,7 +89,9 @@ exports.joinJsonConfigs = [
     property: 'raw_material_ids',
     refer: (id, dataList) => {
       const found = dataList.find(({ result }) => {
-        return result.id === id && /raw-material\.json/i.test(result.$schema);
+        return (
+          result.id === id && basename(result.$schema) === 'raw-material.json'
+        );
       });
       return found.result;
     },
@@ -98,7 +101,7 @@ exports.joinJsonConfigs = [
     property: 'tag_ids',
     refer: (id, dataList) => {
       const found = dataList.find(({ result }) => {
-        return result.id === id && /tag\.json/i.test(result.$schema);
+        return result.id === id && basename(result.$schema) === 'tag.json';
       });
       return found.result;
     },
