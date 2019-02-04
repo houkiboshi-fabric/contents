@@ -1,53 +1,50 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"json.schemas": [
-      {
+  "folders": [{
+    "path": "."
+  }],
+  "settings": {
+    "json.schemas": [{
         "fileMatch": [
           "/src/*.json"
         ],
         "url": "./schemas/page.json"
       },
-			{
-				"fileMatch": [
-					"/src/dyeing-material-types/**/*.json"
-				],
-				"url": "./schemas/dyeing-material-type.json"
-			},
-			{
-				"fileMatch": [
-					"/src/dyeing-materials/**/*.json"
-				],
-				"url": "./schemas/dyeing-material.json"
-			},
-			{
-				"fileMatch": [
-					"/src/products/**/*.json"
-				],
-				"url": "./schemas/product.json"
-			},
-			{
-				"fileMatch": [
-					"/src/raw-materials/**/*.json"
-				],
-				"url": "./schemas/raw-material.json"
+      {
+        "fileMatch": [
+          "/src/dyeing-material-types/**/*.json"
+        ],
+        "url": "./schemas/dyeing-material-type.json"
       },
       {
-				"fileMatch": [
-					"/src/blog/posts/**/*.json"
-				],
-				"url": "./schemas/blog-entry.json"
-			},
+        "fileMatch": [
+          "/src/dyeing-materials/**/*.json"
+        ],
+        "url": "./schemas/dyeing-material.json"
+      },
       {
-				"fileMatch": [
-					"/src/blog/tags/**/*.json"
-				],
-				"url": "./schemas/tag.json"
-			}
-		]
-	}
+        "fileMatch": [
+          "/src/products/**/*.json"
+        ],
+        "url": "./schemas/product.json"
+      },
+      {
+        "fileMatch": [
+          "/src/raw-materials/**/*.json"
+        ],
+        "url": "./schemas/raw-material.json"
+      },
+      {
+        "fileMatch": [
+          "/src/blog/posts/**/*.json"
+        ],
+        "url": "./schemas/blog-entry.json"
+      },
+      {
+        "fileMatch": [
+          "/src/blog/tags/**/*.json"
+        ],
+        "url": "./schemas/tag.json"
+      }
+    ]
+  }
 }
