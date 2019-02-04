@@ -44,6 +44,12 @@
           "/src/blog/tags/**/*.json"
         ],
         "url": "./schemas/tag.json"
+      },
+      {
+        "fileMatch": [
+          "/src/processes/**/*.json"
+        ],
+        "url": "./schemas/process.json"
       }
     ]
   }

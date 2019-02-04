@@ -1,0 +1,7 @@
+{
+  "$schema": "../../schemas/page.json",
+  "title": "製法",
+  "description": "製法の一覧です。",
+  "media_image": null,
+  "body": "body.md"
+}

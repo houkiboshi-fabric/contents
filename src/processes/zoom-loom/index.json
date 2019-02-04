@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/process.json",
+  "id": "process-zoom-loom",
+  "name": "ズームルーム",
+  "name_kana": "ずーむるーむ",
+  "title": "ズームルーム",
+  "description": "Schacht Spindle Company (シャクトスピンドル社) から発売されている持ち運べるほど小型の機織り道具です。小さなサイズの布を手軽に織り始められます。",
+  "media_image": null,
+  "body": "body.md"
+}

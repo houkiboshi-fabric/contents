@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/process.json",
+  "id": "process-sakiori",
+  "name": "裂織",
+  "name_kana": "さきおり",
+  "title": "裂織",
+  "description": "端切れを裂いて長い紐をつくり、麻糸などを経糸、端切れの紐を緯糸として織ることで、古い布などを再利用する手法です。",
+  "media_image": null,
+  "body": "body.md"
+}

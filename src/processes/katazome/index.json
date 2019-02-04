@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/process.json",
+  "id": "process-katazome",
+  "name": "型染め",
+  "name_kana": "かたぞめ",
+  "title": "型染め",
+  "description": "型紙・木型・金型、その他の染型を用いて布地に模様を染める方法です。",
+  "media_image": null,
+  "body": "body.md"
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/process.json",
+  "id": "process-rigid-heddle-table-loom",
+  "name": "リジッドヘドル卓上織機",
+  "name_kana": "りじっどへどるたくじょうしょっき",
+  "title": "リジッドへドル卓上織機",
+  "description": "リジッドヘドル織機 (Rigid-heddle loom) は筬綜絖織機 (おさそうこうしょっき) とも呼ばれ、筬とシャフトが一体化した織機です。",
+  "media_image": null,
+  "body": "body.md"
+}

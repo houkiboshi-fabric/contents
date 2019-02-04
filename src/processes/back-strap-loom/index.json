@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/process.json",
+  "id": "process-back-strap-loom",
+  "name": "腰機",
+  "name_kana": "こしばた",
+  "title": "腰機",
+  "description": "腰機 (こしばた) (Back strap loom) (バックストラップ織機) は織機につながった 2 本の帯紐のうち、一方を織手の腰に、もう一方を樹木やドアノブなどに固定するタイプの織機です。",
+  "media_image": null,
+  "body": "body.md"
+}

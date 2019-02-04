@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/process.json",
+  "id": "process-hand-spinning",
+  "name": "手紡ぎ",
+  "name_kana": "てつむぎ",
+  "title": "手紡ぎ",
+  "description": "手作業で紡いた糸を使っています。",
+  "media_image": null,
+  "body": "body.md"
+}

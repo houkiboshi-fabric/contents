@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/process.json",
+  "id": "process-kusaki-zome",
+  "name": "草木染め",
+  "name_kana": "くさきぞめ",
+  "title": "草木染め",
+  "description": "植物の根・皮・葉・実などから抽出した染料による染色方法です。",
+  "media_image": null,
+  "body": "body.md"
+}
