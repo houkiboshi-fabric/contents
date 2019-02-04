@@ -7,7 +7,7 @@ const addIdsAsEnum = (schema, listOfPropAndIds) => {
   const props = clonedSchema.properties;
 
   if (!props) {
-    return;
+    return clonedSchema;
   }
 
   const searchAndAddEnum = props => {

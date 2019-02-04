@@ -92,10 +92,8 @@ const buildSchemas = async ({
   if (!schemas) {
     schemas = await fetch(schemaUri)
       .then(res => res.json())
-      .then(schema => {
-        return Object.keys(schema.properties).map(key => {
-          return schema.properties[key];
-        });
+      .then(schemas => {
+        return schemas.map(({ value }) => value);
       })
       .catch(err => {
         throw new Error(err);
