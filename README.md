@@ -29,16 +29,13 @@ yarn install
 
 ### Build
 
-- Generate json files with timestamps
+- Add timestamps
   - import from under `src/`, export into `dist/`
   - timestamps from git commit history
     - `created_at`
     - `modified_at`
-- Generate each index files per specified directory under `dist/`
-  - ex.) `dist/products/index.json`
-  - ex.) https://houkiboshi-fabric.github.io/contents/dyeing-materials/index.json
-  - import from under `dist/`, export into `dist/`
-  - useful to `fetch` dataset
+- Join entities to id and ids references
+- Add relative paths for Web pages
 
 ```console
 yarn build
@@ -50,6 +47,7 @@ yarn build
   - All properties of schemas named `*_id` or `*_ids` have enum that
     are ids collected from actual dataset. So you can use auto-complete with ids
     in your editor like Visual Studio Code.
+  - Generate default snippets from examples for Visual Studio Code
 
 ```console
 yarn build-schemas
@@ -67,13 +65,20 @@ yarn build-schemas
 yarn validate
 ```
 
+### Format
+
+- Format `.(js|json|md)` files using prettier
+- Sort properties of json according to schema properties
+
+```console
+yarn format
+```
+
 ### Watch
 
-- Watch specific directories continually and run `build-schemas` and `validate`
-  - `src/dyeing-material-types/**/*.json`
-  - `src/dyeing-materials/**/*.json`
-  - `src/products/**/*.json`
-  - `src/raw-materials/**/*.json`
+- Watch file changing continually and run `build-schemas`, `validate`,
+  and `format`
+  - `src/**/*.json`
 
 ```console
 yarn watch
