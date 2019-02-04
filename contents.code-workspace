@@ -14,25 +14,25 @@
       },
 			{
 				"fileMatch": [
-					"/src/dyeing-material-types/*.json"
+					"/src/dyeing-material-types/**/*.json"
 				],
 				"url": "./schemas/dyeing-material-type.json"
 			},
 			{
 				"fileMatch": [
-					"/src/dyeing-materials/*.json"
+					"/src/dyeing-materials/**/*.json"
 				],
 				"url": "./schemas/dyeing-material.json"
 			},
 			{
 				"fileMatch": [
-					"/src/products/*.json"
+					"/src/products/**/*.json"
 				],
 				"url": "./schemas/product.json"
 			},
 			{
 				"fileMatch": [
-					"/src/raw-materials/*.json"
+					"/src/raw-materials/**/*.json"
 				],
 				"url": "./schemas/raw-material.json"
       },
