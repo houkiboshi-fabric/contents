@@ -34,5 +34,6 @@
     {
       "dyeing_material_ids": ["biwa"]
     }
-  ]
+  ],
+  "process_ids": ["process-kusaki-zome", "process-zoom-loom"]
 }

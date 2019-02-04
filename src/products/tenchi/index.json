@@ -40,5 +40,6 @@
         "logwood"
       ]
     }
-  ]
+  ],
+  "process_ids": ["process-kusaki-zome"]
 }

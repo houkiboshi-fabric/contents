@@ -54,5 +54,6 @@
         "ready-made"
       ]
     }
-  ]
+  ],
+  "process_ids": ["process-kusaki-zome", "process-rigid-heddle-table-loom"]
 }

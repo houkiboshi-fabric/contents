@@ -34,5 +34,6 @@
     {
       "dyeing_material_ids": ["akane", "ai", "tamanegi", "ready-made"]
     }
-  ]
+  ],
+  "process_ids": ["process-kusaki-zome", "process-multi-shaft-table-loom"]
 }

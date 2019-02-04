@@ -52,5 +52,6 @@
     {
       "dyeing_material_ids": ["koucha", "resin-pigment"]
     }
-  ]
+  ],
+  "process_ids": ["process-kusaki-zome", "process-katazome"]
 }

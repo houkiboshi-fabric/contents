@@ -36,5 +36,6 @@
         "ready-made"
       ]
     }
-  ]
+  ],
+  "process_ids": ["process-kusaki-zome", "process-multi-shaft-table-loom"]
 }

@@ -38,5 +38,6 @@
     {
       "dyeing_material_ids": ["sakura", "kuzu"]
     }
-  ]
+  ],
+  "process_ids": ["process-kusaki-zome", "process-multi-shaft-table-loom"]
 }
