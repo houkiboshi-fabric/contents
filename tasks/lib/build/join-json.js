@@ -1,24 +1,7 @@
 'use strict';
 
-const { readFileSync } = require('fs');
-
-const glob = require('glob');
 const isPlainObject = require('lodash.isplainobject');
 const cloneDeep = require('lodash.clonedeep');
-
-const { resolve } = require('path');
-const {
-  dirs: { src }
-} = require('../../config.js');
-
-const readJson = path => {
-  try {
-    const content = readFileSync(path, 'utf8');
-    return JSON.parse(content);
-  } catch (err) {
-    throw new Error(err);
-  }
-};
 
 const joinEntityOf = (id, dataList, method) => {
   const entity = method(id, dataList);

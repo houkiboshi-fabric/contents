@@ -1,10 +1,9 @@
 'use strict';
 
 const { mkdirSync, readFileSync, writeFileSync } = require('fs');
-const { basename, resolve, relative } = require('path');
+const { resolve, relative } = require('path');
 
 const fetch = require('node-fetch');
-const glob = require('glob');
 const consola = require('consola');
 const pluralize = require('pluralize');
 const rimraf = require('rimraf');
@@ -78,13 +77,7 @@ const clean = (dist, baseDir) => {
 // Do not fetch while watching task is running
 let schemas = null;
 
-const buildSchemas = async ({
-  src,
-  dist,
-  schemaUri,
-  addingEnumConfig,
-  baseDir
-}) => {
+const buildSchemas = async ({ dist, schemaUri, addingEnumConfig, baseDir }) => {
   await clean(dist, baseDir);
 
   consola.info('Building schemas...');
@@ -99,9 +92,6 @@ const buildSchemas = async ({
         throw new Error(err);
       });
   }
-  /*schemas = glob.sync(resolve(dist, '**', '*.json')).map(path => {
-    return JSON.parse(readFileSync(path));
-  });*/
 
   const {
     results: buildSchemasResults,

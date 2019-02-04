@@ -1,7 +1,7 @@
 'use strict';
 
 const { readFileSync } = require('fs');
-const { basename, parse, resolve, relative } = require('path');
+const { basename, resolve, relative } = require('path');
 
 const Ajv = require('ajv');
 const jsonSchemaDraft06 = require('ajv/lib/refs/json-schema-draft-06.json');

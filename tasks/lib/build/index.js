@@ -35,7 +35,6 @@ const readJson = path => {
 const buildContents = ({
   src,
   dist,
-  schemaDir,
   schemaUri,
   joinJsonConfigs,
   addPathPropertyConfig,
@@ -108,7 +107,7 @@ const buildContents = ({
 
   const replaceSchemaPathToRemote = ({ path, result }) => {
     if (!result.$schema) {
-      throw 'Cannot find "$schema" property.';
+      throw new Error('Cannot find "$schema" property.');
     }
     const replaced = `${dirname(schemaUri)}/${basename(result.$schema)}`;
     return {

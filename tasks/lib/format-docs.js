@@ -49,7 +49,7 @@ const formatDocs = (srcDir, schemasDir) => {
       const schemaOrderList = Object.keys(schema.properties);
       const sorted = sortDocProperties(doc, schemaOrderList);
       const formatted = prettier.format(
-        JSON.stringify(sorted, null, 2) + '\n',
+        `${JSON.stringify(sorted, null, 2)}\n`,
         {
           parser: 'json'
         }
