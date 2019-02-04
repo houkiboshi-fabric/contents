@@ -35,6 +35,18 @@
 					"/src/raw-materials/*.json"
 				],
 				"url": "./schemas/raw-material.json"
+      },
+      {
+				"fileMatch": [
+					"/src/blog/posts/**/*.json"
+				],
+				"url": "./schemas/blog-entry.json"
+			},
+      {
+				"fileMatch": [
+					"/src/blog/tags/**/*.json"
+				],
+				"url": "./schemas/tag.json"
 			}
 		]
 	}
