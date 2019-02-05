@@ -38,6 +38,7 @@ const buildContents = ({
   schemaUri,
   joinJsonConfigs,
   addPathPropertyConfig,
+  addTimeStampsConfig,
   baseDir
 }) => {
   consola.info('Building content files...');
@@ -88,6 +89,18 @@ const buildContents = ({
   };
 
   const addTimeStamps = ({ path, result }) => {
+    if (addTimeStampsConfig.exclude.length > 0) {
+      const shouldExclude = addTimeStampsConfig.exclude.some(ePath => {
+        return path.startsWith(ePath);
+      });
+      if (shouldExclude) {
+        return {
+          path,
+          result
+        };
+      }
+    }
+
     const { createdAt, modifiedAt } = getTimeStamps(path);
 
     if (!createdAt || !modifiedAt) {
@@ -178,6 +191,7 @@ const build = async ({
   schemaDir,
   schemaUri,
   addPathPropertyConfig,
+  addTimeStampsConfig,
   joinJsonConfigs,
   baseDir
 }) => {
@@ -192,6 +206,7 @@ const build = async ({
       schemaDir,
       schemaUri,
       addPathPropertyConfig,
+      addTimeStampsConfig,
       joinJsonConfigs,
       baseDir
     });

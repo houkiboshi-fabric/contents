@@ -12,6 +12,7 @@ const {
   archiveDistPath,
   SCHEMA_URI,
   addPathPropertyConfig,
+  addTimeStampsConfig,
   joinJsonConfigs
 } = require('./config.js');
 const { build } = require('./lib/build');
@@ -27,6 +28,7 @@ const additionalDeploymentTargets = ['.circleci'];
       schemaDir: schemas,
       schemaUri: SCHEMA_URI,
       addPathPropertyConfig,
+      addTimeStampsConfig,
       joinJsonConfigs,
       baseDir: root
     });

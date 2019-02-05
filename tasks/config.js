@@ -35,8 +35,12 @@ const pullIdsFromIndex = (dirPath, readJson) => {
     .filter(e => e);
 };
 
+exports.addTimeStampsConfig = {
+  exclude: ['config'].map(p => resolve(src, p))
+};
+
 exports.addPathPropertyConfig = {
-  exclude: []
+  exclude: ['config'].map(p => resolve(src, p))
 };
 
 exports.addingEnumConfig = {
@@ -59,6 +63,14 @@ exports.addingEnumConfig = {
   process_ids: readJson => {
     const dirPath = resolve(src, 'processes');
     return pullIdsFromIndex(dirPath, readJson);
+  },
+  instruction_category_ids: readJson => {
+    const filePath = resolve(src, 'config', 'instructions.json');
+    const { result, error } = readJson(filePath);
+    if (error) {
+      throw new Error(error);
+    }
+    return result.instruction_categories.map(category => category.id);
   }
 };
 

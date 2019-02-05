@@ -8,6 +8,7 @@ const {
   dirs: { root, src, schemas, tmp },
   SCHEMA_URI,
   addPathPropertyConfig,
+  addTimeStampsConfig,
   joinJsonConfigs
 } = require('./config.js');
 
@@ -18,6 +19,7 @@ const {
     schemaDir: schemas,
     schemaUri: SCHEMA_URI,
     addPathPropertyConfig,
+    addTimeStampsConfig,
     joinJsonConfigs,
     baseDir: root
   });
