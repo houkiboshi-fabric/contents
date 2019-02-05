@@ -24,7 +24,7 @@
     "deploy": "NODE_DEBUG=gh-pages node ./tasks/deploy.js"
   },
   "devDependencies": {
-    "ajv": "^6.7.0",
+    "ajv": "^6.8.1",
     "chokidar": "^2.0.4",
     "consola": "^2.3.2",
     "eslint": "^5.13.0",
@@ -43,10 +43,10 @@
     "jest": "^24.0.0",
     "lodash.clonedeep": "^4.5.0",
     "lodash.isplainobject": "^4.0.6",
-    "luxon": "^1.10.0",
+    "luxon": "^1.11.1",
     "node-fetch": "^2.3.0",
     "pluralize": "^7.0.0",
-    "prettier": "^1.16.3",
+    "prettier": "^1.16.4",
     "prettier-eslint": "^8.8.2",
     "rimraf": "^2.6.3",
     "tar-pack": "^3.4.1"
