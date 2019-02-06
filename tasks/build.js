@@ -27,6 +27,7 @@ const {
   });
   consola.success(results);
   if (errors.length > 0) {
-    throw new Error(errors);
+    errors.forEach(err => consola.error(err));
+    throw new Error('Build failed.');
   }
 })();

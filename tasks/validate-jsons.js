@@ -36,7 +36,7 @@ const {
   });
 
   if (errorsInValidateJson.length > 0) {
-    consola.error(errorsInValidateJson);
+    errorsInValidateJson.forEach(err => consola.error(err));
     process.on('exit', () => {
       process.exit(1);
     });

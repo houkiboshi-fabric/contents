@@ -20,5 +20,6 @@ const {
   consola.success('Generated schemas:', results);
   if (errors.length > 0) {
     errors.forEach(err => consola.error(err));
+    throw new Error('Build failed.');
   }
 })();
