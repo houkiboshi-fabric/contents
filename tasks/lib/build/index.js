@@ -8,8 +8,9 @@ const consola = require('consola');
 const glob = require('glob');
 const rimraf = require('rimraf');
 
-const { getTimeStamps } = require('./get-time-stamps.js');
+const { buildSchemas } = require('../build-schemas');
 const { formatDocs } = require('../format-docs.js');
+const { getTimeStamps } = require('./get-time-stamps.js');
 const { joinJson } = require('./join-json.js');
 
 const readJson = path => {
@@ -221,6 +222,7 @@ const build = async ({
   dist,
   schemaDir,
   schemaUri,
+  addingEnumConfig,
   addInstructionsConfig,
   addPathPropertyConfig,
   addTimeStampsConfig,
@@ -229,10 +231,16 @@ const build = async ({
 }) => {
   try {
     await clean(dist, baseDir);
-    const {
-      errors: buildContentsErrors,
-      results: buildContentsResults
-    } = buildContents({
+
+    const { errors: bsErrors, results: bsResults } = await buildSchemas({
+      src,
+      dist: schemaDir,
+      schemaUri,
+      addingEnumConfig,
+      baseDir
+    });
+
+    const { errors: bcErrors, results: bcResults } = buildContents({
       src,
       dist,
       schemaDir,
@@ -244,16 +252,17 @@ const build = async ({
       baseDir
     });
 
-    const { errors: formatDocsErrors, results: formatDocsResults } = formatDocs(
+    const { errors: fdErrors, results: fdResults } = formatDocs(
       dist,
       schemaDir
     );
 
     return {
-      errors: [...buildContentsErrors, ...formatDocsErrors],
+      errors: [...bsErrors, ...bcErrors, ...fdErrors],
       results: {
-        built: buildContentsResults,
-        formatted: formatDocsResults.map(p => relative(baseDir, p))
+        schemas: bsResults,
+        built: bcResults,
+        formatted: fdResults.map(p => relative(baseDir, p))
       }
     };
   } catch (err) {
