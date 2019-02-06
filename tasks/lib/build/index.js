@@ -36,6 +36,7 @@ const buildContents = ({
   src,
   dist,
   schemaUri,
+  addInstructionsConfig,
   joinJsonConfigs,
   addPathPropertyConfig,
   addTimeStampsConfig,
@@ -59,6 +60,35 @@ const buildContents = ({
     return {
       path,
       result
+    };
+  };
+
+  const addInstructions = ({ path, result }, _i, dataList) => {
+    if (basename(result.$schema) !== 'product.json') {
+      return {
+        path,
+        result
+      };
+    }
+    const {
+      result: { instructions: allInstructions }
+    } = dataList.find(
+      d => d.path === resolve(src, 'config', 'instructions.json')
+    );
+    const instructions = addInstructionsConfig.instructions
+      .filter(({ condition }) => condition(result))
+      .map(({ instructionId }) =>
+        allInstructions.find(({ id }) => id === instructionId)
+      );
+    return {
+      path,
+      result: {
+        ...result,
+        instructions: {
+          ...result.instructions,
+          items: instructions
+        }
+      }
     };
   };
 
@@ -155,6 +185,7 @@ const buildContents = ({
     .sync(jsonPattern)
     .map(readJsonFile)
     .filter(e => e)
+    .map(addInstructions)
     .map(addPathProperty)
     .map(addTimeStamps)
     .map(replaceSchemaPathToRemote)
@@ -190,6 +221,7 @@ const build = async ({
   dist,
   schemaDir,
   schemaUri,
+  addInstructionsConfig,
   addPathPropertyConfig,
   addTimeStampsConfig,
   joinJsonConfigs,
@@ -205,6 +237,7 @@ const build = async ({
       dist,
       schemaDir,
       schemaUri,
+      addInstructionsConfig,
       addPathPropertyConfig,
       addTimeStampsConfig,
       joinJsonConfigs,

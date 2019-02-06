@@ -122,5 +122,131 @@ exports.joinJsonConfigs = [
       return found.result;
     },
     entityProperty: 'tag_entities'
+  },
+  {
+    property: 'instruction_category_id',
+    refer: (id, dataList) => {
+      const { result } = dataList.find(({ result }) => {
+        return basename(result.$schema) === 'instructions.json';
+      });
+      return result['instruction_categories'].find(
+        category => category.id === id
+      );
+    },
+    entityProperty: 'instruction_category_entity'
   }
 ];
+
+// 手織り
+const isMadeByHandWeaving = product => {
+  const handWeavingProcessIds = [
+    'process-sakiori',
+    'process-multi-shaft-table-loom',
+    'process-rigid-heddle-table-loom',
+    'process-back-strap-loom',
+    'process-zoom-loom'
+  ];
+  return product.process_ids.some(process => {
+    return handWeavingProcessIds.includes(process);
+  });
+};
+
+// 草木染め
+const isMadeByKusakiZome = product =>
+  product.process_ids.includes('process-kusaki-zome');
+
+// 型染め
+const isMadeByKatazome = product =>
+  product.process_ids.includes('process-katazome');
+
+// 毛使用
+const usesWool = product => {
+  return product.raw_materials.filter(e => {
+    return e.raw_material_ids.includes('wool').length > 0;
+  });
+};
+
+// 綿使用
+const usesCotton = product => {
+  return (
+    product.raw_materials.filter(e => {
+      return e.raw_material_ids.includes('cotton');
+    }).length > 0
+  );
+};
+
+// 伯州綿使用
+const usesHakushuCotton = product => {
+  return (
+    product.raw_materials.filter(e => {
+      return e.raw_material_ids.includes('hakushu-cotton');
+    }).length > 0
+  );
+};
+
+exports.addInstructionsConfig = {
+  instructions: [
+    {
+      instructionId: 'hand-wash',
+      condition: product => !(isMadeByKatazome(product) && usesCotton(product))
+    },
+    {
+      instructionId: 'machine-wash',
+      condition: product => isMadeByKatazome(product) && usesCotton(product)
+    },
+    {
+      instructionId: 'neutral-detergent',
+      condition: () => true // all products
+    },
+    {
+      instructionId: 'wash-at-low-temperature',
+      condition: product => usesWool(product)
+    },
+    {
+      instructionId: 'dry-in-the-shade',
+      condition: product => isMadeByKusakiZome(product)
+    },
+    {
+      instructionId: 'dry-after-reshaping',
+      condition: product => usesHakushuCotton(product)
+    },
+    {
+      instructionId: 'keep-out-of-direct-sunlight',
+      condition: product => isMadeByKusakiZome(product)
+    },
+    {
+      instructionId: 'color-dulling',
+      condition: product => isMadeByKusakiZome(product)
+    },
+    {
+      instructionId: 'color-staining',
+      condition: product =>
+        isMadeByKusakiZome(product) || isMadeByKatazome(product)
+    },
+    {
+      instructionId: 'wash-once-before-use',
+      condition: product => isMadeByKatazome(product) && usesCotton(product)
+    },
+    {
+      instructionId: 'change-of-the-texture',
+      condition: product => isMadeByKusakiZome(product)
+    },
+    {
+      instructionId: 'variance-of-color-and-pattern',
+      condition: () => true // all products
+    },
+    {
+      instructionId: 'color-unevenness-and-blurring',
+      condition: product =>
+        isMadeByKusakiZome(product) || isMadeByKatazome(product)
+    },
+    {
+      instructionId: 'variance-of-shape',
+      condition: product => isMadeByHandWeaving(product)
+    },
+    {
+      instructionId: 'neps',
+      condition: product => usesHakushuCotton(product)
+    }
+  ]
+};

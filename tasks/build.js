@@ -9,6 +9,7 @@ const {
   SCHEMA_URI,
   addPathPropertyConfig,
   addTimeStampsConfig,
+  addInstructionsConfig,
   joinJsonConfigs
 } = require('./config.js');
 
@@ -20,6 +21,7 @@ const {
     schemaUri: SCHEMA_URI,
     addPathPropertyConfig,
     addTimeStampsConfig,
+    addInstructionsConfig,
     joinJsonConfigs,
     baseDir: root
   });

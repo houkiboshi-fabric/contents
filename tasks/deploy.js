@@ -11,6 +11,7 @@ const {
   dirs: { src, dist, root, schemas, tmp },
   archiveDistPath,
   SCHEMA_URI,
+  addInstructionsConfig,
   addPathPropertyConfig,
   addTimeStampsConfig,
   joinJsonConfigs
@@ -27,6 +28,7 @@ const additionalDeploymentTargets = ['.circleci'];
       dist: tmp,
       schemaDir: schemas,
       schemaUri: SCHEMA_URI,
+      addInstructionsConfig,
       addPathPropertyConfig,
       addTimeStampsConfig,
       joinJsonConfigs,
