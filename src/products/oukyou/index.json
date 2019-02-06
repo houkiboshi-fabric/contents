@@ -32,7 +32,11 @@
       "dyeing_material_ids": ["akane"]
     }
   ],
-  "process_ids": ["process-kusaki-zome", "process-multi-shaft-table-loom"],
+  "process_ids": [
+    "process-kusaki-zome",
+    "process-multi-shaft-table-loom",
+    "process-hand-spinning"
+  ],
   "instructions": {
     "additional_items": []
   }

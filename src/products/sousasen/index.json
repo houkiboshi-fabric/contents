@@ -55,7 +55,11 @@
       ]
     }
   ],
-  "process_ids": ["process-kusaki-zome", "process-rigid-heddle-table-loom"],
+  "process_ids": [
+    "process-kusaki-zome",
+    "process-rigid-heddle-table-loom",
+    "process-hand-spinning"
+  ],
   "instructions": {
     "additional_items": []
   }

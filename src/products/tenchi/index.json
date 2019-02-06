@@ -41,7 +41,7 @@
       ]
     }
   ],
-  "process_ids": ["process-kusaki-zome"],
+  "process_ids": ["process-kusaki-zome", "process-hand-spinning"],
   "instructions": {
     "additional_items": []
   }
