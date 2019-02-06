@@ -1,0 +1,98 @@
+{
+  "$schema": "../../schemas/instructions.json",
+  "instructions": [
+    {
+      "id": "hand-wash",
+      "instruction_category_id": "washing",
+      "value": "型崩れを防ぐため、手洗いをおすすめします。"
+    },
+    {
+      "id": "machine-wash",
+      "instruction_category_id": "washing",
+      "value": "洗濯機で洗えます。"
+    },
+    {
+      "id": "neutral-detergent",
+      "instruction_category_id": "washing",
+      "value": "変色を防ぐため、中性洗剤を使用してください。"
+    },
+    {
+      "id": "wash-at-low-temperature",
+      "instruction_category_id": "washing",
+      "value": "縮みを防ぐため、ぬるま湯でやさしく洗ってください。"
+    },
+    {
+      "id": "dry-in-the-shade",
+      "instruction_category_id": "washing",
+      "value": "変色、色あせを防ぐため、陰干ししてください。"
+    },
+    {
+      "id": "dry-after-reshaping",
+      "instruction_category_id": "washing",
+      "value": "手紡ぎ糸の部分がしわになることがあるため、形を整えて干してください。"
+    },
+    {
+      "id": "keep-out-of-direct-sunlight",
+      "instruction_category_id": "keeping",
+      "value": "変色を防ぐため、直射日光の当たらないところで保管してください。"
+    },
+    {
+      "id": "color-dulling",
+      "instruction_category_id": "using",
+      "value": "草木染めの性質上、徐々に退色します。"
+    },
+    {
+      "id": "color-staining",
+      "instruction_category_id": "using",
+      "value": "色移りすることがあるため、摩擦にはご注意ください。"
+    },
+    {
+      "id": "wash-once-before-use",
+      "instruction_category_id": "using",
+      "value": "糊を使う染め方をしています。風合いが硬く気になる場合は使用前に一度洗ってください。"
+    },
+    {
+      "id": "change-of-the-texture",
+      "instruction_category_id": "using",
+      "value": "草木染め製品のため、使用する環境等によって色が変化することがあります。変化しないように保管するより、使って変化を楽しむことをおすすめします。"
+    },
+    {
+      "id": "variance-of-color-and-pattern",
+      "instruction_category_id": "disclaimer",
+      "value": "柄や色に個体差があります。"
+    },
+    {
+      "id": "color-unevenness-and-blurring",
+      "instruction_category_id": "disclaimer",
+      "value": "手染めのため、色ムラ・掠れ・にじみがあります。"
+    },
+    {
+      "id": "variance-of-shape",
+      "instruction_category_id": "disclaimer",
+      "value": "手織りのため、ゆがみがあります。"
+    },
+    {
+      "id": "neps",
+      "instruction_category_id": "disclaimer",
+      "value": "黒い点は綿を手紡ぎするときに混ざる綿花の一部です。"
+    }
+  ],
+  "instruction_categories": [
+    {
+      "id": "washing",
+      "label": "洗濯"
+    },
+    {
+      "id": "keeping",
+      "label": "保管"
+    },
+    {
+      "id": "using",
+      "label": "使用"
+    },
+    {
+      "id": "disclaimer",
+      "label": "免責"
+    }
+  ]
+}

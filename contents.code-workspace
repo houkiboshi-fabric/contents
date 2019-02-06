@@ -50,6 +50,12 @@
           "/src/processes/**/*.json"
         ],
         "url": "./schemas/process.json"
+      },
+      {
+        "fileMatch": [
+          "/src/config/instructions.json"
+        ],
+        "url": "./schemas/instructions.json"
       }
     ]
   }
