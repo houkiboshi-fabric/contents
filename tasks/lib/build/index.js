@@ -37,10 +37,10 @@ const buildContents = ({
   src,
   dist,
   schemaUri,
-  addInstructionsConfig,
+  instructionsConfig,
   joinJsonConfigs,
-  addPathPropertyConfig,
-  addTimeStampsConfig,
+  pagePathConfig,
+  timeStampsConfig,
   baseDir
 }) => {
   consola.info('Building content files...');
@@ -76,7 +76,7 @@ const buildContents = ({
     } = dataList.find(
       d => d.path === resolve(src, 'config', 'instructions.json')
     );
-    const instructions = addInstructionsConfig.instructions
+    const instructions = instructionsConfig.instructions
       .filter(({ condition }) => condition(result))
       .map(({ instructionId }) =>
         allInstructions.find(({ id }) => id === instructionId)
@@ -94,8 +94,8 @@ const buildContents = ({
   };
 
   const addPathProperty = ({ path, result }) => {
-    if (addPathPropertyConfig.exclude.length > 0) {
-      const shouldExclude = addPathPropertyConfig.exclude.some(ePath => {
+    if (pagePathConfig.exclude.length > 0) {
+      const shouldExclude = pagePathConfig.exclude.some(ePath => {
         return path.startsWith(ePath);
       });
       if (shouldExclude) {
@@ -120,8 +120,8 @@ const buildContents = ({
   };
 
   const addTimeStamps = ({ path, result }) => {
-    if (addTimeStampsConfig.exclude.length > 0) {
-      const shouldExclude = addTimeStampsConfig.exclude.some(ePath => {
+    if (timeStampsConfig.exclude.length > 0) {
+      const shouldExclude = timeStampsConfig.exclude.some(ePath => {
         return path.startsWith(ePath);
       });
       if (shouldExclude) {
@@ -222,10 +222,10 @@ const build = async ({
   dist,
   schemaDir,
   schemaUri,
-  addingEnumConfig,
-  addInstructionsConfig,
-  addPathPropertyConfig,
-  addTimeStampsConfig,
+  enumConfig,
+  instructionsConfig,
+  pagePathConfig,
+  timeStampsConfig,
   joinJsonConfigs,
   baseDir
 }) => {
@@ -236,7 +236,7 @@ const build = async ({
       src,
       dist: schemaDir,
       schemaUri,
-      addingEnumConfig,
+      enumConfig,
       baseDir
     });
 
@@ -245,9 +245,9 @@ const build = async ({
       dist,
       schemaDir,
       schemaUri,
-      addInstructionsConfig,
-      addPathPropertyConfig,
-      addTimeStampsConfig,
+      instructionsConfig,
+      pagePathConfig,
+      timeStampsConfig,
       joinJsonConfigs,
       baseDir
     });

@@ -11,7 +11,7 @@ const rimraf = require('rimraf');
 const { addIdsAsEnum } = require('./add-ids-as-enum.js');
 const { addDefaultSnippets } = require('./add-default-snippets.js');
 
-const generateNewSchemas = (schemas, addingEnumConfig) => {
+const generateNewSchemas = (schemas, enumConfig) => {
   const errors = [];
 
   const readJson = path => {
@@ -30,8 +30,8 @@ const generateNewSchemas = (schemas, addingEnumConfig) => {
     }
   };
 
-  const propsAndIds = Object.keys(addingEnumConfig).map(key => {
-    const pullIds = addingEnumConfig[key];
+  const propsAndIds = Object.keys(enumConfig).map(key => {
+    const pullIds = enumConfig[key];
     const ids = pullIds(readJson);
     return {
       pattern: new RegExp(`(^${key}|${pluralize.singular(key)}$)`),
@@ -77,7 +77,7 @@ const clean = (dist, baseDir) => {
 // Do not fetch while watching task is running
 let schemas = null;
 
-const buildSchemas = async ({ dist, schemaUri, addingEnumConfig, baseDir }) => {
+const buildSchemas = async ({ dist, schemaUri, enumConfig, baseDir }) => {
   await clean(dist, baseDir);
 
   consola.info('Building schemas...');
@@ -96,7 +96,7 @@ const buildSchemas = async ({ dist, schemaUri, addingEnumConfig, baseDir }) => {
   const {
     results: buildSchemasResults,
     errors: buildSchemasErrors
-  } = generateNewSchemas(schemas, addingEnumConfig);
+  } = generateNewSchemas(schemas, enumConfig);
 
   const errors = buildSchemasErrors.map(err => {
     return {

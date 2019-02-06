@@ -7,10 +7,10 @@ const { build } = require('./lib/build');
 const {
   dirs: { root, src, schemas, tmp },
   SCHEMA_URI,
-  addingEnumConfig,
-  addPathPropertyConfig,
-  addTimeStampsConfig,
-  addInstructionsConfig,
+  enumConfig,
+  pagePathConfig,
+  timeStampsConfig,
+  instructionsConfig,
   joinJsonConfigs
 } = require('./config.js');
 
@@ -20,10 +20,10 @@ const {
     dist: tmp,
     schemaDir: schemas,
     schemaUri: SCHEMA_URI,
-    addingEnumConfig,
-    addPathPropertyConfig,
-    addTimeStampsConfig,
-    addInstructionsConfig,
+    enumConfig,
+    pagePathConfig,
+    timeStampsConfig,
+    instructionsConfig,
     joinJsonConfigs,
     baseDir: root
   });

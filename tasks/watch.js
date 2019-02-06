@@ -12,7 +12,7 @@ const { formatDocs } = require('./lib/format-docs.js');
 const {
   dirs: { root, src, schemas },
   SCHEMA_URI,
-  addingEnumConfig
+  enumConfig
 } = require('./config.js');
 
 const watchPathPattern = resolve(src, '**', '*.json');
@@ -25,7 +25,7 @@ const runTasks = async (watcher, startWatching) => {
     src,
     dist: schemas,
     schemaUri: SCHEMA_URI,
-    addingEnumConfig,
+    enumConfig,
     baseDir: root
   });
 

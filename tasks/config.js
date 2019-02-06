@@ -35,15 +35,15 @@ const pullIdsFromIndex = (dirPath, readJson) => {
     .filter(e => e);
 };
 
-exports.addTimeStampsConfig = {
+exports.timeStampsConfig = {
   exclude: ['config'].map(p => resolve(src, p))
 };
 
-exports.addPathPropertyConfig = {
+exports.pagePathConfig = {
   exclude: ['config'].map(p => resolve(src, p))
 };
 
-exports.addingEnumConfig = {
+exports.enumConfig = {
   dyeing_material_ids: readJson => {
     const dirPath = resolve(src, 'dyeing-materials');
     return pullIdsFromIndex(dirPath, readJson);
@@ -184,7 +184,7 @@ const usesHakushuCotton = product => {
   );
 };
 
-exports.addInstructionsConfig = {
+exports.instructionsConfig = {
   instructions: [
     {
       instructionId: 'hand-wash',

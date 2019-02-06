@@ -6,7 +6,7 @@ const { buildSchemas } = require('./lib/build-schemas');
 const {
   dirs: { root, src, schemas },
   SCHEMA_URI,
-  addingEnumConfig
+  enumConfig
 } = require('./config.js');
 
 (async () => {
@@ -14,7 +14,7 @@ const {
     src,
     dist: schemas,
     schemaUri: SCHEMA_URI,
-    addingEnumConfig,
+    enumConfig,
     baseDir: root
   });
   consola.success('Generated schemas:', results);

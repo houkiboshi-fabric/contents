@@ -11,10 +11,10 @@ const {
   dirs: { src, dist, root, schemas, tmp },
   archiveDistPath,
   SCHEMA_URI,
-  addingEnumConfig,
-  addInstructionsConfig,
-  addPathPropertyConfig,
-  addTimeStampsConfig,
+  enumConfig,
+  instructionsConfig,
+  pagePathConfig,
+  timeStampsConfig,
   joinJsonConfigs
 } = require('./config.js');
 const { build } = require('./lib/build');
@@ -28,10 +28,10 @@ const additionalDeploymentTargets = ['.circleci'];
     dist: tmp,
     schemaDir: schemas,
     schemaUri: SCHEMA_URI,
-    addingEnumConfig,
-    addInstructionsConfig,
-    addPathPropertyConfig,
-    addTimeStampsConfig,
+    enumConfig,
+    instructionsConfig,
+    pagePathConfig,
+    timeStampsConfig,
     joinJsonConfigs,
     baseDir: root
   });
