@@ -3,9 +3,9 @@
 const { execSync } = require('child_process');
 const { DateTime } = require('luxon');
 
-const getCommitTimeStamps = path => {
+const getCommitTimeStamps = (path, cwd = process.cwd()) => {
   const cmd = `git log --format=%aI --follow ${path}`;
-  return execSync(cmd)
+  return execSync(cmd, { cwd })
     .toString('utf-8')
     .split('\n')
     .filter(e => e)

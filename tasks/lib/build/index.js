@@ -131,7 +131,7 @@ const buildContents = ({
       }
     }
 
-    const { createdAt, modifiedAt } = getTimeStamps(path);
+    const { createdAt, modifiedAt } = getTimeStamps(path, baseDir);
 
     if (!createdAt || !modifiedAt) {
       consola.error(path);
