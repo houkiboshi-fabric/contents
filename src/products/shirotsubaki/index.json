@@ -54,5 +54,8 @@
       "dyeing_material_ids": ["kuzu", "resin-pigment"]
     }
   ],
-  "process_ids": ["process-kusaki-zome", "process-katazome"]
+  "process_ids": ["process-kusaki-zome", "process-katazome"],
+  "instructions": {
+    "additional_items": []
+  }
 }

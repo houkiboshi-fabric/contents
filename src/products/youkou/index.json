@@ -37,5 +37,8 @@
       ]
     }
   ],
-  "process_ids": ["process-kusaki-zome", "process-multi-shaft-table-loom"]
+  "process_ids": ["process-kusaki-zome", "process-multi-shaft-table-loom"],
+  "instructions": {
+    "additional_items": []
+  }
 }

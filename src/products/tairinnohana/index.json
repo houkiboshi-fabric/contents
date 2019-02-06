@@ -36,5 +36,8 @@
       "dyeing_material_ids": ["resin-pigment", "tamanegi"]
     }
   ],
-  "process_ids": ["process-kusaki-zome", "process-katazome"]
+  "process_ids": ["process-kusaki-zome", "process-katazome"],
+  "instructions": {
+    "additional_items": []
+  }
 }

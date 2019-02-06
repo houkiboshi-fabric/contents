@@ -39,5 +39,8 @@
       "dyeing_material_ids": ["ready-made"]
     }
   ],
-  "process_ids": ["process-zoom-loom"]
+  "process_ids": ["process-zoom-loom"],
+  "instructions": {
+    "additional_items": []
+  }
 }

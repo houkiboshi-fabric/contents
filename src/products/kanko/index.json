@@ -39,5 +39,8 @@
       "dyeing_material_ids": ["resin-pigment"]
     }
   ],
-  "process_ids": ["process-katazome"]
+  "process_ids": ["process-katazome"],
+  "instructions": {
+    "additional_items": []
+  }
 }

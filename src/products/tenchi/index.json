@@ -41,5 +41,8 @@
       ]
     }
   ],
-  "process_ids": ["process-kusaki-zome"]
+  "process_ids": ["process-kusaki-zome"],
+  "instructions": {
+    "additional_items": []
+  }
 }
