@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "ajv": "^6.8.1",
-    "chokidar": "^2.0.4",
+    "chokidar": "^2.1.0",
     "consola": "^2.3.2",
     "eslint": "^5.13.0",
     "eslint-config-prettier": "^4.0.0",
