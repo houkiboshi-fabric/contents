@@ -77,7 +77,6 @@ yarn format
   - `build-schemas`
   - `validate`
   - `lint`
-  - `format`
 - watch target pattern `src/**/*.{json,md}`
 
 ```console
