@@ -56,10 +56,7 @@ yarn build-schemas
 ### Validate
 
 - Validate json files using Ajv
-  - `src/dyeing-material-types/**/*.json`
-  - `src/dyeing-materials/**/*.json`
-  - `src/products/**/*.json`
-  - `src/raw-materials/**/*.json`
+  - `src/**/*.json`
 
 ```console
 yarn validate
@@ -67,7 +64,7 @@ yarn validate
 
 ### Format
 
-- Format `.(js|json|md)` files using prettier
+- Format `.{js,json,md}` files using prettier
 - Sort properties of json according to schema properties
 
 ```console
@@ -76,14 +73,40 @@ yarn format
 
 ### Watch
 
-- Watch file changing continually and run `build-schemas`, `validate`,
-  and `format`
-  - `src/**/*.json`
+- Watch file changing continually and run tasks below
+  - `build-schemas`
+  - `validate`
+  - `lint`
+- watch target pattern `src/**/*.{json,md}`
 
 ```console
 yarn watch
 // or
 yarn start
+```
+
+### Lint
+
+- Run lint to `src/**/*.{json,md}`
+  - json `description` property
+  - Markdown body contents
+
+```console
+yarn lint
+```
+
+### Lint and fix
+
+- Run lint to `src/**/*.{json,md}` and fix automatically if possible
+
+```console
+yarn fix
+```
+
+### Lint JavaScript files
+
+```console
+yarn lint-js
 ```
 
 ### Test
@@ -94,14 +117,6 @@ yarn start
 yarn test
 // or
 yarn test:watch
-```
-
-### Lint
-
-- Lint JavaScript files using ESLint
-
-```console
-yarn lint
 ```
 
 ### Deploy
