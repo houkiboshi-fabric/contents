@@ -58,7 +58,7 @@ const lintMdFiles = async pattern => {
   const filePaths = glob.sync(pattern);
   return engine.executeOnFiles(filePaths).then(results => {
     if (!engine.isErrorResults(results)) {
-      return;
+      return [];
     }
     return results;
   });
@@ -69,7 +69,7 @@ const fixMdFiles = async pattern => {
   const filePaths = glob.sync(pattern);
   return engine.executeOnFiles(filePaths).then(results => {
     if (!engine.isErrorResults(results)) {
-      return;
+      return [];
     }
     return results;
   });
