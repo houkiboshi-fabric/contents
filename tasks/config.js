@@ -8,6 +8,7 @@ const root = resolve(__dirname, '..');
 const src = resolve(root, 'src');
 const dist = resolve(root, 'dist');
 const schemas = resolve(root, 'schemas');
+const assets = resolve(root, 'assets');
 const tmp = resolve(dist, 'contents');
 
 exports.dirs = {
@@ -15,6 +16,7 @@ exports.dirs = {
   src,
   dist,
   schemas,
+  assets,
   tmp
 };
 
