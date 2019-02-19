@@ -8,9 +8,12 @@
   "title": "草木染め糸のストール 桜鏡",
   "description": "茜で染めたコットンミニストールです。ところどころ手紡ぎのウールをいれることでギャザーがより、立体感がでています。薄手で軽いので、一年中使えます。",
   "body": null,
-  "media_image": "products/oukyou/main.jpg",
-  "image": "products/oukyou/main.jpg",
-  "images_alt": ["products/oukyou/01.jpg", "products/oukyou/02.jpg"],
+  "media_image": "../../../assets/products/oukyou/main.jpg",
+  "image": "../../../assets/products/oukyou/main.jpg",
+  "images_alt": [
+    "../../../assets/products/oukyou/01.jpg",
+    "../../../assets/products/oukyou/02.jpg"
+  ],
   "price": 18000,
   "links_to_shop": ["https://minne.com/items/2747336"],
   "size": {

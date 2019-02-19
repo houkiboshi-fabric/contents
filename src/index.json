@@ -2,6 +2,6 @@
   "$schema": "../schemas/page.json",
   "title": "手織り草木染ホウキボシ",
   "description": "手織り草木染ホウキボシは、手織り・型染め・草木染めを専門とする鳥取県の工房です。鳥取県中西部は、伯耆国（ほうきのくに）と呼ばれていました。中国地方で最高峰の「大山」をはじめとする豊かな自然があるこの場所で、自然の色やかたちを布にしています。",
-  "media_image": "products/chojo/main.jpg",
+  "media_image": "../assets/products/chojo/main.jpg",
   "body": "body.md"
 }

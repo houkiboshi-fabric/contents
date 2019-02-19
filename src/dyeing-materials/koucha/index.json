@@ -6,8 +6,8 @@
   "title": "紅茶",
   "description": "紅茶です。一煎目は飲む用にして、そのあとは染液抽出用に乾かしておくと二度美味しいです。紅茶のような色に染まります。",
   "body": null,
-  "media_image": "dyeing-materials/koucha/main.jpg",
-  "image": "dyeing-materials/koucha/main.jpg",
+  "media_image": "../../../assets/dyeing-materials/koucha/main.jpg",
+  "image": "../../../assets/dyeing-materials/koucha/main.jpg",
   "images_alt": [],
   "dyeing_material_type_id": "plant-dye-type"
 }

@@ -8,9 +8,12 @@
   "title": "草木染め糸のストール 安閑",
   "description": "草木染めした綿糸で手織りしたストールです。柔らかくて軽く、さらっとしていて、3 シーズン使えます。明るい色味なので、シンプルな服装にあわせるときっとすてきです。経糸に金柑、葛、藍、ミント、桜の糸を、緯糸に藍の糸を使っています。",
   "body": null,
-  "media_image": "products/ankan/main.jpg",
-  "image": "products/ankan/main.jpg",
-  "images_alt": ["products/ankan/01.jpg", "products/ankan/02.jpg"],
+  "media_image": "../../../assets/products/ankan/main.jpg",
+  "image": "../../../assets/products/ankan/main.jpg",
+  "images_alt": [
+    "../../../assets/products/ankan/01.jpg",
+    "../../../assets/products/ankan/02.jpg"
+  ],
   "price": 18000,
   "links_to_shop": [
     "https://minne.com/items/10918338",

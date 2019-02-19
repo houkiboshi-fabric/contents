@@ -8,12 +8,12 @@
   "title": "草木染め糸の手織り布 長城",
   "description": "草木染めした綿糸で手織りした布です。柔らかくて軽く、さらっとしていて、首に巻くストールとして春〜秋に最適です。インテリアファブリックとして家具にかけたり、飾るのもおすすめです。",
   "body": null,
-  "media_image": "products/chojo/main.jpg",
-  "image": "products/chojo/main.jpg",
+  "media_image": "../../../assets/products/chojo/main.jpg",
+  "image": "../../../assets/products/chojo/main.jpg",
   "images_alt": [
-    "products/chojo/01.jpg",
-    "products/chojo/02.jpg",
-    "products/chojo/03.jpg"
+    "../../../assets/products/chojo/01.jpg",
+    "../../../assets/products/chojo/02.jpg",
+    "../../../assets/products/chojo/03.jpg"
   ],
   "price": 23000,
   "links_to_shop": [

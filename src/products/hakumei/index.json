@@ -8,9 +8,12 @@
   "title": "ポーチ 薄明",
   "description": "A4 の紙を三つ折りして入れられるくらいの大きさで、ノートなら B6、A6 が入ります。母子手帳と予防接種などのお知らせの紙をいっしょに入れたり、メモ帳とペン、文庫本、いろいろ入ります。",
   "body": null,
-  "media_image": "products/hakumei/main.jpg",
-  "image": "products/hakumei/main.jpg",
-  "images_alt": ["products/hakumei/01.jpg", "products/hakumei/02.jpg"],
+  "media_image": "../../../assets/products/hakumei/main.jpg",
+  "image": "../../../assets/products/hakumei/main.jpg",
+  "images_alt": [
+    "../../../assets/products/hakumei/01.jpg",
+    "../../../assets/products/hakumei/02.jpg"
+  ],
   "price": 4800,
   "links_to_shop": [
     "https://minne.com/items/14791953",

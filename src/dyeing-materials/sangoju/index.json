@@ -6,8 +6,8 @@
   "title": "サンゴジュ",
   "description": "葉で染めます。赤みがかったベージュのような色に染まります。",
   "body": null,
-  "media_image": "dyeing-materials/sangoju/main.jpg",
-  "image": "dyeing-materials/sangoju/main.jpg",
+  "media_image": "../../../assets/dyeing-materials/sangoju/main.jpg",
+  "image": "../../../assets/dyeing-materials/sangoju/main.jpg",
   "images_alt": [],
   "dyeing_material_type_id": "plant-dye-type"
 }

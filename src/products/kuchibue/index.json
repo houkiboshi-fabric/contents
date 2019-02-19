@@ -8,12 +8,12 @@
   "title": "草木染め糸の手織布 口笛",
   "description": "首まわりにさらっと巻ける、夏にも使える布を織りました。さらさらとした風合いでハリがありながら、くったりとしたやわらかさがあります。身につける用途以外にも、テーブルセンターなどとして使うのも良いかもしれません。桜で染めた糸を 3 色と、葛で染めた緑の糸を使用しています。",
   "body": null,
-  "media_image": "products/kuchibue/main.jpg",
-  "image": "products/kuchibue/main.jpg",
+  "media_image": "../../../assets/products/kuchibue/main.jpg",
+  "image": "../../../assets/products/kuchibue/main.jpg",
   "images_alt": [
-    "products/kuchibue/01.jpg",
-    "products/kuchibue/02.jpg",
-    "products/kuchibue/03.jpg"
+    "../../../assets/products/kuchibue/01.jpg",
+    "../../../assets/products/kuchibue/02.jpg",
+    "../../../assets/products/kuchibue/03.jpg"
   ],
   "price": 15000,
   "links_to_shop": [
