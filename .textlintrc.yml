@@ -1,21 +1,22 @@
 rules:
   max-ten:
-    max: 3
+    max: 6
   max-kanji-continuous-len:
-    max: 5
+    max: 6
     allow:
       - 鳥取県東伯郡琴浦町槻下
       - 鳥取県中西部
   no-doubled-joshi:
     min_interval: 1
     strict: false
-    allow: []
-  no-double-negative-ja: true
+    allow: ["も", "や", "たり"]
   no-hankaku-kana: true
   ja-no-redundant-expression: true
   no-mixed-zenkaku-and-hankaku-alphabet: true
-  sentence-length: true
-  first-sentence-length: true
+  sentence-length:
+    max: 150
+  first-sentence-length:
+    max: 80
   no-dropping-the-ra: true
   no-doubled-conjunctive-particle-ga: true
   no-doubled-conjunction: true
@@ -25,8 +26,6 @@ rules:
     '##': 30
   ja-hiragana-keishikimeishi: true
   ja-hiragana-fukushi: true
-  ja-hiragana-hojodoushi: true
-  ja-unnatural-alphabet: true
   ja-space-between-half-and-full-width:
     space: always
   ja-nakaguro-or-halfwidth-space-between-katakana: true
