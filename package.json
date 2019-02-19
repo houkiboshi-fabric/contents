@@ -22,7 +22,7 @@
     "lint": "node ./tasks/lint-contents.js",
     "fix": "node ./tasks/fix-contents && yarn format",
     "lint-js": "eslint './**/*.js'",
-    "format": "prettier --write '{README.md,{docs,src,tasks}/**/*.{json,js,md}}' && node ./tasks/build-schemas.js && node ./tasks/format-docs.js",
+    "format": "node ./tasks/build-schemas.js && node ./tasks/format-docs.js",
     "validate": "node ./tasks/validate-jsons.js",
     "deploy": "NODE_DEBUG=gh-pages node ./tasks/deploy.js"
   },
