@@ -1,6 +1,7 @@
 # Styleguide
 
-ルールの量があまりに多くなるなら [textlint](https://github.com/textlint/textlint) の利用を視野に入れます。
+ルールの量があまりに多くなるなら
+[textlint](https://github.com/textlint/textlint) の利用を視野に入れます。
 
 ## 半角英数・半角スペース
 
