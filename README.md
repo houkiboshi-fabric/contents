@@ -46,9 +46,9 @@ yarn build
 ### Build schemas
 
 - Build new JSON Schema files locally
-  - All properties of schemas named `*_id` or `*_ids` have enum that
-    are ids collected from actual dataset. So you can use auto-complete with ids
-    in your editor like Visual Studio Code.
+  - All properties of schemas named `*_id` or `*_ids` have enum that are ids
+    collected from actual dataset. So you can use auto-complete with ids in your
+    editor like Visual Studio Code.
   - Generate default snippets from examples for Visual Studio Code
 
 ```console
@@ -133,8 +133,8 @@ yarn test:watch
 ### Deploy
 
 - `yarn build` & commit files under `dist/` and push them to `gh-pages` branch
-- You don't need to run this task manually in most cases since
-  this task will be run automatically on CI.
+- You don't need to run this task manually in most cases since this task will be
+  run automatically on CI.
 
 ```console
 yarn deploy
