@@ -48,9 +48,11 @@ const formatDocs = (srcDir, schemasDir) => {
       const schema = schemaMap[schemaId];
       const schemaOrderList = Object.keys(schema.properties);
       const sorted = sortDocProperties(doc, schemaOrderList);
+      const config = prettier.resolveConfig.sync(path);
       const formatted = prettier.format(
         `${JSON.stringify(sorted, null, 2)}\n`,
         {
+          ...config,
           parser: 'json'
         }
       );
@@ -69,7 +71,9 @@ const formatDocs = (srcDir, schemasDir) => {
   glob.sync(mdPattern).forEach(path => {
     try {
       const docString = readFileSync(path, 'utf8');
+      const config = prettier.resolveConfig.sync(path);
       const formatted = prettier.format(docString, {
+        ...config,
         parser: 'markdown'
       });
       const hasModified = formatted !== docString;
