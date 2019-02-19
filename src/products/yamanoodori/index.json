@@ -8,9 +8,9 @@
   "title": "飾る布 山の踊り",
   "description": "草木染めした綿糸で手織りした布です。太めの糸で織った柔らかい布です。テーブルセンターや家具にかけるなどのインテリアファブリックとして飾るのに最適です。フリンジがコイルのようになっていて特徴的です。",
   "body": null,
-  "media_image": "products/yamanoodori/main.jpg",
-  "image": "products/yamanoodori/main.jpg",
-  "images_alt": ["products/yamanoodori/01.jpg"],
+  "media_image": "../../../assets/products/yamanoodori/main.jpg",
+  "image": "../../../assets/products/yamanoodori/main.jpg",
+  "images_alt": ["../../../assets/products/yamanoodori/01.jpg"],
   "price": 6500,
   "links_to_shop": ["https://minne.com/items/6599719"],
   "size": {

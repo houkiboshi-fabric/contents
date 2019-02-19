@@ -8,9 +8,12 @@
   "title": "草木染め糸のハンカチ 春の池",
   "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。軽くてやわらかく、しなやかです。緯糸にはところどころに手紡ぎした伯州綿のスラブ糸を使っています。",
   "body": null,
-  "media_image": "products/harunoike/main.jpg",
-  "image": "products/harunoike/main.jpg",
-  "images_alt": ["products/harunoike/01.jpg", "products/harunoike/02.jpg"],
+  "media_image": "../../../assets/products/harunoike/main.jpg",
+  "image": "../../../assets/products/harunoike/main.jpg",
+  "images_alt": [
+    "../../../assets/products/harunoike/01.jpg",
+    "../../../assets/products/harunoike/02.jpg"
+  ],
   "price": 3250,
   "links_to_shop": [
     "https://minne.com/items/4402158",

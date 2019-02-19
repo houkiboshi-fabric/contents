@@ -8,9 +8,12 @@
   "title": "織りフェルトのキーホルダー 深海",
   "description": "織った羊毛を少し縮絨させてつくったフェルトのキーホルダーです。青緑系のミックス色と灰色の組み合わせでつくりました。かばんなどにひっかけておくとかわいいし便利です。個体差ありますが、おおよそ 6.5 cm 以内の長さの鍵であれば収まると思います。サイズを必ずご確認ください。",
   "body": null,
-  "media_image": "products/shinkai/main.jpg",
-  "image": "products/shinkai/main.jpg",
-  "images_alt": ["products/shinkai/01.jpg", "products/shinkai/02.jpg"],
+  "media_image": "../../../assets/products/shinkai/main.jpg",
+  "image": "../../../assets/products/shinkai/main.jpg",
+  "images_alt": [
+    "../../../assets/products/shinkai/01.jpg",
+    "../../../assets/products/shinkai/02.jpg"
+  ],
   "price": 1200,
   "links_to_shop": ["https://minne.com/items/1449933"],
   "size": {

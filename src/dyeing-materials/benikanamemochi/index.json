@@ -6,8 +6,8 @@
   "title": "ベニカナメモチ",
   "description": "新葉が赤くなる特徴を持つ木です。赤い新葉で染めると、緑がかった黄色に染まります。",
   "body": null,
-  "media_image": "dyeing-materials/benikanamemochi/main.jpg",
-  "image": "dyeing-materials/benikanamemochi/main.jpg",
+  "media_image": "../../../assets/dyeing-materials/benikanamemochi/main.jpg",
+  "image": "../../../assets/dyeing-materials/benikanamemochi/main.jpg",
   "images_alt": [],
   "dyeing_material_type_id": "plant-dye-type"
 }

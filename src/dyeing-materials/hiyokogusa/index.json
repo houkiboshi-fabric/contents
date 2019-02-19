@@ -6,8 +6,8 @@
   "title": "ひよこ草",
   "description": "いわゆるハコベで、淡い黄色に染まる雑草です。人参のまわりにたくさん生えていてうっとおしかったので染めてみたらいい感じの色でした。",
   "body": null,
-  "media_image": "dyeing-materials/hiyokogusa/main.jpg",
-  "image": "dyeing-materials/hiyokogusa/main.jpg",
+  "media_image": "../../../assets/dyeing-materials/hiyokogusa/main.jpg",
+  "image": "../../../assets/dyeing-materials/hiyokogusa/main.jpg",
   "images_alt": [],
   "dyeing_material_type_id": "plant-dye-type"
 }

@@ -8,9 +8,9 @@
   "title": "壁飾り 天地",
   "description": "壁に飾る織物です。織物は四角になりがちですが、丸くて立体感あるものが飾りたいなあと考えてつくりました。同じものをつくることが難しいので、一点物です。",
   "body": null,
-  "media_image": "products/tenchi/main.jpg",
-  "image": "products/tenchi/main.jpg",
-  "images_alt": ["products/tenchi/01.jpg"],
+  "media_image": "../../../assets/products/tenchi/main.jpg",
+  "image": "../../../assets/products/tenchi/main.jpg",
+  "images_alt": ["../../../assets/products/tenchi/01.jpg"],
   "price": 5700,
   "links_to_shop": [
     "https://minne.com/items/15007450",

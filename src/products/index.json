@@ -2,6 +2,6 @@
   "$schema": "../../schemas/page.json",
   "title": "製品",
   "description": "製品の一覧です。",
-  "media_image": "products/chojo/main.jpg",
+  "media_image": "../../assets/products/chojo/main.jpg",
   "body": "body.md"
 }

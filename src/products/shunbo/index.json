@@ -8,9 +8,12 @@
   "title": "草木染め糸のハンカチ 春暮",
   "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。軽くてやわらかく、しなやかです。緯糸にはところどころに手紡ぎした伯州綿のスラブ糸を使っています。",
   "body": null,
-  "media_image": "products/shunbo/main.jpg",
-  "image": "products/shunbo/main.jpg",
-  "images_alt": ["products/shunbo/01.jpg", "products/shunbo/02.jpg"],
+  "media_image": "../../../assets/products/shunbo/main.jpg",
+  "image": "../../../assets/products/shunbo/main.jpg",
+  "images_alt": [
+    "../../../assets/products/shunbo/01.jpg",
+    "../../../assets/products/shunbo/02.jpg"
+  ],
   "price": 3250,
   "links_to_shop": [
     "https://minne.com/items/6595046",

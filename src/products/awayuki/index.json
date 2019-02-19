@@ -8,9 +8,12 @@
   "title": "手織りミニストール 淡雪",
   "description": "綿のスラブ糸で織ったスクエアモチーフをつなげたミニストールです。やわらかでふわっとあたたかく、一年中使えます。甘すぎず、シンプルすぎずの使いやすいデザインになりました。糸は草木染めでほんのり生成りのニュアンスを加えました。",
   "body": null,
-  "media_image": "products/awayuki/main.jpg",
-  "image": "products/awayuki/main.jpg",
-  "images_alt": ["products/awayuki/01.jpg", "products/awayuki/02.jpg"],
+  "media_image": "../../../assets/products/awayuki/main.jpg",
+  "image": "../../../assets/products/awayuki/main.jpg",
+  "images_alt": [
+    "../../../assets/products/awayuki/01.jpg",
+    "../../../assets/products/awayuki/02.jpg"
+  ],
   "price": 16000,
   "links_to_shop": [
     "https://minne.com/items/1467329",

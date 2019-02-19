@@ -8,11 +8,11 @@
   "title": "草木染め糸のハンカチ 博物館",
   "description": "綿糸を草木染めして、使いやすいサイズのハンカチを作りました。市販のタオルハンカチくらいのサイズで、かさばりにくく使いやすい大きさです。軽くてやわらかく、しなやかです。緯糸にはところどころに手紡ぎした伯州綿のスラブ糸を使っています。",
   "body": null,
-  "media_image": "products/hakubutsukan/main.jpg",
-  "image": "products/hakubutsukan/main.jpg",
+  "media_image": "../../../assets/products/hakubutsukan/main.jpg",
+  "image": "../../../assets/products/hakubutsukan/main.jpg",
   "images_alt": [
-    "products/hakubutsukan/01.jpg",
-    "products/hakubutsukan/02.jpg"
+    "../../../assets/products/hakubutsukan/01.jpg",
+    "../../../assets/products/hakubutsukan/02.jpg"
   ],
   "price": 3250,
   "links_to_shop": [

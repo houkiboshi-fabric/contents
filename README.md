@@ -21,6 +21,8 @@ houkiboshi-fabric dataset
 ```console
 git clone git@github.com:houkiboshi-fabric/contents.git
 cd contents/
+cp .env.example .env
+code .env # Edit and save required environment variables on your editor
 nodenv update-version-defs && nodenv install # <-- optional
 yarn install
 ```
@@ -53,6 +55,14 @@ yarn build
 yarn build-schemas
 ```
 
+### Update assets
+
+- Check assets updates and sync
+
+```console
+yarn update-assets
+```
+
 ### Validate
 
 - Validate json files using Ajv
@@ -73,6 +83,7 @@ yarn format
 
 ### Watch
 
+- Run `update-assets` once at the first
 - Watch file changing continually and run tasks below
   - `build-schemas`
   - `validate`

@@ -8,9 +8,12 @@
   "title": "ポーチ 水面",
   "description": "水面のような織り柄の布を織りました。新書がすっぽり入るくらいの大きさのポーチです。",
   "body": null,
-  "media_image": "products/minamo/main.jpg",
-  "image": "products/minamo/main.jpg",
-  "images_alt": ["products/minamo/01.jpg", "products/minamo/02.jpg"],
+  "media_image": "../../../assets/products/minamo/main.jpg",
+  "image": "../../../assets/products/minamo/main.jpg",
+  "images_alt": [
+    "../../../assets/products/minamo/01.jpg",
+    "../../../assets/products/minamo/02.jpg"
+  ],
   "price": 4800,
   "links_to_shop": [
     "https://minne.com/items/14938131",

@@ -6,8 +6,8 @@
   "title": "柚子",
   "description": "柚子は枝と葉を煮だして使います。レモンイエローのような淡い黄色に染まります。煮だす過程でいい匂いを楽しめます。",
   "body": null,
-  "media_image": "dyeing-materials/yuzu/main.jpg",
-  "image": "dyeing-materials/yuzu/main.jpg",
+  "media_image": "../../../assets/dyeing-materials/yuzu/main.jpg",
+  "image": "../../../assets/dyeing-materials/yuzu/main.jpg",
   "images_alt": [],
   "dyeing_material_type_id": "plant-dye-type"
 }

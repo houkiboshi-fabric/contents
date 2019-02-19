@@ -6,8 +6,8 @@
   "title": "枇杷の葉",
   "description": "普通に煮だすと黄色系、アルカリ性で煮だすと赤系の茶色に染まります。乾燥葉の方が濃い色を出せるので、染料店で購入するか、枇杷茶を使うと手っ取り早いです。",
   "body": null,
-  "media_image": "dyeing-materials/biwa/main.jpg",
-  "image": "dyeing-materials/biwa/main.jpg",
+  "media_image": "../../../assets/dyeing-materials/biwa/main.jpg",
+  "image": "../../../assets/dyeing-materials/biwa/main.jpg",
   "images_alt": [],
   "dyeing_material_type_id": "plant-dye-type"
 }

@@ -6,8 +6,8 @@
   "title": "ローズマリー",
   "description": "肉料理などに使うローズマリーは、染料にするとレモンイエローのような色に染められます。",
   "body": null,
-  "media_image": "dyeing-materials/rosemary/main.jpg",
-  "image": "dyeing-materials/rosemary/main.jpg",
+  "media_image": "../../../assets/dyeing-materials/rosemary/main.jpg",
+  "image": "../../../assets/dyeing-materials/rosemary/main.jpg",
   "images_alt": [],
   "dyeing_material_type_id": "plant-dye-type"
 }

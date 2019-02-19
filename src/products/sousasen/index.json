@@ -8,9 +8,9 @@
   "title": "ポーチ 走査線",
   "description": "羊毛を草木染めした糸で、カラフルな布を織ってポーチをつくりました。A4 の紙を三つ折りして入れられるくらいの大きさで、ノートなら B6、A6 が入ります。母子手帳と予防接種などのお知らせの紙をいっしょに入れたり、メモ帳とペン、文庫本、いろいろ入ります。",
   "body": null,
-  "media_image": "products/sousasen/main.jpg",
-  "image": "products/sousasen/main.jpg",
-  "images_alt": ["products/sousasen/01.jpg"],
+  "media_image": "../../../assets/products/sousasen/main.jpg",
+  "image": "../../../assets/products/sousasen/main.jpg",
+  "images_alt": ["../../../assets/products/sousasen/01.jpg"],
   "price": 4800,
   "links_to_shop": [
     "https://minne.com/items/12002424",

@@ -8,12 +8,12 @@
   "title": "ポーチ 赤椿",
   "description": "赤い椿のポーチをつくりました。内側の布は紅茶で染めて、ほんのり色づいています。A4 の紙を三つ折りして入れられるくらいの大きさで、ノートなら B6、A6 が入ります（写真は文庫本)。母子手帳と予防接種などのお知らせの紙をいっしょに入れたり、メモ帳とペン、文庫本、いろいろ入ります。",
   "body": null,
-  "media_image": "products/akatsubaki/main.jpg",
-  "image": "products/akatsubaki/main.jpg",
+  "media_image": "../../../assets/products/akatsubaki/main.jpg",
+  "image": "../../../assets/products/akatsubaki/main.jpg",
   "images_alt": [
-    "products/akatsubaki/01.jpg",
-    "products/akatsubaki/02.jpg",
-    "products/akatsubaki/03.jpg"
+    "../../../assets/products/akatsubaki/01.jpg",
+    "../../../assets/products/akatsubaki/02.jpg",
+    "../../../assets/products/akatsubaki/03.jpg"
   ],
   "price": 3900,
   "links_to_shop": [
