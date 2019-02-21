@@ -5,7 +5,7 @@
   "name_kana": "じゅしがんりょう",
   "title": "樹脂顔料",
   "description": "型染めのときに使う顔料です。バインダーという定着剤を入れることで布に色を定着させます。バインダーが多ければ仕上がりが固く、少なければ布の風合いを損ないません。水の量や布の特徴、バインダーの割合によって色のにじみやすさが変わります。",
-  "body": null,
+  "body": "body.md",
   "media_image": "../../../assets/dyeing-materials/resin-pigment/main.jpg",
   "image": "../../../assets/dyeing-materials/resin-pigment/main.jpg",
   "images_alt": [],

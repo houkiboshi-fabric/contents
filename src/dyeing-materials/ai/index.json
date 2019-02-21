@@ -5,7 +5,7 @@
   "name_kana": "あい",
   "title": "藍",
   "description": "デニムなどを染めるのに使われる青色の植物染料です。藍といえば発酵させて濃い青色に染める染液ですが、明るい水色に染まる生葉染めや、乾燥させた葉の煮だし染めの方法もあります。多くの植物染料と違って媒染剤 (ばいせんざい) が不要で、酸素と反応して発色・定着します。",
-  "body": null,
+  "body": "body.md",
   "media_image": "../../../assets/dyeing-materials/ai/main.jpg",
   "image": "../../../assets/dyeing-materials/ai/main.jpg",
   "images_alt": ["../../../assets/dyeing-materials/ai/01.jpg"],

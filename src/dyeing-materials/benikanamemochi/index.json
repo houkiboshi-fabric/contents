@@ -5,7 +5,7 @@
   "name_kana": "べにかなめもち",
   "title": "ベニカナメモチ",
   "description": "新葉が赤くなる特徴を持つ木です。赤い新葉で染めると、緑がかった黄色に染まります。",
-  "body": null,
+  "body": "body.md",
   "media_image": "../../../assets/dyeing-materials/benikanamemochi/main.jpg",
   "image": "../../../assets/dyeing-materials/benikanamemochi/main.jpg",
   "images_alt": [],

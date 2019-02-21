@@ -5,7 +5,7 @@
   "name_kana": "みんと",
   "title": "ミント",
   "description": "繁殖力の高いミントは、煮出して染料にすると茶系の色に染められます。煮ているときの匂いが良いので好きです。",
-  "body": null,
+  "body": "body.md",
   "media_image": "../../../assets/dyeing-materials/mint/main.jpg",
   "image": "../../../assets/dyeing-materials/mint/main.jpg",
   "images_alt": [],

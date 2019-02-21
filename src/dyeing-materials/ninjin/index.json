@@ -5,7 +5,7 @@
   "name_kana": "にんじん",
   "title": "人参",
   "description": "人参の葉の部分を煮だすと、あざやかな黄緑色に染めることができます。煮だすあいだ、人参の匂いがかなり漂います。",
-  "body": null,
+  "body": "body.md",
   "media_image": "../../../assets/dyeing-materials/ninjin/main.jpg",
   "image": "../../../assets/dyeing-materials/ninjin/main.jpg",
   "images_alt": [],

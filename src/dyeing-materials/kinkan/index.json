@@ -5,7 +5,7 @@
   "name_kana": "きんかん",
   "title": "金柑",
   "description": "金柑の葉と枝を煮だして染液にします。明るい黄色に染まります。",
-  "body": null,
+  "body": "body.md",
   "media_image": "../../../assets/dyeing-materials/kinkan/main.jpg",
   "image": "../../../assets/dyeing-materials/kinkan/main.jpg",
   "images_alt": [],

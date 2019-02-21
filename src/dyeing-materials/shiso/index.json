@@ -5,7 +5,7 @@
   "name_kana": "しそ",
   "title": "紫蘇",
   "description": "梅干しに使われる紫蘇です。赤紫蘇で緑色に染まります。酸性で抽出すると赤にも染まりますが、堅牢度が低く、素材によってはすぐに色があせてしまいます。",
-  "body": null,
+  "body": "body.md",
   "media_image": null,
   "image": null,
   "images_alt": [],

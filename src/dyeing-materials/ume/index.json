@@ -5,7 +5,7 @@
   "name_kana": "うめ",
   "title": "梅",
   "description": "桜とおなじく、枝や葉をアルカリ性で抽出するとピンク色に染まります。中性で抽出すると黄色系です。",
-  "body": null,
+  "body": "body.md",
   "media_image": null,
   "image": null,
   "images_alt": [],
