@@ -7,7 +7,7 @@
   "name_alt_kana": "かざるぬの",
   "title": "飾る布 平安",
   "description": "草木染めした綿糸で手織りした布です。コシがあるので、テーブルセンターや家具にかけるなどのインテリアファブリックとして飾るのに最適です。",
-  "body": null,
+  "body": "body.md",
   "media_image": "../../../assets/products/heian/main.jpg",
   "image": "../../../assets/products/heian/main.jpg",
   "images_alt": ["../../../assets/products/heian/01.jpg"],

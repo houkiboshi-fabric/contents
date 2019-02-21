@@ -6,8 +6,8 @@
   "name_alt": "手染腹帯",
   "name_alt_kana": "てぞめはらおび",
   "title": "手染腹帯 感光",
-  "body": null,
   "description": "妊婦のおなかを支えるために昔から使われてきた腹帯はふつう白無地ですが、でもそれ以外の選択肢があればいいのに、と思ったので水彩のような淡い色で染めました。",
+  "body": "body.md",
   "media_image": "../../../assets/products/kanko/main.jpg",
   "image": "../../../assets/products/kanko/main.jpg",
   "images_alt": [

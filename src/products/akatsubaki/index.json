@@ -6,8 +6,8 @@
   "name_alt": "ポーチ",
   "name_alt_kana": "ぽーち",
   "title": "ポーチ 赤椿",
-  "body": null,
   "description": "型染めで赤い椿を染めてポーチをつくりました。内側の布は紅茶で染めています。",
+  "body": "body.md",
   "media_image": "../../../assets/products/akatsubaki/main.jpg",
   "image": "../../../assets/products/akatsubaki/main.jpg",
   "images_alt": [

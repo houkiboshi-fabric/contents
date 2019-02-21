@@ -6,8 +6,8 @@
   "name_alt": "草木染め糸のストール",
   "name_alt_kana": "くさきぞめいとのすとーる",
   "title": "草木染め糸のストール 駱駝",
-  "body": null,
   "description": "草木染めした綿糸で手織りしたストールです。柔らかくて軽く、さらっとしていて、3 シーズン使えます。手紡ぎ糸をたくさん使用しているので、軽くて空気をよく含みます。",
+  "body": "body.md",
   "media_image": "../../../assets/products/rakuda/main.jpg",
   "image": "../../../assets/products/rakuda/main.jpg",
   "images_alt": [

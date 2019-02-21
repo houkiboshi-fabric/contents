@@ -6,8 +6,8 @@
   "name_alt": "ポーチ",
   "name_alt_kana": "ぽーち",
   "title": "ポーチ 白つばき",
-  "body": null,
   "description": "型染めで白い椿の柄を染めました。内側の布は葛で染めています。A4 の紙を三つ折りして入れられるくらいの大きさで、ノートなら B6、A6 が入ります。",
+  "body": "body.md",
   "media_image": "../../../assets/products/shirotsubaki/main.jpg",
   "image": "../../../assets/products/shirotsubaki/main.jpg",
   "images_alt": [

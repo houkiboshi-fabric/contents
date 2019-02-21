@@ -6,8 +6,8 @@
   "name_alt": "手織りミニストール",
   "name_alt_kana": "ておりみにすとーる",
   "title": "手織りミニストール 青貝",
-  "body": null,
   "description": "表と裏とで色の違う綿のミニストールをつくりました。やわらかく、軽めですが、二重になっているので春先の少し肌寒いときにも重宝します。",
+  "body": "body.md",
   "media_image": "../../../assets/products/aogai/main.jpg",
   "image": "../../../assets/products/aogai/main.jpg",
   "images_alt": [
