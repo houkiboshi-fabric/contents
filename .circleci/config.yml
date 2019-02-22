@@ -9,7 +9,7 @@ jobs:
       ignore:
         - gh-pages
     docker:
-      - image: node:10.15.1
+      - image: node:11.10.0
         environment:
           TZ: '/usr/share/zoneinfo/Asia/Tokyo'
           LANG: ja_JP.UTF-8
