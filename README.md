@@ -14,6 +14,7 @@ houkiboshi-fabric dataset
 
 - [nodenv/nodenv](https://github.com/nodenv/nodenv)
 - [nodenv/node-build](https://github.com/nodenv/node-build)
+- [nodenv/node-build-update-defs](https://github.com/nodenv/node-build-update-defs)
 - [EditorConfig](https://editorconfig.org/)
 
 ## Install
