@@ -5,7 +5,7 @@
   "name_kana": "ひよこぐさ",
   "title": "ひよこ草",
   "description": "いわゆるハコベで、淡い黄色に染まる雑草です。人参のまわりにたくさん生えていてうっとおしかったので染めてみたらいい感じの色でした。",
-  "body": null,
+  "body": "body.md",
   "media_image": "../../../assets/dyeing-materials/hiyokogusa/main.jpg",
   "image": "../../../assets/dyeing-materials/hiyokogusa/main.jpg",
   "images_alt": [],

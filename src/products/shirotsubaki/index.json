@@ -6,8 +6,8 @@
   "name_alt": "ポーチ",
   "name_alt_kana": "ぽーち",
   "title": "ポーチ 白つばき",
-  "description": "冬に道ばたで見た白い椿がきれいだったので、形にしたいと思って布を染めました。内側の布は葛で染めたので、冬の終わりと春の終わりが合体したポーチになりました。A4 の紙を三つ折りして入れられるくらいの大きさで、ノートなら B6、A6 が入ります（写真は A6 ノート)。母子手帳と予防接種などのお知らせの紙をいっしょに入れたり、メモ帳とペン、文庫本、いろいろ入ります。",
-  "body": null,
+  "description": "型染めで白い椿の柄を染めました。内側の布は葛で染めています。A4 の紙を三つ折りして入れられるくらいの大きさで、ノートなら B6、A6 が入ります。",
+  "body": "body.md",
   "media_image": "../../../assets/products/shirotsubaki/main.jpg",
   "image": "../../../assets/products/shirotsubaki/main.jpg",
   "images_alt": [

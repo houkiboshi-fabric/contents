@@ -5,7 +5,7 @@
   "name_kana": "あかね",
   "title": "茜",
   "description": "赤い色を染めるときに使います。堅牢度が高く、洗濯の必要があるアイテムにも使いやすい染料です。染液を煮だすとき、あまり高温にせず、かつ pH を酸性にすることできれいな赤を抽出できます。染料店で購入します。",
-  "body": null,
+  "body": "body.md",
   "media_image": "../../../assets/dyeing-materials/akane/main.jpg",
   "image": "../../../assets/dyeing-materials/akane/main.jpg",
   "images_alt": [],

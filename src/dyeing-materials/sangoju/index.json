@@ -5,7 +5,7 @@
   "name_kana": "さんごじゅ",
   "title": "サンゴジュ",
   "description": "葉で染めます。赤みがかったベージュのような色に染まります。",
-  "body": null,
+  "body": "body.md",
   "media_image": "../../../assets/dyeing-materials/sangoju/main.jpg",
   "image": "../../../assets/dyeing-materials/sangoju/main.jpg",
   "images_alt": [],

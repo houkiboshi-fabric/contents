@@ -5,7 +5,7 @@
   "name_kana": "きせいのそざい",
   "title": "既製の素材",
   "description": "あらかじめ染めてある糸や布、または染めていない糸や布などを材料として用いています。",
-  "body": null,
+  "body": "body.md",
   "media_image": null,
   "image": null,
   "images_alt": [],
