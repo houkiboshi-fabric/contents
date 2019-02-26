@@ -37,6 +37,11 @@
   ],
   "process_ids": ["process-kusaki-zome", "process-multi-shaft-table-loom"],
   "instructions": {
-    "additional_items": []
+    "additional_items": [
+      {
+        "value": "製品の一部に織り傷があるため特別価格になっています。ご了承の上ご購入ください。",
+        "instruction_category_id": "disclaimer"
+      }
+    ]
   }
 }

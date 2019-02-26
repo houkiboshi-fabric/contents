@@ -14,7 +14,7 @@
     "../../../assets/products/shinkai/01.jpg",
     "../../../assets/products/shinkai/02.jpg"
   ],
-  "price": 1200,
+  "price": null,
   "links_to_shop": ["https://minne.com/items/1449933"],
   "size": {
     "width_mm": 60,
@@ -44,6 +44,11 @@
   ],
   "process_ids": ["process-zoom-loom"],
   "instructions": {
-    "additional_items": []
+    "additional_items": [
+      {
+        "value": "お手持ちの鍵の大きさと製品サイズを確認の上ご購入ください。",
+        "instruction_category_id": "disclaimer"
+      }
+    ]
   }
 }
