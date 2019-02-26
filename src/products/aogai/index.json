@@ -31,11 +31,16 @@
   ],
   "dyeing_materials": [
     {
-      "dyeing_material_ids": ["biwa"]
+      "dyeing_material_ids": ["biwa", "kuzu"]
     }
   ],
   "process_ids": ["process-kusaki-zome", "process-multi-shaft-table-loom"],
   "instructions": {
-    "additional_items": []
+    "additional_items": [
+      {
+        "value": "布目の荒い部分が引っ掛かりやすいためご注意ください。",
+        "instruction_category_id": "using"
+      }
+    ]
   }
 }
