@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/social.json",
+  "accounts": [
+    {
+      "id": "twitter",
+      "user_id": "houkiboshifab",
+      "uri": "https://twitter.com/houkiboshifab"
+    },
+    {
+      "id": "github",
+      "user_id": "houkiboshi-fabric",
+      "uri": "https://github.com/houkiboshi-fabric"
+    },
+    {
+      "id": "instagram",
+      "user_id": "houkiboshifabric",
+      "uri": "https://www.instagram.com/houkiboshifabric/"
+    }
+  ],
+  "facebook_app_id": "280562095941455"
+}
