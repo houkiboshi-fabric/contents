@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/author.json",
+  "@context": "http://schema.org/",
+  "@type": "Organization",
+  "name": "手織り草木染ホウキボシ",
+  "image": {
+    "@type": "ImageObject",
+    "url": "../../assets/products/chojo/main.jpg",
+    "width": 1000,
+    "height": 1000
+  },
+  "address": "鳥取県東伯郡琴浦町槻下 977-1",
+  "telephone": "0858-53-2018",
+  "email": "houkiboshi.info@gmail.com"
+}
