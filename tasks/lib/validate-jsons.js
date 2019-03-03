@@ -1,7 +1,7 @@
 'use strict';
 
-const { readFileSync } = require('fs');
-const { basename, resolve, relative } = require('path');
+const { readFileSync, statSync } = require('fs');
+const { basename, dirname, resolve, relative } = require('path');
 
 const Ajv = require('ajv');
 const jsonSchemaDraft06 = require('ajv/lib/refs/json-schema-draft-06.json');
@@ -88,6 +88,7 @@ const validateJsons = ({ src, schemaDir, baseDir }) => {
       });
       return acm;
     }
+
     if (!doc.$schema) {
       errs.push({
         path: docPath,
@@ -95,6 +96,13 @@ const validateJsons = ({ src, schemaDir, baseDir }) => {
         error: new Error('"$schema" property is missing.')
       });
       return acm;
+    }
+
+    try {
+      const schemaFile = resolve(dirname(docPath), doc.$schema);
+      statSync(schemaFile);
+    } catch (err) {
+      errs.push(err);
     }
 
     const docSchemaId = basename(doc.$schema);
