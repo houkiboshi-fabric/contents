@@ -1,10 +1,10 @@
 {
   "$schema": "../../schemas/author.json",
-  "@context": "http://schema.org/",
-  "@type": "Organization",
+  "__at__context": "http://schema.org/",
+  "__at__type": "Organization",
   "name": "手織り草木染ホウキボシ",
   "image": {
-    "@type": "ImageObject",
+    "__at__type": "ImageObject",
     "url": "../../assets/products/chojo/main.jpg",
     "width": 1000,
     "height": 1000
