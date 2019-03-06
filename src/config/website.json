@@ -1,15 +1,15 @@
 {
   "$schema": "../../schemas/website.json",
-  "__at__context": "http://schema.org/",
-  "__at__type": "WebSite",
-  "__at__id": "https://houkiboshi.co/",
+  "jsonld_at_context": "http://schema.org/",
+  "jsonld_at_type": "WebSite",
+  "jsonld_at_id": "https://houkiboshi.co/",
   "inLanguage": "ja",
   "url": "https://houkiboshi.co/",
   "name": "手織り草木染ホウキボシ",
   "alternateName": "houkiboshi.co",
   "description": "手織り・型染め・草木染めを専門とする鳥取県の工房です。",
   "image": {
-    "__at__type": "ImageObject",
+    "jsonld_at_type": "ImageObject",
     "url": "../../assets/products/chojo/main.jpg",
     "width": 1252,
     "height": 630
